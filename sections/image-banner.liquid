@@ -27,6 +27,10 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+
+  .pp .header {
+    background: transparent;
+  }
 {%- endstyle -%}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
@@ -64,7 +68,6 @@
         </div>
         <img src="https://cdn.shopify.com/s/files/1/0702/4522/0637/files/Capsule_popup_Low-17.jpg?v=1684110748" alt="">
       </div>
-
     </div>
     <div class="swiper-slide">
       <div class="main-hero-item">
@@ -72,7 +75,16 @@
           test<br>
           Sept. 3, 2022
         </div>
-        <img src="https://cdn.shopify.com/s/files/1/0702/4522/0637/files/Capsule_popup_Low-17.jpg?v=1684110748" alt="">
+        <img src="https://cdn.shopify.com/s/files/1/0702/4522/0637/files/Capsule_popup_Low-36.jpg?v=1684153578" alt="">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="main-hero-item">
+        <div class="main-hero-title">
+          test test<br>
+          Sept. 3, 2023
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0702/4522/0637/files/100cups_pre-4.jpg?v=16841534478" alt="">
       </div>
 
     </div>
@@ -84,6 +96,16 @@
   var swiper = new Swiper(".main-hero", {
     direction: "vertical",
     mousewheel: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -0.5],
+      },
+      next: {
+        translate: [0, "100%", 0],
+      },
+    },
   });
 </script>
 {% schema %}
