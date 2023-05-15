@@ -53,6 +53,7 @@
             </div>
 
             <div class="product-default">
+                {% comment %}여기에 그리드 스타일 넣기{% endcomment %}
                 <div
                         id="ProductInfo-{{ section.id }}"
                         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
@@ -126,6 +127,7 @@
                                     </div>
                                 </details>
                             </div>
+
                         {%- when 'quantity_selector' -%}
                             <div
                                     class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -159,66 +161,6 @@
                                     </button>
                                 </quantity-input>
                             </div>
-                        {%- when 'popup' -%}
-                            <modal-opener
-                                    class="product-popup-modal__opener no-js-hidden quick-add-hidden"
-                                    data-modal="#PopupModal-{{ block.id }}"
-                                    {{ block.shopify_attributes }}
-                            >
-                                <button
-                                        id="ProductPopup-{{ block.id }}"
-                                        class="product-popup-modal__button link"
-                                        type="button"
-                                        aria-haspopup="dialog"
-                                >
-                                    {{ block.settings.text | default: block.settings.page.title }}
-                                </button>
-                            </modal-opener>
-                            <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">
-                                {{- block.settings.text -}}
-                            </a>
-                        {%- when 'share' -%}
-                            <share-button
-                                    id="Share-{{ section.id }}"
-                                    class="share-button quick-add-hidden"
-                                    {{ block.shopify_attributes }}
-                            >
-                                <button class="share-button__button hidden">
-                                    {% render 'icon-share' %}
-                                    {{ block.settings.share_label | escape }}
-                                </button>
-                                <details id="Details-{{ block.id }}-{{ section.id }}">
-                                    <summary class="share-button__button">
-                                        {% render 'icon-share' %}
-                                        {{ block.settings.share_label | escape }}
-                                    </summary>
-                                    <div id="Product-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                                        <div class="field">
-                      <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                      </span>
-                                            <input
-                                                    type="text"
-                                                    class="field__input"
-                                                    id="url"
-                                                    value="{{ product.selected_variant.url | default: product.url | prepend: request.origin }}"
-                                                    placeholder="{{ 'general.share.share_url' | t }}"
-                                                    onclick="this.select();"
-                                                    readonly
-                                            >
-                                            <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                                        </div>
-                                        <button class="share-button__close hidden no-js-hidden">
-                                            {% render 'icon-close' %}
-                                            <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                                        </button>
-                                        <button class="share-button__copy no-js-hidden">
-                                            {% render 'icon-clipboard' %}
-                                            <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                                        </button>
-                                    </div>
-                                </details>
-                            </share-button>
-                            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
                         {%- when 'variant_picker' -%}
                         {%- unless product.has_only_default_variant -%}
                         {%- if block.settings.picker_type == 'button' -%}
@@ -293,7 +235,6 @@
                             </variant-selects>
                         {%- endif -%}
                         {%- endunless -%}
-
                             <noscript class="product-form__noscript-wrapper-{{ section.id }}">
                                 <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
                                     <label class="form__label" for="Variants-{{ section.id }}">
@@ -335,8 +276,7 @@
                                                 focusable="false"
                                                 role="presentation"
                                                 class="icon icon-error"
-                                                viewBox="0 0 13 13"
-                                        >
+                                                viewBox="0 0 13 13">
                                             <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
                                             <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
                                             <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
@@ -390,68 +330,9 @@
 
                                 {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
-                                {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
 
-                                <pickup-availability
-                                        class="product__pickup-availabilities no-js-hidden quick-add-hidden"
-                                        {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}
-                                            available
-                                        {% endif %}
-                                        data-root-url="{{ routes.root_url }}"
-                                        data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-                                        data-has-only-default-variant="{{ product.has_only_default_variant }}"
-                                >
-                                    <template>
-                                        <pickup-availability-preview class="pickup-availability-preview">
-                                            {% render 'icon-unavailable' %}
-                                            <div class="pickup-availability-info">
-                                                <p class="caption-large">{{ 'products.product.pickup_availability.unavailable' | t }}</p>
-                                                <button class="pickup-availability-button link link--text underlined-link">
-                                                    {{ 'products.product.pickup_availability.refresh' | t }}
-                                                </button>
-                                            </div>
-                                        </pickup-availability-preview>
-                                    </template>
-                                </pickup-availability>
                             </div>
 
-                            <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-                        {%- when 'rating' -%}
-                        {%- if product.metafields.reviews.rating.value != blank -%}
-                            {% liquid
-                                assign rating_decimal = 0
-                                assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
-                                if decimal >= 0.3 and decimal <= 0.7
-                                    assign rating_decimal = 0.5
-                                elsif decimal > 0.7
-                                    assign rating_decimal = 1
-                                endif
-                            %}
-                            <div
-                                    class="rating"
-                                    role="img"
-                                    aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
-                            >
-                  <span
-                          aria-hidden="true"
-                          class="rating-star color-icon-{{ settings.accent_icons }}"
-                          style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
-                  ></span>
-                            </div>
-                            <p class="rating-text caption">
-                  <span aria-hidden="true">
-                    {{- product.metafields.reviews.rating.value }} /
-                    {{ product.metafields.reviews.rating.value.scale_max -}}
-                  </span>
-                            </p>
-                            <p class="rating-count caption">
-                                <span aria-hidden="true">({{ product.metafields.reviews.rating_count }})</span>
-                                <span class="visually-hidden">
-                    {{- product.metafields.reviews.rating_count }}
-                                    {{ "accessibility.total_reviews" | t -}}
-                  </span>
-                            </p>
-                        {%- endif -%}
 
                         {%- when 'complementary' -%}
                             <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
