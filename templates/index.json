@@ -1,1 +1,22 @@
-{"sections":{"948f3b4a-2f96-4ba0-ba29-ab7e656c4d65":{"type":"custom-liquid","settings":{"custom_liquid":"test","color_scheme":"background-1","padding_top":0,"padding_bottom":0}}},"order":["948f3b4a-2f96-4ba0-ba29-ab7e656c4d65"]}
+{
+  "sections": {
+    "6ed37bab-c4d4-44f9-9254-755425b21c26": {
+      "type": "image-banner",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "6ed37bab-c4d4-44f9-9254-755425b21c26"
+  ]
+}
