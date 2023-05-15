@@ -1416,9 +1416,9 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  /*font-size: 1.5rem;*/
+  /*letter-spacing: 0.1rem;*/
+  /*line-height: calc(1 + 0.2 / var(--font-body-scale));*/
 }
 
 .button--tertiary {
@@ -2216,6 +2216,7 @@ input[type='checkbox'] {
 
 /* section-header */
 #shopify-section-header {
+  position: relative;
   z-index: 3;
 }
 
