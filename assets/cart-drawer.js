@@ -8,7 +8,7 @@ class CartDrawer extends HTMLElement {
   }
 
   setHeaderCartIconAccessibility() {
-    const cartLink = document.querySelector('.cart-icon-bubble');
+    const cartLink = document.querySelector('#cart-icon-bubble');
     cartLink.setAttribute('role', 'button');
     cartLink.setAttribute('aria-haspopup', 'dialog');
     cartLink.addEventListener('click', (event) => {
@@ -16,6 +16,19 @@ class CartDrawer extends HTMLElement {
       this.open(cartLink)
     });
     cartLink.addEventListener('keydown', (event) => {
+      if (event.code.toUpperCase() === 'SPACE') {
+        event.preventDefault();
+        this.open(cartLink);
+      }
+    });
+    const cartLink2 = document.querySelector('#cart-icon-bubble-2');
+    cartLink2.setAttribute('role', 'button');
+    cartLink2.setAttribute('aria-haspopup', 'dialog');
+    cartLink2.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.open(cartLink)
+    });
+    cartLink2.addEventListener('keydown', (event) => {
       if (event.code.toUpperCase() === 'SPACE') {
         event.preventDefault();
         this.open(cartLink);
