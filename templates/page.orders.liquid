@@ -1,0 +1,9 @@
+<h1>주문 목록</h1>
+
+<ul>
+  {% for order in customer.orders %}
+    <li>
+      <a href="/orders/{{ order.order_number }}">{{ order.order_number }}</a>
+    </li>
+  {% endfor %}
+</ul>
