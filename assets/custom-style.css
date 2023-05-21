@@ -535,7 +535,7 @@ a {
     padding: 0;
 }
 
-.pp .collection .product-item .card__heading {
+.pp .product-item .card__heading {
     opacity: 0;
 }
 
@@ -544,11 +544,11 @@ a {
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
+    color: #000;
 }
 
-.pp .collection .product-item:hover .card__heading {
+.pp .product-item:hover .card__heading {
     opacity: 1;
-
 }
 
 .pp .collection .product-item .card-information {

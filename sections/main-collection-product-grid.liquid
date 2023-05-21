@@ -68,7 +68,7 @@
               <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
             </svg>
           </div>
-        </div>  
+        </div>
       </form>
     </facet-filters-form>
   {%- endif -%}
@@ -111,7 +111,7 @@
         {%- else -%}
           <div class="collection">
             <div class="loading-overlay gradient"></div>
-    
+
             <ul id="product-grid" data-id="{{ section.id }}" class="product-grid-list">
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
@@ -133,7 +133,7 @@
                 </li>
               {%- endfor -%}
             </ul>
-    
+
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
@@ -144,7 +144,15 @@
   </div>
 </div>
 
+<script>
+  const filterBtn = document.querySelector('.filter-btn');
+  const filter = document.querySelector('.facets-wrap');
 
+  filterBtn.addEventListener('click', function() {
+    filter.classList.toggle('on');
+  });
+
+</script>
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
