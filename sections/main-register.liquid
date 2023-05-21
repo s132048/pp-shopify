@@ -62,6 +62,18 @@
       aria-required="true"
       placeholder="Confirm Password"
       >
+    <div>
+      <span for='termspolicy'>
+        Agree to our terms & conditions, privacy policy
+      </span>
+      <input type="checkbox" id='termspolicy'/>
+    </div>
+    <div>
+      <label for='newsletter'>
+        Subscribe to our newsletter
+      </span>
+      <input type="checkbox" id='newsletter'/>
+    </div>
 
     
     {%- if form.errors contains 'password' -%}
