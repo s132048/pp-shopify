@@ -62,10 +62,6 @@
                     {{ all_country_option_tags }}
                   </select>
                 <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;">
-                  <label for="AddressProvince_{{ form.id }}">
-                    {{ 'customer.addresses.province' | t }}
-                  </label>
-                  <div class="select">
                     <select
                       id="AddressProvince_{{ form.id }}"
                       name="address[province]"
@@ -73,7 +69,6 @@
                       autocomplete="address-level1"
                     >
                     </select>
-                  </div>
                 </div>
                   <input type="text" id="AddressZip_{{ form.id }}" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
                   <input type="tel" id="AddressPhone_{{ form.id }}"  name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
