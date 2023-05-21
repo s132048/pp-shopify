@@ -124,33 +124,6 @@ body{
   margin-bottom: 4rem;
 }
 
-.customer ul a {
-  display: inline;
-}
-
-.customer strong {
-  font-weight: normal;
-  color: rgb(var(--color-foreground));
-}
-
-.customer h2.form__message {
-  font-size: calc(var(--font-heading-scale) * 1.8rem);
-}
-
-@media only screen and (min-width: 750px) {
-  .customer h2.form__message {
-    font-size: calc(var(--font-heading-scale) * 2.2rem);
-  }
-}
-
-.customer .field {
-  margin: 2rem 0 0 0;
-}
-
-.customer .field:first-of-type {
-  margin-top: 0;
-}
-
 /* Customer Table */
 .customer table {
   table-layout: auto;
