@@ -19,13 +19,7 @@
       </h3>
     {%- endif -%}
     {%- form 'customer_login', novalidate: 'novalidate' -%}
-      {%- if form.errors -%}
-        <h2 class="form__message" tabindex="-1" autofocus>
-          <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
-          {{ 'templates.contact.form.error_heading' | t }}
-        </h2>
-        {{ form.errors | default_errors }}
-      {%- endif -%}      
+         
         <input
           type="email"
           name="customer[email]"
@@ -71,6 +65,12 @@
         </a>
       {%- endif -%}
       </div>
+    {%- if form.errors -%}
+        <div class="account_error_box" tabindex="-1" autofocus>
+          {{ 'templates.contact.form.error_heading' | t }}
+        </div>
+        {{ form.errors | default_errors }}
+      {%- endif -%}   
     {%- endform -%}
     
   <!-- 비밀번호 재설정 -->
