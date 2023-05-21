@@ -10,7 +10,7 @@ body *{
   border-top: 1px solid #fff;
 }
 
-.customer a, .customer button{
+.customer a, .customer button .login a{
   margin: 0;
   text-decoration : nono;
   font-size : 19px;
@@ -39,6 +39,7 @@ body *{
   padding : 7px 0;
   border-bottom: 1px solid #fff;
 }
+
 @media screen and (min-width: 750px) {
   .customer a, .customer button {
     font-size : 22px;
