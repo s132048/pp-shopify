@@ -116,10 +116,6 @@ input:autofill:active {
   outline: none;
   box-shadow: none;
   border: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: #fff;
   transition: background-color 0.3s ease;
   position: relative;
   cursor: pointer;
@@ -127,8 +123,8 @@ input:autofill:active {
 
 .customer input[type="checkbox"]::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   border : 1px solid #fff;
   background-color: #000;
