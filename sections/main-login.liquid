@@ -98,9 +98,15 @@
           placeholder="Type your email account"
         >
       {%- if form.errors -%}
-        <small id="RecoverEmail-email-error" class="form__message">
-          {{ form.errors.messages['form'] }}
-        </small>
+        <div class="account_error_box">
+            {%- for field in form.errors -%}
+              <span id="RecoverEmail-email-error" >
+                {%- if field == 'form' -%}
+                  {{ form.errors.messages[field] }}
+                {%- endif -%}
+              </span>
+            {%- endfor -%}
+        </div>
       {%- endif -%}
       {% if recover_success == 'true' %}
         <div class='account_message'>
