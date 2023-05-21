@@ -10,7 +10,7 @@
       {%- for address in customer.addresses -%}
         <li data-address>
           {%- if address == customer.default_address -%}
-            <span>Primary shipping address</span>
+            <span class='default_title'>Primary shipping address</span>
           {%- endif -%}
           {{ address | format_address }}
           <button
