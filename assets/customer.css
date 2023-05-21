@@ -635,6 +635,7 @@ body{
   border-top:1px solid #fff;
 }
 .addresses .address_list li{
+  padding: 7px 0;
   position: relative;
   border-bottom: 1px solid #fff;
 }
