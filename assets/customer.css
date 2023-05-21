@@ -9,13 +9,10 @@ body *{
 .menu-list{
   border-top: 1px solid #fff;
 }
-input:-webkit-autofill {
-  color: #fff;
-}
+
 
 .customer a, .customer button{
   margin: 0;
-  text-decoration : nono;
 /*   font-size : 19px; */
 }
 
