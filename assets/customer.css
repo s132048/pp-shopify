@@ -10,6 +10,12 @@ body *{
   border-top: 1px solid #fff;
 }
 
+input:focus,
+input:hover,
+input:active
+{
+  outline: none;
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
