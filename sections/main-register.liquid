@@ -73,6 +73,14 @@
         {% endif %}
         placeholder="Password"
       >
+    <input 
+      type="password" 
+      name="customer[password_confirmation]" 
+      id="customer_password_confirmation" 
+      aria-required="true"
+      placeholder="Confirm Password"
+      >
+
     
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
