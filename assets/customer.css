@@ -676,22 +676,7 @@ label[for='AddressProvinceNew'] {
   display: block;
 }
 
-.addresses h2 {
-  text-align: left;
-}
 
-li[data-address] > h2 {
-  text-align: center;
-  font-size: calc(var(--font-heading-scale) * 1.8rem);
-  margin-bottom: 0;
-}
-
-
-
-.addresses form > div:nth-of-type(7),
-.addresses form > div:nth-of-type(7) + div[id] {
-  margin-top: 1.5rem;
-}
 input placeholder{
   color: #959595;
 }
