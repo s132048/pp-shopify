@@ -7,23 +7,6 @@
   </span>
   <div class="account_form_box">
   {%- form 'create_customer', novalidate: 'novalidate' -%}
-   
-<!--       <input
-        type="text"
-        name="customer[first_name]"
-        id="RegisterForm-FirstName"
-        {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
-        autocomplete="given-name"
-        placeholder="{{ 'customer.register.first_name' | t }}"
-      >
-      <input
-        type="text"
-        name="customer[last_name]"
-        id="RegisterForm-LastName"
-        {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
-        autocomplete="family-name"
-        placeholder="{{ 'customer.register.last_name' | t }}"
-      >    -->
       <input
         type="email"
         name="customer[email]"
