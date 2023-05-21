@@ -126,7 +126,10 @@ input:autofill:active {
 }
 
 .customer input[type="checkbox"]::before {
-  
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border : 1px solid #fff;
   background-color: #000;
 }
 
