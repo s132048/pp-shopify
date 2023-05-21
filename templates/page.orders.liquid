@@ -12,7 +12,7 @@
             <li>
               <span>{{ order.created_at | time_tag: format: 'date' }}</span>
               <span>{{ order.fulfillment_status_label }}</span>
-              <span>{{ order.line_items.count }}</span>
+              <span>{{ order.line_items.length }}</span>
               <span>Order no.{{ order.name }}</span>
               <span>{{ order.total_price | money_with_currency }}</span>
             </li>
