@@ -1,23 +1,11 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-<div class="customer register section-{{ section.id }}-padding">
+<div class="customer register">
   <h1>
     Register
   </h1>
+  <div class="account_form_box">
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}
       <h2 class="form__message" tabindex="-1" autofocus>
@@ -85,6 +73,7 @@
         {% endif %}
         placeholder="{{ 'customer.register.password' | t }}"
       >
+    </div>
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
