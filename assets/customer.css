@@ -38,7 +38,7 @@ body{
 }
 .account_form_box input,
 .account_contents > span,
-.account .account_contents > button{
+.customer .account_contents > button{
   text-align: left;
   display: block;
   border:none;
