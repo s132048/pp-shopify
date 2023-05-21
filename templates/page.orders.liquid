@@ -1,6 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
- <div id='orders'>
+<div class="customer account" id='account'>
     <div>
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
