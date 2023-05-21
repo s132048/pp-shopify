@@ -9,7 +9,7 @@ body *{
 .menu-list{
   border-top: 1px solid #fff;
 }
-input[aria-invalid="true"]{
+input[aria-invalid="true"] placeholder{
   color: #ff0000;
 }
 input:focus,
