@@ -7,6 +7,11 @@
     <div>
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
+          <ul class='order_list'>
+            <li>
+              
+            </li>
+          </ul>
           <table role="table" class="order-history">
             <tbody role="rowgroup">
               {%- for order in customer.orders -%}
@@ -22,7 +27,7 @@
                     </a>
                   </td>
                   <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
-                    {{ order.created_at | time_tag: format: 'date' }}
+                    
                   </td>
                   <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
                     {{ order.financial_status_label }}
