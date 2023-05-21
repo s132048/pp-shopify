@@ -74,8 +74,6 @@
       </span>
       <input type="checkbox" id='newsletter'/>
     </div>
-
-    
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
