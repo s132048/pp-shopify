@@ -33,7 +33,7 @@
             Delete
           </button>
         
-          <div id="EditAddress_{{ address.id }}">
+          <div id="EditAddress_{{ address.id }}" class='addressPop'>
             <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
               <div class="field">
