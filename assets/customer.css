@@ -27,8 +27,22 @@ body *{
   background-color: transparent;
 }
 
+.account_form_box .account_buttons{
+  display : flex;
+  gap: 20px;
+  padding : 7px 0;
+  border-bottom: 1px solid #fff;
+}
+.account_form_box .account_buttons a, .account_form_box .account_buttons button {
+  margin: 0;
+  text-decoration : nono;
+  font-size : 19px;
+}
+
 @media screen and (min-width: 750px) {
-  padding: 10px;
+  .account_form_box .account_buttons a, .account_form_box .account_buttons button {
+    font-size : 22px;
+  }
 }
 
 .customer > h1,
