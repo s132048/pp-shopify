@@ -1,3 +1,5 @@
+
+/* account 관련 배경, 텍스트 색상 설정 */
 body{
   background-color : #000 !important; 
 }
@@ -17,14 +19,12 @@ body{
   color: #fff;
 }
 
-
 .customer .account_title{
   display: block;
   margin-bottom: 7px;
 }
 .customer a, .customer button{
   margin: 0;
-/*   font-size : 19px; */
 }
 
 .customer:not(.account):not(.order) {
