@@ -101,18 +101,24 @@
           >
       {%- endif -%}
 
+      <!-- 로그인 버튼 -->
       <button>
         {{ 'customer.login_page.sign_in' | t }}
       </button>
+    
+      <!-- 회원가입 버튼 -->
+      <a href="{{ routes.account_register_url }}">
+        {{ 'customer.login_page.create_account' | t }}
+      </a>
+    
+      <!-- 비밀번호 재설정 버튼 -->
       {%- if form.password_needed -%}     
         <a href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
 
-      <a href="{{ routes.account_register_url }}">
-        {{ 'customer.login_page.create_account' | t }}
-      </a>
+      
       
     {%- endform -%}
   </div>
