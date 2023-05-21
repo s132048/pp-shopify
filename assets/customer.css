@@ -107,6 +107,11 @@ input:autofill:active {
   color: #FF0000;
   text-align: left;
 }
+.account_message span{
+  display: block;
+  color: #00FF00;
+  text-align: left;
+}
 .customer .account_checkbox{
   display: flex;
   justify-content:space-between;
