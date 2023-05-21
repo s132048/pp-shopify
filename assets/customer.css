@@ -27,6 +27,12 @@ body{
   margin: 0;
 }
 
+.customer {
+  margin: 0 auto;
+  padding: 7px;
+  text-align: center;
+}
+
 .account_form_box{
   border-top : 1px solid #fff;
 }
