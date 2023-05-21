@@ -4,10 +4,10 @@
 
 
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses section-{{ section.id }}-padding" data-customer-addresses>
-      <span class='account_title'>
-    Addresses
-  </span>
+  <div class="customer addresses" data-customer-addresses>
+    <span class='account_title'>
+      Addresses
+    </span>
     <a href="{{ routes.account_url }}">
       {{ 'customer.account.return' | t }}
     </a>
