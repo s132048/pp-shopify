@@ -25,7 +25,6 @@
 
   <div>
     <div>
-
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <table role="table" class="order-history">
