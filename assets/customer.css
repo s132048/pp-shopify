@@ -629,6 +629,12 @@ body{
   display: block;
   margin-bottom: 30px;
 }
+.addresses .address_list {
+  border-top:1px solid #fff;
+}
+.addresses .address_list li{
+  border-bottom: 1px solid #fff;
+}
 .addresses li > button {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
