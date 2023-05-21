@@ -409,7 +409,7 @@ body{
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
 }
 .addresses .address_list li p{
   margin: 0;
