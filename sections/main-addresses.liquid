@@ -6,69 +6,7 @@
     <span class='account_title'>
       Addresses
     </span>
-    <div data-address class='account_contents'>
-      <button
-        type="button"
-        aria-expanded="false"
-        aria-controls="AddAddress"
-      >
-        Add new addresss
-      </button>
-      <div id="AddAddress" class='address'>
-        <span class='account_title'>
-          Add new addresses
-        </span>
-        <button type="reset" class='close_add'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
-            <path id="패스_2258" data-name="패스 2258" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#fff"/>
-        </svg>
-        </button>
-        <div class='account_form_box'>
-        {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-          <div>
-            <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="Address name">
-            <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="Postal code">
-            <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}">
-            <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">            
-            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
-            <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="Phone">
-          <select
-            id="AddressCountryNew"
-            name="address[country]"
-            data-default="{{ form.country }}"
-            autocomplete="country"
-          >
-            {{ all_country_option_tags }}
-          </select>
-          <div id="AddressProvinceContainerNew" style="display: none">
-            <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
-            <div class="select">
-              <select
-                id="AddressProvinceNew"
-                name="address[province]"
-                data-default="{{ form.province }}"
-                autocomplete="address-level1"
-              >
-              </select>
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                <use href="#icon-caret" />
-              </svg>
-            </div>
-          </div>
-          <div class='account_checkbox'>
-            <label for="address_default_address_new">Set as a primary shipping address</label>
-            {{ form.set_as_default_checkbox }}
-          </div>
-          </div>
-          <div class='submit_add_address'>
-            <button>Add</button>
-          </div>
-        {%- endform -%}
-      </div>
-      </div>
-    </div>
-
-    <ul role="list">
+      <ul role="list">
       {%- for address in customer.addresses -%}
         <li data-address>
           {%- if address == customer.default_address -%}
@@ -180,6 +118,69 @@
         </li>
       {%- endfor -%}
     </ul>
+    <div data-address class='account_contents'>
+      <button
+        type="button"
+        aria-expanded="false"
+        aria-controls="AddAddress"
+      >
+        Add new addresss
+      </button>
+      <div id="AddAddress" class='address'>
+        <span class='account_title'>
+          Add new addresses
+        </span>
+        <button type="reset" class='close_add'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
+            <path id="패스_2258" data-name="패스 2258" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#fff"/>
+        </svg>
+        </button>
+        <div class='account_form_box'>
+        {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
+          <div>
+            <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="Address name">
+            <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="Postal code">
+            <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}">
+            <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">            
+            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
+            <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="Phone">
+          <select
+            id="AddressCountryNew"
+            name="address[country]"
+            data-default="{{ form.country }}"
+            autocomplete="country"
+          >
+            {{ all_country_option_tags }}
+          </select>
+          <div id="AddressProvinceContainerNew" style="display: none">
+            <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+            <div class="select">
+              <select
+                id="AddressProvinceNew"
+                name="address[province]"
+                data-default="{{ form.province }}"
+                autocomplete="address-level1"
+              >
+              </select>
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                <use href="#icon-caret" />
+              </svg>
+            </div>
+          </div>
+          <div class='account_checkbox'>
+            <label for="address_default_address_new">Set as a primary shipping address</label>
+            {{ form.set_as_default_checkbox }}
+          </div>
+          </div>
+          <div class='submit_add_address'>
+            <button>Add</button>
+          </div>
+        {%- endform -%}
+      </div>
+      </div>
+    </div>
+
+  
 
     {%- if paginate.pages > 1 -%}
       {%- if paginate.parts.size > 0 -%}
