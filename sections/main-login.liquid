@@ -73,7 +73,8 @@
       {%- endif -%}
       </div>
     {%- endform -%}
-
+    
+  <!-- 비밀번호 재설정 -->
   <h1 id="recover" tabindex="-1">
   </h1>
   <div>
@@ -98,10 +99,13 @@
           {{ form.errors.messages['form'] }}
         </small>
       {%- endif -%}
+      {% if recover_success %}
+        
+      {% endif %}
 
-      <button>
+<!--       <button>
         Reset
-      </button>
+      </button> -->
 
 <!--       <a href="#login">
         {{ 'customer.login_page.cancel' | t }}
