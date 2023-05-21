@@ -4,8 +4,12 @@ body *{
 .pp .header{
   background-color : #000;
   color: #fff;
-  border-color : #fff;
 }
+
+.menu-list{
+  border-top: 1px solid #fff;
+}
+
 .customer:not(.account):not(.order) {
   margin: 0 auto;
   padding: 7px;
