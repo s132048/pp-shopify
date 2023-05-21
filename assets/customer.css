@@ -98,6 +98,11 @@ input:autofill:active {
   color: #FF0000;
   text-align: left;
 }
+.customer .account_checkbox{
+  display: flex;
+  padding : 7px 0;
+  border-bottom: 1px solid #fff;
+}
 
 .customer > h1,
 .customer__title {
