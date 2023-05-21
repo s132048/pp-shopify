@@ -67,9 +67,8 @@
       </div>
     {%- if form.errors -%}
         <div class="account_error_box" tabindex="-1" autofocus>
-          {{ form.errors | default_errors }}
+          <span>{{ form.errors | default_errors }}</span>
         </div>
-        
       {%- endif -%}   
     {%- endform -%}
     
