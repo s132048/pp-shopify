@@ -34,7 +34,9 @@
           </button>
         
           <div id="EditAddress_{{ address.id }}" class='addressPop'>
-            <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
+            <span class='account_title'>
+              Edit addresses
+            </span>
             {%- form 'customer_address', address -%}
               <div class="field">
                 <input type="text" id="AddressFirstName_{{ form.id }}" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
