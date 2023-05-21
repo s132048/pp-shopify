@@ -11,8 +11,8 @@ body *{
 }
 
 input:-internal-autofill-selected {
-  background-color: transparent;
-  color: #fff;
+  background-color: initial !important;
+  color: initial !important;
 }
 
 .customer a, .customer button{
