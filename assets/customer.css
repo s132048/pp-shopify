@@ -9,7 +9,9 @@ body *{
 .menu-list{
   border-top: 1px solid #fff;
 }
-
+input[aria-invalid="true"]{
+  color: #ff0000;
+}
 input:focus,
 input:hover,
 input:active {
