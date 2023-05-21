@@ -38,6 +38,21 @@
               </svg>
             </div>
           </div>
+          <div id="AddressProvinceContainerNew" style="display: none">
+            <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+            <div class="select">
+              <select
+                id="AddressProvinceNew"
+                name="address[province]"
+                data-default="{{ form.province }}"
+                autocomplete="address-level1"
+              >
+              </select>
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                <use href="#icon-caret" />
+              </svg>
+            </div>
+          </div>
           <div class="field">
             <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
             <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
