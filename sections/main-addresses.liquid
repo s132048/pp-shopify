@@ -18,6 +18,11 @@
         <span class='account_title'>
           Add new addresses
         </span>
+        <button type="reset" class='close_add'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
+            <path id="패스_2258" data-name="패스 2258" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#fff"/>
+        </svg>
+        </button>
         <div class='account_form_box'>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="Address name">
@@ -55,11 +60,7 @@
           </div>
           <div>
             <button>{{ 'customer.addresses.add' | t }}</button>
-            <button type="reset" class='close_add'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
-                <path id="패스_2258" data-name="패스 2258" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#fff"/>
-            </svg>
-            </button>
+            
           </div>
         {%- endform -%}
       </div>
