@@ -11,8 +11,12 @@ body{
 
 .menu-list{
   border-top: 1px solid #fff;
+  
+}
+.menu-list *{
   color: #fff;
 }
+
 input placeholder{
   color: #959595;
 }
