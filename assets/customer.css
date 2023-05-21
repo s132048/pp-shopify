@@ -36,6 +36,14 @@ input:autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
 
+@media screen and (max-width: 1024px) {
+  input:autofill,
+  input:autofill:hover,
+  input:autofill:focus,
+  input:autofill:active {
+    font-size : 19px;
+  }
+}
 
 .customer a, .customer button{
   margin: 0;
@@ -73,9 +81,6 @@ input:autofill:active {
   display: block;
   color: #FF0000;
   text-align: left;
-}
-@media screen and (min-width: 750px) {
-
 }
 
 .customer > h1,
