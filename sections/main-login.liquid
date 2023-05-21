@@ -118,9 +118,6 @@
   
   {%- if shop.checkout.guest_login -%}
     <div>
-      <hr>
-      <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
-
       {%- form 'guest_login' -%}
         <button>
           {{ 'customer.login_page.guest_continue' | t }}
