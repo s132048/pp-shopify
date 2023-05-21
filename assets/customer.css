@@ -72,6 +72,7 @@ input:autofill:active {
 .account_error_box span{
   display: block;
   color: #FF0000;
+  text-align: left;
 }
 @media screen and (min-width: 750px) {
 
