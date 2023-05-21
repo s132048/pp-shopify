@@ -36,7 +36,8 @@ body{
 .account_form_box, .account_contents{
   border-top : 1px solid #fff;
 }
-.account_form_box input{
+.account_form_box input,
+.account_form_box .account_contents  ul li{
   border:none;
   border-bottom : 1px solid #fff;
   width : 100%;
