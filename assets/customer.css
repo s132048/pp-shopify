@@ -636,6 +636,9 @@ body{
   position: relative;
   border-bottom: 1px solid #fff;
 }
+.addresses .address_list li:last-child{
+  border-bottom: none;
+}
 .addresses .address_list li .button_set{
   position:absolute;
   top: 0;
