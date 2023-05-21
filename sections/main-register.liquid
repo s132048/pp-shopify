@@ -82,7 +82,7 @@
      {%- if form.errors -%}
       <ul> 
         {%- for field in form.errors -%}
-          <li>
+          <span>
             {%- if field == 'form' -%}
               {{ form.errors.messages[field] }}
             {%- else -%}
@@ -91,7 +91,7 @@
                 {{ form.errors.messages[field] }}
               </a>
             {%- endif -%}
-          </li>
+          </span>
         {%- endfor -%}
       </ul>
     {%- endif -%}
