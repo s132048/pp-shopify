@@ -37,7 +37,8 @@ body{
   border-top : 1px solid #fff;
 }
 .account_form_box input,
-.account_contents span{
+.account_contents > span,
+.account_contents > span{
   text-align: left;
   display: block;
   border:none;
