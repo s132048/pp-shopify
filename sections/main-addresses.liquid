@@ -13,6 +13,7 @@
             <span class='default_title'>Primary shipping address</span>
           {%- endif -%}
           {{ address | format_address }}
+        <div class='button_set'>
           <button
             type="button"
             id="EditFormButton_{{ address.id }}"
@@ -31,6 +32,7 @@
           >
             Delete
           </button>
+        </div>
           <div id="EditAddress_{{ address.id }}">
             <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
