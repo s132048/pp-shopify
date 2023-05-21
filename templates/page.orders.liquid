@@ -16,7 +16,9 @@
               <span>Order no. {{ order.name | replace:'#','' }}</span>
               <span>{{ order.total_price | money }}</span>
               <div class='button_set'>
-                <span>Track</span>
+                <span>
+                  <a href='{{ order.fulfillment.tracking_url }}'>Track</a>
+                </span>
                 <span>Details</span>
               </div>
             </li>
