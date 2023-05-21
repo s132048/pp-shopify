@@ -142,7 +142,11 @@ body{
   background-color: #000;
   z-index: 10;
 }
-
+.customer .close_add{
+ position: absolute;
+ top: 10px;
+ right:10px;
+}
 /* Customer Table */
 .customer table {
   table-layout: auto;
