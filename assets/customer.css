@@ -12,6 +12,9 @@ body *{
 .menu-list{
   border-top: 1px solid #fff;
 }
+input placeholder{
+  color: #959595;
+}
 input[aria-invalid="true"] placeholder{
   color: #ff0000;
 }
@@ -21,6 +24,7 @@ input:active {
   outline: none !important;
   box-shadow: none;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
