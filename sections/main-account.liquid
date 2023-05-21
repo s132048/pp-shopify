@@ -10,7 +10,7 @@
       <a>Account details</a>
     </span>
     <span>
-      <a>Addresses</a>
+      <a href="{{ routes.account_addresses_url }}">Addresses</a>
     </span>
     <span>
       <a>wishlist</a>
@@ -120,7 +120,7 @@
 
       {{ customer.default_address | format_address }}
 
-      <a href="{{ routes.account_addresses_url }}">
+      <a >
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
     </div>
