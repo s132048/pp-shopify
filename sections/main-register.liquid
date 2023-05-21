@@ -63,15 +63,15 @@
       placeholder="Confirm Password"
       >
     <div class='account_checkbox'>
-      <span for='termspolicy'>
+      <label for='termspolicy'>
         Agree to our terms & conditions, privacy policy
-      </span>
+      </label>
       <input type="checkbox" id='termspolicy'/>
     </div>
     <div class='account_checkbox'>
       <label for='newsletter'>
         Subscribe to our newsletter
-      </span>
+      </label>
       <input type="checkbox" id='newsletter'/>
     </div>
     {%- if form.errors contains 'password' -%}
