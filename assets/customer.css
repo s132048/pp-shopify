@@ -1,5 +1,5 @@
-body * {
-  font-color: #fff !important;
+body *{
+  color: #fff;
 }
 .customer:not(.account):not(.order) {
   margin: 0 auto;
