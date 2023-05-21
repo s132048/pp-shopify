@@ -108,6 +108,38 @@ input:autofill:active {
   width: auto;
 }
 
+/* 동의 체크박스 스타일 */
+.customer input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.customer input[type="checkbox"]::before {
+  
+  background-color: #000;
+}
+
+.customer input[type="checkbox"]:checked::before {
+  content: "";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .customer > h1,
 .customer__title {
   margin-top: 0;
