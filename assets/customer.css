@@ -13,7 +13,7 @@ body *{
 input:focus,
 input:hover,
 input:active {
-  outline: none;
+  outline: none !important;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
