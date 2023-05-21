@@ -8,9 +8,12 @@
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <ul class='order_list'>
+            {%- for order in customer.orders -%}
             <li>
-              
+              <span>{{ order.created_at | time_tag: format: 'date' }}</span>
+              <span>{{ order.fulfillment_status_label }}</span>
             </li>
+            {% endfor %}
           </ul>
           <table role="table" class="order-history">
             <tbody role="rowgroup">
@@ -33,7 +36,7 @@
                     {{ order.financial_status_label }}
                   </td>
                   <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
-                    {{ order.fulfillment_status_label }}
+                    
                   </td>
                   <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                     {{ order.total_price | money_with_currency }}</td>
