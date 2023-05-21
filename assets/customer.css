@@ -62,7 +62,8 @@ input:autofill:active {
 }
 
 .customer .account_title{
-  margin_bottom: 7px;
+  display: block;
+  margin-bottom: 7px;
 }
 .customer a, .customer button{
   margin: 0;
