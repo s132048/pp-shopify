@@ -1,7 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
-{%- paginate customer.addresses by 5 -%}
+{%- paginate customer.addresses by 20 -%}
   <div class="customer addresses" data-customer-addresses>
     <span class='account_title'>
       Addresses
