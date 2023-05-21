@@ -425,9 +425,9 @@ input:autofill:active {
   display: none;
 }
 
-#recover:target {
+/* #recover:target {
   display: block;
-}
+} */
 
 #recover:target + div {
   display: block;
