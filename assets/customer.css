@@ -776,7 +776,9 @@ input placeholder{
 input[aria-invalid="true"] placeholder{
   color: #ff0000;
 }
-
+select:focus,
+select:hover,
+select:active,
 input:focus,
 input:hover,
 input:active {
