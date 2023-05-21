@@ -12,38 +12,12 @@
             <li>
               <span>{{ order.created_at | time_tag: format: 'date' }}</span>
               <span>{{ order.fulfillment_status_label }}</span>
+              <span></span>
+              <span>Order no.{{ order.name }}</span>
+              <span>{{ order.total_price | money_with_currency }}</span>
             </li>
             {% endfor %}
           </ul>
-          <table role="table" class="order-history">
-            <tbody role="rowgroup">
-              {%- for order in customer.orders -%}
-                <tr role="row">
-                  <td
-                    id="RowOrder"
-                    role="cell"
-                    headers="ColumnOrder"
-                    data-label="{{ 'customer.orders.order_number' | t }}"
-                  >
-                    <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
-                      {{ order.name }}
-                    </a>
-                  </td>
-                  <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
-                    
-                  </td>
-                  <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
-                    {{ order.financial_status_label }}
-                  </td>
-                  <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
-                    
-                  </td>
-                  <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
-                    {{ order.total_price | money_with_currency }}</td>
-                </tr>
-              {%- endfor -%}
-            </tbody>
-          </table>
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
         {%- endif -%}
