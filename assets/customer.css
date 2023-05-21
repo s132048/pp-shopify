@@ -98,7 +98,7 @@ input:autofill:active {
   padding : 7px 0;
   border-bottom: 1px solid #fff;
 }
-.account_error_box {
+.account_error_box, .account_message {
   padding : 7px 0;
   border-bottom: 1px solid #fff;
 }
