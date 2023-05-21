@@ -45,6 +45,7 @@ input:autofill:active {
 .customer:not(.account):not(.order) {
   margin: 0 auto;
   padding: 7px;
+  text-align: center;
 }
 
 .account_form_box{
