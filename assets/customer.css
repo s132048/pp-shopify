@@ -1,7 +1,3 @@
-body {
-  background: #000 !important;
-}
-
 .customer:not(.account):not(.order) {
   margin: 0 auto;
   padding: 7px;
