@@ -545,15 +545,6 @@ input:autofill:active {
 }
 
 /* Account/Order */
-:is(.account, .order) {
-  margin: 0 auto;
-  max-width: var(--page-width);
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-
-
 
 @media screen and (min-width: 750px) {
   .account thead th:last-child,
