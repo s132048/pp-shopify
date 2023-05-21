@@ -14,10 +14,11 @@
       >
         Add new addresss
       </button>
-      <div id="AddAddress" class='account_form_box address'>
+      <div id="AddAddress" class='address'>
         <span class='account_title'>
           Add new addresses
         </span>
+        <div class='account_form_box'>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="Address name">
             <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="Postal code">
@@ -62,6 +63,7 @@
             <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
           </div>
         {%- endform -%}
+      </div>
       </div>
     </div>
 
