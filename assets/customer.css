@@ -24,6 +24,7 @@ input:-webkit-autofill:active {
      box-shadow: 0 0 0 10rem rgb(var(--color-background)) inset !important;
     -webkit-box-shadow: 0 0 0 10rem rgb(var(--color-background)) inset !important;
     transition: background-color 5000s ease-in-out 0s;
+    font-size : 22px;
 }
 
 input:autofill,
@@ -34,6 +35,7 @@ input:autofill:active {
     box-shadow: 0 0 0 10rem rgb(var(--color-background)) inset !important;
     -webkit-box-shadow: 0 0 0 10rem rgb(var(--color-background)) inset !important;
     transition: background-color 5000s ease-in-out 0s;
+    font-size : 22px;
 }
 
 @media screen and (max-width: 1024px) {
