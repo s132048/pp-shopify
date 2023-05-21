@@ -17,59 +17,6 @@ body{
   color: #fff;
 }
 
-input placeholder{
-  color: #959595;
-}
-
-input[aria-invalid="true"] placeholder{
-  color: #ff0000;
-}
-input:focus,
-input:hover,
-input:active {
-  outline: none !important;
-  box-shadow: none;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    background-color : transparent !important; 
-	-webkit-text-fill-color: #fff;
-     box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    transition: background-color 5000s ease-in-out 0s;
-    font-size : 22px;
-}
-
-input:autofill,
-input:autofill:hover,
-input:autofill:focus,
-input:autofill:active {
-    background-color : transparent !important; 
-	-webkit-text-fill-color: #fff;
-    box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    transition: background-color 5000s ease-in-out 0s;
-    font-size : 22px;
-}
-
-@media screen and (max-width: 1024px) {
-  input:autofill,
-  input:autofill:hover,
-  input:autofill:focus,
-  input:autofill:active {
-    font-size : 19px;
-  }
-
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    font-size : 19px;
-  }
-}
 
 .customer .account_title{
   display: block;
@@ -830,3 +777,58 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+input placeholder{
+  color: #959595;
+}
+
+input[aria-invalid="true"] placeholder{
+  color: #ff0000;
+}
+
+input:focus,
+input:hover,
+input:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color : transparent !important; 
+	-webkit-text-fill-color: #fff;
+     box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
+    -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    font-size : 22px;
+}
+
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+    background-color : transparent !important; 
+	-webkit-text-fill-color: #fff;
+    box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
+    -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    font-size : 22px;
+}
+
+@media screen and (max-width: 1024px) {
+  input:autofill,
+  input:autofill:hover,
+  input:autofill:focus,
+  input:autofill:active {
+    font-size : 19px;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    font-size : 19px;
+  }
+}
+
