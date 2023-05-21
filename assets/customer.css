@@ -104,6 +104,9 @@ input:autofill:active {
   padding : 7px 0;
   border-bottom: 1px solid #fff;
 }
+.customer .account_checkbox input{
+  width: auto;
+}
 
 .customer > h1,
 .customer__title {
