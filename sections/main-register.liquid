@@ -55,7 +55,7 @@
           aria-invalid="true"
           aria-describedby="RegisterForm-email-error"
         {% endif %}
-        placeholder="{{ 'customer.register.email' | t }}"
+        placeholder="Email"
       >
     {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
@@ -71,7 +71,7 @@
           aria-invalid="true"
           aria-describedby="RegisterForm-password-error"
         {% endif %}
-        placeholder="{{ 'customer.register.password' | t }}"
+        placeholder="Password"
       >
     </div>
     {%- if form.errors contains 'password' -%}
@@ -79,9 +79,11 @@
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
+    <div class="account_buttons">
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
+    </div>
   {%- endform -%}
 </div>
 
