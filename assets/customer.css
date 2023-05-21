@@ -644,11 +644,11 @@ body{
 }
 .addresses .address_list li .button_set{
   position:absolute;
-  top: 0;
+  top: 7px;
   right: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   
 }
 .addresses .address_list li p{
