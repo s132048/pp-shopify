@@ -636,6 +636,15 @@ body{
   position: relative;
   border-bottom: 1px solid #fff;
 }
+.addresses .address_list li .button_set{
+  position:absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
 .addresses .address_list li p{
   margin: 0;
   padding: 0;
