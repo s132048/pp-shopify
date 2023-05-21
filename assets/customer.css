@@ -132,6 +132,10 @@ input:autofill:active {
   border-radius: 50%;
   border : 1px solid #fff;
   background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .customer input[type="checkbox"]:checked::before {
