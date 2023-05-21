@@ -10,7 +10,7 @@ body *{
   border-top: 1px solid #fff;
 }
 
-.customer a, .customer button .login a{
+.customer a, .customer button{
   margin: 0;
   text-decoration : nono;
   font-size : 19px;
@@ -367,7 +367,7 @@ body *{
 /* Login */
 .login a {
   display: block;
-  margin: 0 auto;
+/*   margin: 0 auto; */
   width: fit-content;
 }
 
