@@ -27,16 +27,14 @@
             <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
             <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="Phone">
           <div>
-            <div class="select">
-              <select
-                id="AddressCountryNew"
-                name="address[country]"
-                data-default="{{ form.country }}"
-                autocomplete="country"
-              >
-                {{ all_country_option_tags }}
-              </select>
-            </div>
+          <select
+            id="AddressCountryNew"
+            name="address[country]"
+            data-default="{{ form.country }}"
+            autocomplete="country"
+          >
+            {{ all_country_option_tags }}
+          </select>
           </div>
           <div id="AddressProvinceContainerNew" style="display: none">
             <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
