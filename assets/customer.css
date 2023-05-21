@@ -132,7 +132,7 @@ body{
 }
 
 /* 주소 추가 팝업 */
-#AddAddress{
+.addressPop{
   position: absolute;
   width: 100%;
   height: 100%;
