@@ -32,7 +32,7 @@
           >
             Delete
           </button>
-        </div>
+        
           <div id="EditAddress_{{ address.id }}">
             <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
@@ -116,6 +116,7 @@
                 <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
               </div>
             {%- endform -%}
+          </div>
           </div>
         </li>
       {%- endfor -%}
