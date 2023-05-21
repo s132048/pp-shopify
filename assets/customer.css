@@ -633,7 +633,12 @@ body{
   border-top:1px solid #fff;
 }
 .addresses .address_list li{
+  position: relative;
   border-bottom: 1px solid #fff;
+}
+.addresses .address_list li p{
+  margin: 0;
+  padding: 0;
 }
 .addresses li > button {
   margin-left: 0.5rem;
