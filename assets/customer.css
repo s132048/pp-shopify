@@ -1,6 +1,11 @@
 body *{
   color: #fff;
 }
+.pp .header{
+  background-color : #000;
+  color: #fff;
+  border-color : #fff;
+}
 .customer:not(.account):not(.order) {
   margin: 0 auto;
   padding: 7px;
