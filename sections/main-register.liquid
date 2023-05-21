@@ -46,7 +46,6 @@
         autocomplete="given-name"
         placeholder="{{ 'customer.register.first_name' | t }}"
       >
-    <div class="field">
       <input
         type="text"
         name="customer[last_name]"
@@ -54,12 +53,7 @@
         {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
         autocomplete="family-name"
         placeholder="{{ 'customer.register.last_name' | t }}"
-      >
-      <label for="RegisterForm-LastName">
-        {{ 'customer.register.last_name' | t }}
-      </label>
-    </div>
-    <div class="field">      
+      >   
       <input
         type="email"
         name="customer[email]"
@@ -75,19 +69,11 @@
         {% endif %}
         placeholder="{{ 'customer.register.email' | t }}"
       >
-      <label for="RegisterForm-email">
-        {{ 'customer.register.email' | t }}
-      </label>
-    </div>
     {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
-        <svg aria-hidden="true" focusable="false" role="presentation">
-          <use href="#icon-error" />
-        </svg>
         {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
       </span>
     {%- endif -%}
-    <div class="field">     
       <input
         type="password"
         name="customer[password]"
@@ -99,15 +85,8 @@
         {% endif %}
         placeholder="{{ 'customer.register.password' | t }}"
       >
-      <label for="RegisterForm-password">
-        {{ 'customer.register.password' | t }}
-      </label>
-    </div>
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
-        <svg aria-hidden="true" focusable="false" role="presentation">
-          <use href="#icon-error" />
-        </svg>
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
