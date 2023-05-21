@@ -9,11 +9,8 @@ body *{
 .menu-list{
   border-top: 1px solid #fff;
 }
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:active {
-  color: #fff !important;
+input:-webkit-autofill {
+  color: #fff;
 }
 
 .customer a, .customer button{
