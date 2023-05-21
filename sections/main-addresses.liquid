@@ -12,7 +12,6 @@
           {%- if address == customer.default_address -%}
             <h2>{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
-          {{ address | format_address }}
           <button
             type="button"
             id="EditFormButton_{{ address.id }}"
