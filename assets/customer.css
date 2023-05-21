@@ -13,7 +13,7 @@ body *{
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:active {
-  color: #fff;
+  color: #fff !important;
 }
 
 .customer a, .customer button{
