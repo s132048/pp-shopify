@@ -12,6 +12,7 @@
             <li class='order_item'>
               {% assign fulfillment_label = '' %}
               {% if order.fulfillment_status == 'unfulfilled' %}
+                {% assign fulfillment_label = order.fulfillment_status %}
               {% elsif order.fulfillment_status == 'fulfilled' %}
                 {% assign fulfillment_label = 'Shipping' %}
               {% endif %}
