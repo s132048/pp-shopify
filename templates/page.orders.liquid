@@ -10,6 +10,11 @@
           <ul class='order_list'>
             {%- for order in customer.orders -%}
             <li class='order_item'>
+              {% assign fulfillment_label = '' %}
+              {% if order.fulfillment_status == 'unfulfilled' %}
+              {% elsif order.fulfillment_status == 'fulfilled' %}
+                {% assign fulfillment_label = 'Shipping' %}
+              {% endif %}
               <span>{{ order.created_at | time_tag: format: 'date' | date: "%b. %d, 20%y" }}</span>
               <span>{{ order.fulfillment_status }}</span>
               <span>{{ order.line_items.size }} items</span>
