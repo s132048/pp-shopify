@@ -31,7 +31,9 @@
             {% endfor %}
           </ul>
         {%- else -%}
-          <p>{{ 'customer.orders.none' | t }}</p>
+          <div class='empty_box'>
+            Your order history is empty
+          </div>
         {%- endif -%}
 
         {%- if paginate.pages > 1 -%}
