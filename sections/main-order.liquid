@@ -5,6 +5,26 @@
   <span class='account_title'>
     Order Details
   </span>
+  <!-- 주문 상세 상품 리스트 -->
+  <div>
+    {%- for line_item in order.line_items -%}
+      <div>
+        
+      </div>
+    {% endfor %}
+  </div>
+  <!-- 주문 정보 -->
+  <div>
+    <span>
+      {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
+      {{ 'customer.order.date_html' | t: date: order_date }}
+    </span>
+    <span>
+      
+       {{ order.financial_status }}
+    </span>
+  </div>
+  
   <div>
     <div>
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
