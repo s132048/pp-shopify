@@ -6,7 +6,7 @@
     Order Details
   </span>
   <!-- 주문 상세 상품 리스트 -->
-  <div>
+  <div class='contents_box'>
     {%- for line_item in order.line_items -%}
       <div>
         
@@ -14,7 +14,7 @@
     {% endfor %}
   </div>
   <!-- 주문 정보 -->
-  <div>
+  <div class='contents_box'>
     <span>
       {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
       {{ 'customer.order.date_html' | t: date: order_date }}
@@ -28,6 +28,7 @@
       <!--  취소/환불 주문건 텍스트 -->
       {% endif %}
     </span>
+    <span></span>
   </div>
   
   <div>
