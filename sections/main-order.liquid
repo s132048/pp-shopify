@@ -1,12 +1,10 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 
-<div class="customer order section-{{ section.id }}-padding">
-  <div>
-    <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
-    <a href="{{ routes.account_url }}">{{ 'customer.account.return' | t }}</a>
-  </div>
-
+<div class="customer order">
+  <span class='account_title'>
+    Order Details
+  </span>
   <div>
     <div>
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
