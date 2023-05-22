@@ -13,8 +13,10 @@ body{
   color: #fff;
 }
 
-.menu-list, 
-.order_empty{
+.menu-list{
+  border-top: 1px solid #fff;
+}
+.empty_box {
   border-top: 1px solid #fff;
 }
 .menu-list *{
