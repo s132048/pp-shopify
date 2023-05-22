@@ -25,7 +25,9 @@ body{
 .menu-list *{
   color: #fff;
 }
-
+.contents_box span{
+  display:block;
+}
 .customer .account_title{
   display: block;
   margin-bottom: 7px;
