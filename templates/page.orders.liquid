@@ -11,7 +11,7 @@
             {%- for order in customer.orders -%}
             <li class='order_item'>
               <span>{{ order.created_at | time_tag: format: 'date' | date: "%b. %d, 20%y" }}</span>
-              <span>{{ order.fulfillment_status_label }}</span>
+              <span>{{ order.fulfillment_status }}</span>
               <span>{{ order.line_items.size }} items</span>
               <span>Order no. {{ order.name | replace:'#','' }}</span>
               <span>{{ order.total_price | money }}</span>
