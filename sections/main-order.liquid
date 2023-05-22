@@ -9,7 +9,9 @@
   <div class='contents_box'>
     {%- for line_item in order.line_items -%}
       <div>
-        
+        <div>
+          {{ line_item.image }}
+        </div>
       </div>
     {% endfor %}
   </div>
