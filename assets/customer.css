@@ -13,9 +13,9 @@ body{
   color: #fff;
 }
 
-.menu-list{
+.menu-list, 
+.order_empty{
   border-top: 1px solid #fff;
-  
 }
 .menu-list *{
   color: #fff;
@@ -378,7 +378,6 @@ body{
   font-size: 1.3rem;
 }
 
-/* Addresses */
 .addresses .default_title{
   display: block;
   margin-bottom: 30px;
