@@ -19,7 +19,7 @@ body{
 .empty_box {
   border-top: 1px solid #fff;
   padding: 7px 0;
-  
+  text-align : left;
 }
 .menu-list *{
   color: #fff;
