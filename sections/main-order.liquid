@@ -10,7 +10,9 @@
     {%- for line_item in order.line_items -%}
       <div>
         <div>
-          {{ line_item.image }}
+          <a href="{{ line_item.url }}" class="cart-image">
+            <img src="{{ line_item | img_url: '150x',scale: 2 }}"  alt="{{ line_item.title | escape }}">
+          </a>
         </div>
       </div>
     {% endfor %}
