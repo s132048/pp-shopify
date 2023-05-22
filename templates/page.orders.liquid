@@ -25,7 +25,11 @@
                 <span>
                   <a href='{{ order.fulfillment.tracking_url }}'>Track</a>
                 </span>
-                <span>Details</span>
+                <span>
+                  <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                   Details 
+                  </a>
+                </span>
               </div>
             </li>
             {% endfor %}
