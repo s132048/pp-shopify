@@ -426,7 +426,7 @@
                 <div class="swiper-wrapper">
                     {% for image in product.images offset:1 %}
                     <div class="swiper-slide">
-                        <img src="{{ image.src | product_img_url: 'large' }}" alt="">
+                        <img src="{{ image.src | product_img_url: 'grande' }}" alt="">
                     </div>
                     {% endfor %}
                 </div>
