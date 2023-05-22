@@ -20,8 +20,13 @@
       {{ 'customer.order.date_html' | t: date: order_date }}
     </span>
     <span>
-      
-       {{ order.financial_status }}
+      {% if order.financial_status == 'pending' %}
+        Payment is not finished
+      {% elsif order.financial_status == 'paid'%}
+        shipping
+      {% else %}
+      <!--  취소/환불 주문건 텍스트 -->
+      {% endif %}
     </span>
   </div>
   
