@@ -226,6 +226,33 @@ a {
 
 .pp .product-default .product__info-container {
     display: flex;
+    flex-wrap: wrap;
+}
+
+variant-radios, variant-selects {
+    width: 100%;
+}
+
+.pp .product-default fieldset.product-form__input .form__label {
+    display: none;
+    margin: 0;
+}
+
+.pp .product-default .product-form__input label {
+    margin-right: 5px;
+}
+
+.pp .product-default .product-form__input input[type='radio']:checked + label {
+    color: #000;
+    padding-left: 8px;
+    position: relative;
+}
+
+.pp .product-default .product-form__input input[type='radio']:checked + label:after {
+    content: '•';
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .pp .product-default .product-form__input {
