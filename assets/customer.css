@@ -326,6 +326,10 @@ label[for='AddressProvinceNew'] {
   gap: 10px;
 }
 
+.customer.order .line_item_list . line_item_box {
+   display:grid; 
+}
+
 .customer.order .line_item_list img{
   width:100%;
 }
