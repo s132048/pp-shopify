@@ -27,12 +27,8 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
-
-  .pp .header {
-    background: transparent;
-  }
 {%- endstyle -%}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+{% comment %}<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 <style>
   .main-hero {
@@ -107,7 +103,7 @@
       },
     },
   });
-</script>
+</script>{% endcomment %}
 {% schema %}
 {
   "name": "t:sections.image-banner.name",

@@ -907,3 +907,44 @@ a {
         margin-top: 10px;
     }
 }
+
+.main-collection-section {
+    padding: 0 10px 70px;
+}
+
+.main-collection-title {
+    padding: 0 0 3px;
+    border-top: 1px solid #000;
+}
+
+.main-collection-title a {
+    color: #000;
+}
+
+.main-collection-row {
+    display: grid;
+    gap: 0 8px;
+}
+
+.main-collection-row--first {
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-collection-row--last {
+    margin-top: 37px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-collection-item .card-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-collection-list .main-collection-item .card__information {
+    padding: 0 !important;
+}
+
+.main-collection-list .main-collection-item .card__information .card-information {
+    display: none !important;
+}
