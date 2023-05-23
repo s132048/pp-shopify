@@ -320,6 +320,7 @@ label[for='AddressProvinceNew'] {
 }
 /* Order detail */
 .customer.order .line_item_list{
+  width: 100%;
   display:grid;
   grid-template-columns: repeat(6, 1fr);
 }
