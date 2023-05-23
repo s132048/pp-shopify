@@ -325,7 +325,9 @@ label[for='AddressProvinceNew'] {
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 }
-
+.customer.order .line_item_list img{
+  width:100%;
+}
 /* input 스타일 */
 input placeholder{
   color: #959595;
