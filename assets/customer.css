@@ -321,6 +321,7 @@ label[for='AddressProvinceNew'] {
 /* Order detail */
 .customer.order .line_item_list{
   display:grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 /* input 스타일 */
