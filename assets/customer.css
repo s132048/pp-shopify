@@ -325,9 +325,18 @@ label[for='AddressProvinceNew'] {
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 }
+
 .customer.order .line_item_list img{
   width:100%;
 }
+
+.customer.order .line_item_list .line_title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
 /* input 스타일 */
 input placeholder{
   color: #959595;
