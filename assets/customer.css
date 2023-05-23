@@ -327,8 +327,9 @@ label[for='AddressProvinceNew'] {
 }
 
 .customer.order .line_item_list .line_item_box {
-   display:grid; 
-   grid-auto-rows: 80% 20%;
+   display: grid;
+  grid-template-rows: auto 1fr; /* Adjust the rows as needed */
+  align-items: stretch;
 }
 
 .customer.order .line_item_list img{
