@@ -337,19 +337,19 @@ label[for='AddressProvinceNew'] {
 }
 
 .customer.order .line_item_list .line_item_box .line_item_img {
-  grid-row: 1; /* Place the image in the first row */
+  grid-row: 1; 
 }
 
 .customer.order .line_item_list .line_item_box .line_item_details {
-  grid-row: 2; /* Place the text in the second row */
+  grid-row: 2; 
 }
 
 
 .customer.order .line_item_list .line_title{
-  overflow: hidden; /* Hide overflowing text */
-  display: -webkit-box; /* Create a flexible box layout */
-  -webkit-line-clamp: 1; /* Limit the text to a single line */
-  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+  overflow: hidden; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; 
   text-overflow: ellipsis; 
 }
 
