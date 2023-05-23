@@ -690,6 +690,18 @@ variant-radios, variant-selects {
     width: 100%;
 }
 
+.cart-items-wrapper .cart-items .cart-item dl {
+    margin: 0;
+}
+
+.cart-cell--first {
+    display: flex;
+}
+
+.cart-items .cart-cell--first .product-option dd {
+    margin-left: 8px;
+}
+
 .cart-items-wrapper .cart-items .cart-item .loading-overlay {
     display: none !important;
 }
