@@ -14,6 +14,9 @@
             <img src="{{ line_item | img_url: '300x', scale: 2 }}"  alt="{{ line_item.title | escape }}">
           </a>
         </div>
+        <span>{{ line_item.title }}</span>
+        <span>{{ line_item.original_price | money }}</span>
+        <span>QTY {{ line_item.quantity }}</span>
       </div>
     {% endfor %}
   </div>
