@@ -17,6 +17,9 @@
     },
     "a58864d6-cf85-449f-94ff-af6425d001f9": {
       "type": "featured-collection",
+      "custom_css": [
+        ".main-collection-title {boder-top: 0 !important;}"
+      ],
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
