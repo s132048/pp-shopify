@@ -36,6 +36,13 @@
     <span>Order no. {{ order.name | replace:'#','' }}</span>
     <span>{{ order.total_price | money }}</span>
   </div>
+  <div>
+    {%- if line_item.fulfillment.tracking_url -%}
+      <a href="{{ line_item.fulfillment.tracking_url }}">
+        Track this order
+      </a>
+    {%- endif -%}
+  </div>
   
   <div>
     <div>
