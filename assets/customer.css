@@ -318,6 +318,10 @@ label[for='AddressProvinceNew'] {
 .addresses [aria-expanded='true'] ~ div[id] {
   display: block;
 }
+/* Order detail */
+.customer.order .line_item_list{
+  display:grid;
+}
 
 /* input 스타일 */
 input placeholder{
