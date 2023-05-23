@@ -346,12 +346,11 @@ label[for='AddressProvinceNew'] {
 
 
 .customer.order .line_item_list .line_title{
-  overflow: hidden;
-  white-space: normal;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  text-overflow: ellipsis;
-  word-break: break-all;
+  overflow: hidden; /* Hide overflowing text */
+  display: -webkit-box; /* Create a flexible box layout */
+  -webkit-line-clamp: 1; /* Limit the text to a single line */
+  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+  text-overflow: ellipsis; 
 }
 
 /* input 스타일 */
