@@ -10,7 +10,7 @@
   <div class='contents_box'>
     <div class='line_item_list'>
     {%- for line_item in order.line_items -%}
-      <div>
+      <div class='line_item_box'>
         <div>
           <a href="{{ line_item.url }}" class="cart-image">
             <img src="{{ line_item | img_url: '300x', scale: 2 }}"  alt="{{ line_item.title | escape }}">
