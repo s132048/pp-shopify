@@ -65,7 +65,7 @@
             {% endif %}
 
             <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="main-collection-item">
-              {% render 'card-product-main',
+              {% render 'card-product-swiper',
                       card_product: product,
                       media_aspect_ratio: section.settings.image_ratio,
                       show_secondary_image: section.settings.show_secondary_image,
