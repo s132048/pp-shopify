@@ -332,6 +332,9 @@ label[for='AddressProvinceNew'] {
 
 .customer.order .line_item_list .line_title{
   overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
   text-overflow: ellipsis;
   word-break: break-all;
 }
