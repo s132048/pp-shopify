@@ -7,6 +7,7 @@
   </span>
   <!-- 주문 상세 상품 리스트 -->
   <div class='contents_box'>
+    <div class='line_item_list'>
     {%- for line_item in order.line_items -%}
       <div>
         <div>
@@ -19,6 +20,7 @@
         <span>QTY {{ line_item.quantity }}</span>
       </div>
     {% endfor %}
+    </div>
   </div>
   <!-- 주문 정보 -->
   <div class='contents_box'>
