@@ -49,7 +49,7 @@
 
             <!--   제품가격 -->
             <div class="product-price">
-                <div class="product-price-inner">{{ product.price | divided_by: 100.00}}</div>
+                <div class="product-price-inner">{{ product.price | amount_no_decimals}}</div>
             </div>
 
             <div class="product-default">
