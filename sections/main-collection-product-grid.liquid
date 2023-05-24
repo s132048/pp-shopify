@@ -134,9 +134,9 @@
               {%- endfor -%}
             </ul>
 
-            {%- if paginate.pages > 1 -%}
+<!--             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
-            {%- endif -%}
+            {%- endif -%} -->
           </div>
         {%- endif -%}
           <input type='hidden' name='eosh-total-pages' class='eosh-total-pages' value='{{ paginate.pages }}'>
