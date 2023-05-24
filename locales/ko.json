@@ -424,5 +424,11 @@
       "copy_code_success": "코드 복사 완료",
       "print_gift_card": "인쇄"
     }
+  },
+  "shopify": {
+    "page_titles": {
+      "account": "Account",
+      "create_account": "Create Account"
+    }
   }
 }
