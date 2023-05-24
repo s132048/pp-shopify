@@ -1,7 +1,9 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width">
+<div class="page-width">  
+  {%- assign page_url = content_for_header | split:'"pageurl":"' | last | split:'"' | first | split: request.host | last | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&'  -%}
+  {{ page_url }}
   <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
   {%- liquid
     case section.settings.sort
