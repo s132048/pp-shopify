@@ -340,8 +340,8 @@
       "delete": "삭제",
       "delete_confirm": "이 주소를 삭제하시겠습니까?"
     },
-    "log_in": "로그인",
-    "log_out": "로그아웃",
+    "log_in": "Login",
+    "log_out": "Logout",
     "login_page": {
       "cancel": "취소",
       "create_account": "계정 생성",
