@@ -373,7 +373,7 @@
       "title": "Create Account",
       "first_name": "이름",
       "last_name": "성",
-      "email": "이메일",
+      "email": "Email",
       "password": "비밀번호",
       "submit": "생성"
     },
