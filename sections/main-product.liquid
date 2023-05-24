@@ -49,7 +49,7 @@
 
             <!--   제품가격 -->
             <div class="product-price">
-                <div class="product-price-inner">{{ product.price | amount_no_decimals}}</div>
+                <div class="product-price-inner">{{ product.price | money_without_trailing_zeros}}</div>
             </div>
 
             <div class="product-default">
