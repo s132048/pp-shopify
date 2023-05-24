@@ -69,7 +69,9 @@
         </div>
       {%- endif -%}   
     {%- endform -%}
-
+{% if form.password_needed %}
+  <div>xx</div>
+  {% endif %}
 {% if form.password_needed %}
   <!-- 비밀번호 재설정 -->
   <h1 id="recover" tabindex="-1">
