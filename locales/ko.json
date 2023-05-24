@@ -370,7 +370,7 @@
       "success": "비밀번호를 업데이트할 링크가 포함된 이메일을 보내드렸습니다."
     },
     "register": {
-      "title": "계정 생성",
+      "title": "Create Account",
       "first_name": "이름",
       "last_name": "성",
       "email": "이메일",
