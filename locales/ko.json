@@ -429,6 +429,11 @@
     "page_titles": {
       "account": "Account",
       "create_account": "Create Account"
+    },
+    "notices": {
+      "customer": {
+        "invalid_credentials": "This account is not valid."
+      }
     }
   },
   "customer_accounts": {
