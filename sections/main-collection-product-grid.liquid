@@ -29,8 +29,9 @@
 <div class="section-{{ section.id }}-padding">
   {%- assign page_url = content_for_header | split:'"pageurl":"' | last | split:'"' | first | split: request.host | last | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&'  -%}
   {{ page_url }}
+  {%  assign is_index = false %}
   {% if page_url contains 'index=true' %}
-    <div>xx</div>
+  {%  assign is_index = true %}
   {% endif %}
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -138,8 +139,8 @@
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
-
+                    section_id: section.id,
+      
                   %}
                 </li>
               {%- endfor -%}
