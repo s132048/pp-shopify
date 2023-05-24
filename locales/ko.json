@@ -344,7 +344,7 @@
     "log_out": "Logout",
     "login_page": {
       "cancel": "취소",
-      "create_account": "계정 생성",
+      "create_account": "Create Account",
       "email": "이메일",
       "forgot_password": "비밀번호를 잊으셨나요?",
       "guest_continue": "계속",
