@@ -30,6 +30,7 @@
       {%- endfor -%}
     </ul>
     {% render 'pagination', paginate: paginate %}
+  <input type='hidden' name='eosh-total-pages' class='eosh-total-pages' value='{{ paginate.pages }}'>
   {%- endpaginate -%}
 </div>
 {% schema %}
