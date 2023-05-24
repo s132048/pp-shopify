@@ -269,6 +269,12 @@
           "wishlist_link_headless_enabled": true,
           "version": "main"
         }
+      },
+      "385851483394302733": {
+        "type": "shopify:\/\/apps\/scroll-freely-infinite-scroll\/blocks\/scroll-freely\/ab81353f-60e9-48db-81f5-5b6037635a06",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
