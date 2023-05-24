@@ -56,51 +56,76 @@
 
     </div>
 
-    <div id="Slider-{{ section.id }}" class="main-collection-list">
-
+    <div id="Slider-{{ section.id }}" class="main-collection-list {% if products_to_display == 3 %}main-collection-list--3{% elsif products_to_display == 2 %}main-collection-list--2{% endif %}">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
-          {% if forloop.index <= 2 %}
-            {% if forloop.index == 1 %}
-              <div class="main-collection-row main-collection-row--first">
-            {% endif %}
+          {% if products_to_display == 5 %}
+            {% if forloop.index <= 2 %}
+              {% if forloop.index == 1 %}
+                <div class="main-collection-row main-collection-row--first">
+              {% endif %}
 
-            <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="main-collection-item">
-              {% render 'card-product-swiper',
-                      card_product: product,
-                      media_aspect_ratio: section.settings.image_ratio,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_rating: section.settings.show_rating,
-                      show_quick_add: section.settings.enable_quick_add,
-                      section_id: section.id
-              %}
-            </div>
-
-            {% if forloop.index == 2 %}
+              <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="main-collection-item">
+                {% render 'card-product-swiper',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        show_quick_add: section.settings.enable_quick_add,
+                        section_id: section.id
+                %}
               </div>
-            {% endif %}
-          {% else %}
-            {% if forloop.index == 3 %}
-              <div class="main-collection-row main-collection-row--last">
-            {% endif %}
 
-            <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="main-collection-item">
-              {% render 'card-product-main',
-                      card_product: product,
-                      media_aspect_ratio: section.settings.image_ratio,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_rating: section.settings.show_rating,
-                      show_quick_add: section.settings.enable_quick_add,
-                      section_id: section.id
-              %}
-            </div>
+              {% if forloop.index == 2 %}
+                </div>
+              {% endif %}
+            {% else %}
+              {% if forloop.index == 3 %}
+                <div class="main-collection-row main-collection-row--last">
+              {% endif %}
 
-            {% if forloop.last %}
+              <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="main-collection-item">
+                {% render 'card-product-main',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        show_quick_add: section.settings.enable_quick_add,
+                        section_id: section.id
+                %}
               </div>
+
+              {% if forloop.last %}
+                </div>
+              {% endif %}
             {% endif %}
+
+          {% elsif products_to_display == 3 %}
+              <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="main-collection-item">
+                  {% render 'card-product-main',
+                          card_product: product,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          show_quick_add: section.settings.enable_quick_add,
+                          section_id: section.id
+                  %}
+              </div>
+          {% elsif products_to_display == 2 %}
+              <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="main-collection-item">
+                  {% render 'card-product-swiper',
+                          card_product: product,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          show_quick_add: section.settings.enable_quick_add,
+                          section_id: section.id
+                  %}
+              </div>
           {% endif %}
-
 
 
         {%- else -%}
