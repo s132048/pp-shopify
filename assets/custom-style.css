@@ -1076,8 +1076,16 @@ variant-radios, variant-selects {
 }
 
 .main-header-inner {
+    height: 100%;
     border-bottom: 1px solid #000;
     text-align: center;
+}
+
+.main-header-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .main-header-row--last {
@@ -1089,7 +1097,7 @@ variant-radios, variant-selects {
 }
 
 .main-header.on .main-header-row--last {
-    display: block;
+    display: flex;
 }
 
 .main-header-row a {
