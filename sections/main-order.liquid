@@ -42,11 +42,11 @@
     <span>{{ order.total_price | money }}</span>
   </div>
   <div class='contents_box'>
-    <div>
+    <div class='address_text'>
       <span>Shipping address</span>
       {{ order.shipping_address | format_address }}
     </div>
-    <div>
+    <div class='address_text'>
       <span>Billing address</span>
       {{ order.billing_address | format_address }}
     </div>
