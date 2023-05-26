@@ -25,13 +25,6 @@
           placeholder="Email"
         >
       
-      {% if recover_success == 'true' %}
-        <div class='account_message'>
-          <span>
-            Temporary password have been sent by email
-          </span>
-        </div>
-      {% endif %}
       <div class="account_buttons">
       <button>
         Reset password
@@ -48,6 +41,13 @@
             {%- endfor -%}
         </div>
       {%- endif -%}
+      {% if form.posted_successfully? %}
+        <div class='account_message'>
+          <span>
+            Temporary password have been sent by email
+          </span>
+        </div>
+      {% endif %}
     {%- endform -%}
   </div>
   <!--  로그인 -->    
