@@ -44,7 +44,7 @@
       "
                 {% comment %}style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"{% endcomment %}
         >
-            <div class="card-img">
+            <div class="card-img" onclick="location.href='{{ card_product.url }}'">
                 <img
                         srcset="
                     {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}

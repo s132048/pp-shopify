@@ -33,11 +33,13 @@
 <div class="main-header">
   <div class="main-header-inner">
     <div class="main-header-row main-header-row--first">
-      Shop
+      <span>Shop</span>
     </div>
     <div class="main-header-row main-header-row--last">
-      <a href="#none" class="main-header-item">Books</a>
-      <a href="#none" class="main-header-item">Merchandise</a>
+      <div class="main-header-item-list">
+        <a href="#none" class="main-header-item">Books</a>
+        <a href="#none" class="main-header-item">Merchandise</a>
+      </div>
     </div>
   </div>
 </div>
@@ -120,14 +122,16 @@
 </script>{% endcomment %}
 
 <script>
-  var element = document.querySelector('.main-header');
+  var mainHeaderItem1 = document.querySelector('.main-header-row--first span');
+  var mainHeaderItem2 = document.querySelector('.main-header-item-list');
+  var mainHeader = document.querySelector('.main-header');
 
-  element.addEventListener('mouseover', function() {
-    element.classList.add('on');
+  mainHeaderItem1.addEventListener('mouseover', function() {
+    mainHeader.classList.add('on');
   });
 
-  element.addEventListener('mouseout', function() {
-    element.classList.remove('on');
+  mainHeaderItem2.addEventListener('mouseleave', function() {
+    mainHeader.classList.remove('on');
   });
 </script>
 {% schema %}
