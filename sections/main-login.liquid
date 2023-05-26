@@ -5,6 +5,9 @@
     Forgot your password?
   </span>
   <div class='account_form_box'>
+  <div class='form_title'>
+      We will send an email to reset your password.
+  </div>
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
         <input type="email"
@@ -19,31 +22,32 @@
             aria-describedby="RecoverEmail-email-error"
             autofocus
           {% endif %}
-          placeholder="Type your email account"
+          placeholder="Email"
         >
-      {%- if form.errors -%}
-        <div class="account_error_box">
-            {%- for field in form.errors -%}
-              <span id="RecoverEmail-email-error" >
-                {%- if field == 'form' -%}
-                  {{ form.errors.messages[field] }}
-                {%- endif -%}
-              </span>
-            {%- endfor -%}
-        </div>
-      {%- endif -%}
-      {% if recover_success == 'true' %}
-        <div class='account_message'>
-          <span>
-            Temporary password have been sent by email
-          </span>
-        </div>
-      {% endif %}
+      
       <div class="account_buttons">
       <button>
         Reset password
       </button>
       </div>
+    {%- if form.errors -%}
+        <div class="account_error_box">
+            {%- for field in form.errors -%}
+              <span id="RecoverEmail-email-error" >
+                {%- if field == 'form' -%}
+                  No account found with thath email.
+                {%- endif -%}
+              </span>
+            {%- endfor -%}
+        </div>
+      {%- endif -%}
+<!--       {% if form.posted_successfully? %}
+        <div class='account_message'>
+          <span>
+            Temporary password have been sent by email
+          </span>
+        </div>
+      {% endif %} -->
     {%- endform -%}
   </div>
   <!--  로그인 -->    
