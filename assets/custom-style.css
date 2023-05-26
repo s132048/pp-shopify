@@ -979,7 +979,7 @@ variant-radios, variant-selects {
 }
 
 .main-collection-row--first {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main-collection-row--last {
@@ -1034,7 +1034,7 @@ variant-radios, variant-selects {
 }
 
 .main-collection-list--2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main-collection-list--3 {
