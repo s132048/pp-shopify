@@ -2,9 +2,9 @@
 
 <div class="customer login">
   <!--  로그인 -->    
-  <span id="login" class='account_title' tabindex="-1">
+  <h2 class='account_title' tabindex="-1" id='login'>
     Login
-  </span>
+  </h2>
   <div class="account_form_box">
     {%- if recover_success == true -%}
       <h3 class="form__message" tabindex="-1" autofocus>
@@ -71,6 +71,7 @@
     {%- endform -%}
   <!-- 비밀번호 재설정 -->
   <h1 id="recover" tabindex="-1">
+    login
   </h1>
   <div>
     {%- form 'recover_customer_password' -%}
