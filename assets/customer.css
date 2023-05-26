@@ -358,7 +358,11 @@ label[for='AddressProvinceNew'] {
   align-items: end;
   grid-row: 1; 
 }
-
+.customer.order .line_item_list .line_item_box .line_item_img a {
+  display: flex;
+  align-items: flex-end;
+  aspect-ratio: 4/5;
+}
 .customer.order .line_item_list .line_item_box .line_item_details {
   grid-row: 2; 
 }
