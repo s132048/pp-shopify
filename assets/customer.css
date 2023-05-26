@@ -28,6 +28,11 @@ body{
 .contents_box span{
   display:block;
 }
+
+.contents_box:last-child {
+  border-bottom: 1px solid #fff;
+}
+
 .customer .account_title{
   display: block;
   margin-bottom: 7px;
