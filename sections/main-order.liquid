@@ -44,7 +44,7 @@
   <div class='contents_box'>
     <div>
       <span>Shipping address</span>
-      {{ order.shipping_address | format_address }}
+      {{ order.shipping_address.first_name | format_address }}
     </div>
     <div>
       <span>Billing address</span>
