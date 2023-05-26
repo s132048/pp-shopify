@@ -51,15 +51,11 @@
     {%- endform -%}
   </div>
   <!--  로그인 -->    
+  {%- unless recover_success == true -%}
   <h2 class='account_title' id='login'>
     Login
   </h2>
   <div class="account_form_box">
-<!--     {%- if recover_success == true -%}
-      <h3 class="form__message" autofocus>
-        {{ 'customer.recover_password.success' | t }}
-      </h3>
-    {%- endif -%} -->
     {%- form 'customer_login', novalidate: 'novalidate' -%}
         <input
           type="email"
@@ -130,6 +126,7 @@
       {%- endform -%}
     </div>
   {%- endif -%}
+  {% endunless %}
 </div>
 
 {% schema %}
