@@ -49,7 +49,8 @@
     </div>
     <div class='address_text'>
       <span>Billing address</span>
-      {{ order.billing_address | format_address }}
+      {{ order.billing_address.address1 }}, {{ order.billing_address.province }}, {{ order.billing_address.city }}, {{ order.billing_address.zip }}<br>
+      {{ order.billing_address.address2 }}
     </div>
   </div>
 </div> 
