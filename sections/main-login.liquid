@@ -1,9 +1,9 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <div class="customer login">
-  <h1 id="recover" tabindex="-1">
-    login
-  </h1>
+  <span id="recover" class='account_title' tabindex="-1">
+    Forgot your password?
+  </span>
   <div>
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
