@@ -1,6 +1,54 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <div class="customer login">
+  <h1 id="recover" tabindex="-1">
+    login
+  </h1>
+  <div>
+    {%- form 'recover_customer_password' -%}
+      {% assign recover_success = form.posted_successfully? %}
+        <input type="email"
+          value=""
+          name="email"
+          id="RecoverEmail"
+          autocorrect="off"
+          autocapitalize="off"
+          autocomplete="email"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="RecoverEmail-email-error"
+            autofocus
+          {% endif %}
+          placeholder="Type your email account"
+        >
+      {%- if form.errors -%}
+        <div class="account_error_box">
+            {%- for field in form.errors -%}
+              <span id="RecoverEmail-email-error" >
+                {%- if field == 'form' -%}
+                  {{ form.errors.messages[field] }}
+                {%- endif -%}
+              </span>
+            {%- endfor -%}
+        </div>
+      {%- endif -%}
+      {% if recover_success == 'true' %}
+        <div class='account_message'>
+          <span>
+            Temporary password have been sent by email
+          </span>
+        </div>
+      {% endif %}
+
+<!--       <button>
+        Reset
+      </button> -->
+
+<!--       <a href="#login">
+        {{ 'customer.login_page.cancel' | t }}
+      </a> -->
+    {%- endform -%}
+  </div>
   <!--  로그인 -->    
   <h2 class='account_title' tabindex="-1" id='login'>
     Login
@@ -70,54 +118,7 @@
       {%- endif -%}   
     {%- endform -%}
   <!-- 비밀번호 재설정 -->
-  <h1 id="recover" tabindex="-1">
-    login
-  </h1>
-  <div>
-    {%- form 'recover_customer_password' -%}
-      {% assign recover_success = form.posted_successfully? %}
-        <input type="email"
-          value=""
-          name="email"
-          id="RecoverEmail"
-          autocorrect="off"
-          autocapitalize="off"
-          autocomplete="email"
-          {% if form.errors %}
-            aria-invalid="true"
-            aria-describedby="RecoverEmail-email-error"
-            autofocus
-          {% endif %}
-          placeholder="Type your email account"
-        >
-      {%- if form.errors -%}
-        <div class="account_error_box">
-            {%- for field in form.errors -%}
-              <span id="RecoverEmail-email-error" >
-                {%- if field == 'form' -%}
-                  {{ form.errors.messages[field] }}
-                {%- endif -%}
-              </span>
-            {%- endfor -%}
-        </div>
-      {%- endif -%}
-      {% if recover_success == 'true' %}
-        <div class='account_message'>
-          <span>
-            Temporary password have been sent by email
-          </span>
-        </div>
-      {% endif %}
-
-<!--       <button>
-        Reset
-      </button> -->
-
-<!--       <a href="#login">
-        {{ 'customer.login_page.cancel' | t }}
-      </a> -->
-    {%- endform -%}
-  </div>
+  
   
   {%- if shop.checkout.guest_login -%}
     <div>
