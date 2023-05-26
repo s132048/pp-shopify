@@ -59,6 +59,8 @@ body{
 }
 .account_form_box .form_title{
   border-bottom: 1px solid #fff;
+  padding: 7px 0;
+  text-align: left;
 }
 .account_form_box select,
 .account_form_box input,
