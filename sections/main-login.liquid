@@ -4,7 +4,7 @@
   <span id="recover" class='account_title' tabindex="-1">
     Forgot your password?
   </span>
-  <div>
+  <div class='account_form_box'>
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
         <input type="email"
