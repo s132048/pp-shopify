@@ -41,12 +41,15 @@
     <span>Order no. {{ order.name | replace:'#','' }}</span>
     <span>{{ order.total_price | money }}</span>
   </div>
-  <div>
-    {%- if line_item.fulfillment.tracking_url -%}
-      <a href="{{ line_item.fulfillment.tracking_url }}">
-        Track this order
-      </a>
-    {%- endif -%}
+  <div class='contents_box'>
+    <div>
+      <span>Shipping address</span>
+      {{ order.shipping_address | format_address }}
+    </div>
+    <div>
+      <span>Billing address</span>
+      {{ order.billing_address | format_address }}
+    </div>
   </div>
 </div> 
 <!--  <div>
