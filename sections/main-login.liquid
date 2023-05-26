@@ -1,7 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <div class="customer login">
-  <span id="recover" class='account_title' tabindex="-1">
+  <span id="recover" class='account_title'>
     Forgot your password?
   </span>
   <div class='account_form_box'>
@@ -47,12 +47,12 @@
     {%- endform -%}
   </div>
   <!--  로그인 -->    
-  <h2 class='account_title' tabindex="-1" id='login'>
+  <h2 class='account_title' id='login'>
     Login
   </h2>
   <div class="account_form_box">
     {%- if recover_success == true -%}
-      <h3 class="form__message" tabindex="-1" autofocus>
+      <h3 class="form__message" autofocus>
         {{ 'customer.recover_password.success' | t }}
       </h3>
     {%- endif -%}
