@@ -74,6 +74,9 @@
     },
     "aaf6d57b-b2e4-484b-929c-475282574f7f": {
       "type": "featured-collection",
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -96,7 +99,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 32
       }
     }
   },
