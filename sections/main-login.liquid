@@ -8,7 +8,8 @@
   <div class='form_title'>
       We will send an email to reset your password.
   </div>
-    <form accept-charset="UTF-8" action="/account/login#recover" id="recover_customer_password" method="post">
+    {%- form 'recover_customer_password' -%}
+      {% assign recover_success = form.posted_successfully? %}
         <input type="email"
           value=""
           name="email"
@@ -16,6 +17,11 @@
           autocorrect="off"
           autocapitalize="off"
           autocomplete="email"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="RecoverEmail-email-error"
+            autofocus
+          {% endif %}
           placeholder="Email"
         >
       
@@ -24,7 +30,7 @@
         Reset password
       </button>
       </div>
-<!--     {%- if form.errors -%}
+    {%- if form.errors -%}
         <div class="account_error_box">
             {%- for field in form.errors -%}
               <span id="RecoverEmail-email-error" >
@@ -35,8 +41,14 @@
             {%- endfor -%}
         </div>
       {%- endif -%}
- -->
-    </form>
+<!--       {% if form.posted_successfully? %}
+        <div class='account_message'>
+          <span>
+            Temporary password have been sent by email
+          </span>
+        </div>
+      {% endif %} -->
+    {%- endform -%}
   </div>
   <!--  로그인 -->    
   <h2 class='account_title' id='login'>
@@ -119,7 +131,9 @@
     </div>
   {%- endif -%}
 </div>
-
+<script>
+  $('#recover')
+</script>
 {% schema %}
 {
   "name": "t:sections.main-login.name",
