@@ -389,7 +389,7 @@ label[for='AddressProvinceNew'] {
 }
 
 #recover:target {
-  display: block;
+  display: flex;
 }
 
 #recover:target + div {
