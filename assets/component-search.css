@@ -119,7 +119,7 @@ input::-webkit-search-results-decoration{
 
 /* 서치모달 */
 .snize-ac-results-content{
-  posision: fixed;
+  position: fixed;
   display: block !important;
   width: 100%;
   height: 100%;
