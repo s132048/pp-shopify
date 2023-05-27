@@ -154,6 +154,9 @@ input::-webkit-search-results-decoration{
   max-height : none;
   max-width: none;
   width: 100%;
+  display: flex;
+  align-items: flex-end;
+  aspect-ratio: 4/5;
 }
 .snize-ac-results-list li .snize-item{
   flex-direction: column;
@@ -162,6 +165,7 @@ input::-webkit-search-results-decoration{
   margin :0;
   font-size:inherit;
   line-height: interit;
+  grid-row: 2; 
 }
 .snize-ac-results .snize-item-image{
   width: 100%;
@@ -176,4 +180,10 @@ input::-webkit-search-results-decoration{
 }
 .snize-ac-results-list li.snize-label, .snize-ac-results-list li.snize-separator{
   display:none;
+}
+
+.snize-ac-results .snize-item-image {
+  display: grid;
+  align-items: end;
+  grid-row: 1; 
 }
