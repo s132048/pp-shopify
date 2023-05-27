@@ -242,8 +242,8 @@ input::-webkit-search-results-decoration{
   margin:0 0 2px 0;
   padding: 0 0 2px 0;
 }
-.search_menu_list > div .title ul,
-.search_menu_list > div .title li{
+.search_menu_list > div ul,
+.search_menu_list > div ul li{
   list-style:none;
   padding: 0;
   margin: 0;
