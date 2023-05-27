@@ -52,7 +52,10 @@
   </div>
   {%- if recover_success == true -%}
     <script>
-      $('.customer').attr('data-status', 'recover_success');
+      let customers = document.getElementsByClassName('customer');
+      for (let i = 0; i < customers.length; i++) {
+        customers[i].setAttribute('data-status', 'recover_success');
+      }
     </script>
   {% endif %}
   <!--  로그인 -->    
