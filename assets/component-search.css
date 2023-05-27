@@ -7,6 +7,10 @@
   background-color: #FFFF00;
 }
 
+.search_input{
+  background: transparent;
+  padding: 7px 0;
+}
 
 
 .search__input.field__input {
