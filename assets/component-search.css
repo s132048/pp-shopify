@@ -153,6 +153,7 @@ input::-webkit-search-results-decoration{
 .snize-ac-results .snize-thumbnail{
   max-height : none;
   max-width: none;
+  width: 100%;
 }
 .snize-ac-results-list li .snize-item{
   flex-direction: column;
