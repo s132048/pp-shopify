@@ -4,7 +4,7 @@
     <span class='account_title'>
       Orders
     </span>
-    <div class='order'>
+    <div>
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <ul class='order_list'>
