@@ -144,11 +144,13 @@ input::-webkit-search-results-decoration{
   }
 }
 
-.snize-ac-results-list li.snize-product .snize-item {
+.snize-ac-results-list li.snize-product {
+  padding: 0;
+}
+.snize-ac-results-list li.snize-product .snize-item{
   display: grid;
   grid-template-rows: 1fr; 
   align-items: stretch;
-  padding: 0;
 }
 .snize-ac-results .snize-thumbnail{
   max-height : none;
