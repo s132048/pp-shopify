@@ -144,7 +144,7 @@ input::-webkit-search-results-decoration{
   }
 }
 
-.snize-ac-results-list li.snize-product {
+.snize-ac-results-list li.snize-product .snize-item {
   display: grid;
   grid-template-rows: 1fr; 
   align-items: stretch;
