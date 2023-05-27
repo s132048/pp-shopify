@@ -156,7 +156,7 @@ input::-webkit-search-results-decoration{
 
 .snize-product-info .snize-description,
 .snize-product-info .snize-ac-prices-container,
-.snize-product-info .snize-labels-wrapper,{
+.snize-product-info .snize-labels-wrapper{
   display:none;
 }
 .snize-ac-results-list li.snize-label, .snize-ac-results-list li.snize-separator{
