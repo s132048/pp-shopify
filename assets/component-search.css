@@ -126,3 +126,7 @@ input::-webkit-search-results-decoration{
   top: 40px;
   
 }
+
+.snize-label{
+  display:none;
+}
