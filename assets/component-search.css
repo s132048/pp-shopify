@@ -237,6 +237,11 @@ input::-webkit-search-results-decoration{
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
+.search_menu_list > div .title{
+  display: block;
+  border-bottom: 1px solid #000;
+}
 body.snize-instant-widget-is-open .snize-ac-results-content{
   display: none !important;
 }
