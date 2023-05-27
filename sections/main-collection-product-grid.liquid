@@ -174,7 +174,10 @@
     $(`.btn-grid-type[data="${gridType}"]`).css('display', 'inherit');
     $('.section-{{ section.id }}-padding').removeClass('grid-loading');
   }
-  
+
+  $('.btn-grid-type').on('click', function(){
+    console.log($(this));
+  });
   render();
   
 
