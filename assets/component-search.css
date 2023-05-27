@@ -261,8 +261,8 @@ input::-webkit-search-results-decoration{
     height: 8px;
   }
   .search_menu_list{
-    top: 37px;
-    height: calc(100% - 37px);
+    top: 34px;
+    height: calc(100% - 34px);
     grid-template-columns: repeat(1, 1fr);
   }
   .search_menu_list > div .title{
