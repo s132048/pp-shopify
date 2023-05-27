@@ -1,11 +1,9 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <div class="customer login" data-status=''>
-  <div id="recover" style='display: flex; align-items: center; justify-content: center; height: 35px;'>
-    <span class='account_title'>
-      Forgot your password?
-    </span>
-  </div>
+  <span id="recover" class='account_title'>
+    Forgot your password?
+  </span>
   <div class='account_form_box'>
   <div class='form_title'>
       We will send an email to reset your password.
@@ -61,11 +59,9 @@
     </script>
   {% endif %}
   <!--  로그인 -->    
-  <div style='display: flex; align-items: center; justify-content: center; height: 35px;'>
-    <span class='account_title' id='login'>
-      Login
-    </span>
-  </div>
+  <span class='account_title' id='login'>
+    Login
+  </span>
   <div class="account_form_box">
     {%- if recover_success == true -%}
       <h3 class="form__message" autofocus>
