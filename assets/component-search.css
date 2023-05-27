@@ -247,7 +247,9 @@ input::-webkit-search-results-decoration{
 .search_menu_list > div .title .close-list{
   display: none;
 }
-
+.search-modal__content{
+  overflow: auto;
+}
 
 @media screen and (max-width: 1024px){
   .search-modal__close-button{
