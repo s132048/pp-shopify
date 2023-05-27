@@ -215,3 +215,10 @@ input::-webkit-search-results-decoration{
 .snize-popular-suggestions-view-all-products-text{
   display: none !important;
 }
+.snize-nothing-found{
+  padding: 0;
+}
+.snize-nothing-found span{
+  padding: 0;
+  font-size:inherit;
+}
