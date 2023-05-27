@@ -7,53 +7,14 @@
                   <path id="패스_228" data-name="패스 228" d="M0,0H-3.8V-3.952H-5.187V0H-9.006V1.349h3.819v3.99H-3.8V1.349H0Z" transform="translate(9.006 3.952)" fill="#2b2e34"/>
                 </svg>
             </span>
-            <span class="close-list" data-close="1">
+            <span class="close-list hide" data-close="1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8.303" height="1.387" viewBox="0 0 8.303 1.387">
                   <path id="패스_219" data-name="패스 219" d="M397.519-676.157h8.3v-1.387h-8.3Z" transform="translate(-397.519 677.544)" fill="#2b2e34"/>
                 </svg>
             </span>
         </span>
-        <div class="nav-list search-menu-item-list" data-status="close" data-list-index="3">
-            {%- for link in section.settings.menu.links -%}
-                <!-- 네비게이션 1depth 메뉴 리스트-->
-                <div class="nav-item">
-                    {%- if link.links != blank -%}
-                        <!-- 네비게이션 1depth 메뉴 타이틀(Books, merchandise..) -->
-                        <div class="depth-title{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">{{ link.title | escape }}</div>
-                        <!-- 네비게이션 2depth 메뉴 리스트-->
-                        <div class="depth-list" role="list" tabindex="-1">
-                            {%- for childlink in link.links -%}
-                                <div class="depth-tiem">
-                                    {%- if childlink.links == blank -%}
-                                        <a href="{{ childlink.url }}"
-                                           class="{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                            {{ childlink.title | escape }}
-                                        </a>
-                                    {%- else -%}
-                                        <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                                            <a href="{{ childlink.url }}"
-                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                                {{ childlink.title | escape }}
-                                            </a>
-                                            {%- for grandchildlink in childlink.links -%}
-                                                <li>
-                                                    <a href="{{ grandchildlink.url }}"
-                                                       class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                                        {{ grandchildlink.title | escape }}
-                                                    </a>
-                                                </li>
-                                            {%- endfor -%}
-                                        </ul>
-                                    {%- endif -%}
-                                </div>
-                            {%- endfor -%}
-                        </div>
-                    {%- else -%}
-                        <a href="{{ link.url }}"
-                           class="{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>
-                    {%- endif -%}
-                </div>
-            {%- endfor -%}
+        <div class="search-menu-item-list hide" data-status="close" data-list-index="1">
+            <!-- Content -->
         </div>
     </div>
     <div class="search-menu-item" data-index="2">
@@ -64,54 +25,32 @@
                   <path id="패스_228" data-name="패스 228" d="M0,0H-3.8V-3.952H-5.187V0H-9.006V1.349h3.819v3.99H-3.8V1.349H0Z" transform="translate(9.006 3.952)" fill="#2b2e34"/>
                 </svg>
             </span>
-            <span class="close-list" data-close="2">
+            <span class="close-list hide" data-close="2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8.303" height="1.387" viewBox="0 0 8.303 1.387">
                   <path id="패스_219" data-name="패스 219" d="M397.519-676.157h8.3v-1.387h-8.3Z" transform="translate(-397.519 677.544)" fill="#2b2e34"/>
                 </svg>
             </span>
         </span>
-        <div class="search-menu-item-list" data-status="close" data-list-index="2">
-            <ul>
-                <li>
-                    <a href="/">
-                        Airport
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        1017 Alyx 9sm
-                    </a>
-                </li>
-            </ul>
+        <div class="search-menu-item-list hide" data-status="close" data-list-index="2">
+            <!-- Content -->
         </div>
     </div>
     <div class="search-menu-item" data-index="3">
         <span class="mobile-search-menu-title" data-title-index='3'>
           Publishers
-            <span class="open-list">
+            <span class="open-list" data-open="3">
                  <svg xmlns="http://www.w3.org/2000/svg" width="9.006" height="9.291" viewBox="0 0 9.006 9.291">
                   <path id="패스_228" data-name="패스 228" d="M0,0H-3.8V-3.952H-5.187V0H-9.006V1.349h3.819v3.99H-3.8V1.349H0Z" transform="translate(9.006 3.952)" fill="#2b2e34"/>
                 </svg>
             </span>
-            <span class="close-list" data-close="3">
+            <span class="close-list hide" data-close="3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8.303" height="1.387" viewBox="0 0 8.303 1.387">
                   <path id="패스_219" data-name="패스 219" d="M397.519-676.157h8.3v-1.387h-8.3Z" transform="translate(-397.519 677.544)" fill="#2b2e34"/>
                 </svg>
             </span>
         </span>
-        <div class="search-menu-item-list" data-status="close" data-list-index="3">
-            <ul>
-                <li>
-                    <a href="/">
-                        A Magazine
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Abrams
-                    </a>
-                </li>
-            </ul>
+        <div class="search-menu-item-list hide" data-status="close" data-list-index="3">
+            <!-- Content -->
         </div>
     </div>
 </div>
@@ -128,12 +67,26 @@ mobileSearchMenuTitles.forEach((title) => {
 
         searchMenuItems.forEach((menuItem) => {
             menuItem.setAttribute('data-status', 'close');
+            menuItem.classList.add('hide');
         });
 
         if (isOpen) {
             searchMenuList.setAttribute('data-status', 'close');
+            searchMenuList.classList.add('hide');
         } else {
             searchMenuList.setAttribute('data-status', 'open');
+            searchMenuList.classList.remove('hide');
+        }
+
+        let openButton = title.querySelector('.open-list');
+        let closeButton = title.querySelector('.close-list');
+
+        if (isOpen) {
+            openButton.classList.remove('hide');
+            closeButton.classList.add('hide');
+        } else {
+            openButton.classList.add('hide');
+            closeButton.classList.remove('hide');
         }
     });
 });
