@@ -213,5 +213,5 @@ input::-webkit-search-results-decoration{
 }
 
 .snize-popular-suggestions-view-all-products-text{
-  display: none;
+  display: none !important;
 }
