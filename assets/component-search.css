@@ -255,9 +255,12 @@ input::-webkit-search-results-decoration{
   }
   .search_menu_list > div .title .open-list,
   .search_menu_list > div .title .close-list{
+    display:block;
     position: absolute;
     right:0;
-    top:5px;
+    top:2px;
+    width:10px
+    height:10px;
   }
 }
 
