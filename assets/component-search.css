@@ -118,7 +118,7 @@ input::-webkit-search-results-decoration{
 }
 
 /* 서치모달 */
-.snize-ac-results{
+.snize-ac-results-content{
   posision: fixed;
   display: block !important;
   width: 100%;
