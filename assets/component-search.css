@@ -319,6 +319,7 @@ body.overflow-hidden .search_menu_list{
   display: grid !important;
 }
 @media screen and (max-width: 1024px){
-  body.overflow-hidden .search_menu_list{
-  display: block !important;
+    body.overflow-hidden .search_menu_list{
+    display: block !important;
+  }
 }

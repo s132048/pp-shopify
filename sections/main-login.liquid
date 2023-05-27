@@ -1,7 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <div class="customer login" data-status=''>
-  <div style='height: 35px;'>
+  <div style='display: flex; align-items: center; height: 35px;'>
     <span id="recover" class='account_title'>
       Forgot your password?
     </span>
@@ -61,7 +61,7 @@
     </script>
   {% endif %}
   <!--  로그인 -->    
-  <div style='height: 35px;'>
+  <div style='display: flex; align-items: center; height: 35px;'>
     <span class='account_title' id='login'>
       Login
     </span>
