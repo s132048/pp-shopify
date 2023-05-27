@@ -239,6 +239,8 @@ input::-webkit-search-results-decoration{
 .search_menu_list > div .title{
   display: block;
   border-bottom: 1px solid #000;
+  margin:0;
+  padding: 0 0 7px 0;
 }
 body.snize-instant-widget-is-open .snize-ac-results-content{
   display: none !important;
