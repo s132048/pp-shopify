@@ -52,7 +52,7 @@ input::-webkit-search-decoration {
 
 /* input 스타일 */
 input placeholder{
-  color: #959595;
+  color: #2B2E34;
 }
 
 input[aria-invalid="true"] placeholder{
