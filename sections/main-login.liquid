@@ -51,7 +51,9 @@
     {%- endform -%}
   </div>
   {%- if recover_success == true -%}
-    $('.customer').attr('data-status', 'recover_success');
+    <script>
+      $('.customer').attr('data-status', 'recover_success');
+    </script>
   {% endif %}
   <!--  로그인 -->    
   <span class='account_title' id='login'>
