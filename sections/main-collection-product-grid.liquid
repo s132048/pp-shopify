@@ -26,7 +26,7 @@
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}-padding">
+<div class="section-{{ section.id }}-padding grid-loading">
   {%- assign page_url = content_for_header | split:'"pageurl":"' | last | split:'"' | first | split: request.host | last | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&'  -%}
   {{ page_url }}
   {%  assign is_index = false %}
@@ -173,6 +173,7 @@
     $('.btn-grid-type').css('display', 'none');
     $(`.btn-grid-type[data="${gridType}"]`).css('display', 'inherit');
   }
+  
   render();
   
 
