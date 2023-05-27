@@ -132,58 +132,7 @@
         <div class="menu-item menu-item--nav">Menu</div>
         <div class="menu-item">
           <!-- 서치 -->
-          <details-modal class="header__search">
-            <details>
-              <summary class="modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
-                Search
-              </summary>
-              <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
-                <div class="modal-overlay"></div>
-                <div class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}" tabindex="-1">
-                  {%- if settings.predictive_search_enabled -%}
-                    <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
-                  {%- endif -%}
-                    <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-                        <input class="search__input"
-                          id="Search-In-Modal"
-                          type="search"
-                          name="q"
-                          value=""
-                          placeholder="Type something..."
-                          {%- if settings.predictive_search_enabled -%}
-                            role="combobox"
-                            aria-expanded="false"
-                            aria-owns="predictive-search-results-list"
-                            aria-controls="predictive-search-results-list"
-                            aria-haspopup="listbox"
-                            aria-autocomplete="list"
-                            autocorrect="off"
-                            autocomplete="off"
-                            autocapitalize="off"
-                            spellcheck="false"
-                          {%- endif -%}
-                        >
-                        <input type="hidden" name="options[prefix]" value="last">
-<!--                         <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                          <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                            <use href="#icon-search">
-                          </svg>
-                        </button> -->
-        
-                    </form>
-                  {%- if settings.predictive_search_enabled -%}
-                    </predictive-search>
-                  {%- endif -%}
-                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
-                      <path id="패스_686" data-name="패스 686" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#2b2e34"/>
-                    </svg>
-                  </button>
-                </div>
-               {% render 'search-menu-list' %}
-              </div>
-            </details>
-          </details-modal>
+          {% render search %}
         </div>
         <div class="menu-item">
           <!-- 카트 --> 
