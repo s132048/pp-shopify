@@ -171,13 +171,14 @@ input::-webkit-search-results-decoration{
   
 }
 .snize-ac-results .snize-product-info .snize-title{
-  display: block'
+  display: block;
   overflow: hidden; 
   display: -webkit-box; 
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical; 
   text-overflow: ellipsis; 
   font-size: inherit;
+  line-height: inherit;
 }
   
 .snize-ac-results .snize-item-image{
