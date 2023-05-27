@@ -154,6 +154,11 @@ input::-webkit-search-results-decoration{
   flex-direction: column;
 }
 
+.snize-product-info .snize-description,
+.snize-product-info .snize-ac-prices-container,
+.snize-product-info .snize-labels-wrapper,{
+  display:none;
+}
 .snize-ac-results-list li.snize-label, .snize-ac-results-list li.snize-separator{
   display:none;
 }
