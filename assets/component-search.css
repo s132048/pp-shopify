@@ -126,6 +126,7 @@ input::-webkit-search-results-decoration{
   top: 40px;
   left:0;
   padding: 0;
+  background: transparent;
 }
 
 .snize-label{
