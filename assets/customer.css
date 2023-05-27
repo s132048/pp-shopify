@@ -405,8 +405,8 @@ label[for='AddressProvinceNew'] {
   display: block;
 }
 
-.customer[data-status='recover_success'] #recover:target ~ #login,
-.customer[data-status='recover_success'] #recover:target ~ #login + div {
+.customer[data-status='recover_success'] #login,
+.customer[data-status='recover_success'] #login + div {
   display: none;
 }
 /* input 스타일 */
