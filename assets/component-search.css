@@ -250,6 +250,10 @@ input::-webkit-search-results-decoration{
 
 
 @media screen and (max-width: 1024px){
+  .search-modal__close-button{
+    width:1rem !important;
+    right:0;
+  }
   .search-modal__close-button svg{
     width: 8px;
     height: 8px;
