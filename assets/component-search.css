@@ -233,7 +233,11 @@ input::-webkit-search-results-decoration{
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
+@media screen and (max-width: 1024px){
+  .search_menu_list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .search_menu_list > div .title{
   display: block;
