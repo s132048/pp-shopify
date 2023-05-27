@@ -224,9 +224,11 @@ input::-webkit-search-results-decoration{
   font-size:inherit;
 }
 
-body.overflow-hidden.snize-instant-widget-is-open .snize-ac-results-content{
-  display: block;  
-}
+
 body.snize-instant-widget-is-open .snize-ac-results-content{
   display: none !important;
+}
+
+body.overflow-hidden.snize-instant-widget-is-open .snize-ac-results-content{
+  display: block !important;  
 }
