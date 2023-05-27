@@ -1115,3 +1115,7 @@ variant-radios, variant-selects {
 .main-header-row a + a {
     margin-left: 10px;
 }
+
+.product-item-index {
+  width: 100%;
+}
