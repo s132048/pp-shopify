@@ -225,12 +225,11 @@ input::-webkit-search-results-decoration{
 }
 
 .search_menu_list{
-  position:fixed;
+  position:absolute;
   top: 46px;
   left: 0px;
   height: calc(100% - 46px);
   width: 100%;
-  padding: 0 10px;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
