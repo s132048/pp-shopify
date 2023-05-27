@@ -158,7 +158,10 @@ input::-webkit-search-results-decoration{
   font-size:inherit;
   line-height: interit;
 }
-
+.snize-ac-results .snize-item-image{
+  width: 100%;
+  height: auto;
+}
 .snize-product-info .snize-description,
 .snize-product-info .snize-ac-prices-container,
 .snize-product-info .snize-labels-wrapper{
