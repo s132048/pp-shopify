@@ -5,7 +5,6 @@
       Orders
     </span>
     <div>
-      {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <ul class='order_list'>
             {%- for order in customer.orders -%}
@@ -81,7 +80,6 @@
               </nav>
           {%- endif -%}
         {%- endif -%}
-      {% endpaginate %}
     </div>
 
   </div>
