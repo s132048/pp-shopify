@@ -149,7 +149,7 @@
                           type="search"
                           name="q"
                           value=""
-                          placeholder="Type something..."
+                          placeholder="Type something.."
                           {%- if settings.predictive_search_enabled -%}
                             role="combobox"
                             aria-expanded="false"
@@ -163,6 +163,8 @@
                             spellcheck="false"
                           {%- endif -%}
                         >
+                        <label class="field__label" for="Search-In-Modal">"Type something..</label>
+                        <input type="hidden" name="options[prefix]" value="last">
                         <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                           <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                             <use href="#icon-search">
