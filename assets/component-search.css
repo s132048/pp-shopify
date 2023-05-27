@@ -8,9 +8,13 @@
   padding: 10px;
 }
 
-.search_input{
+.search__input{
   background: transparent;
   padding: 7px 0;
+  border:none;
+  width: 100%;
+  heigh:100%;
+  border-radius:none;
   border-bottom: 1px solid #000;
 }
 
@@ -47,63 +51,5 @@
 /* Remove extra spacing for search inputs in Safari */
 input::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-/* input 스타일 */
-input placeholder{
-  color: #959595;
-}
-
-input[aria-invalid="true"] placeholder{
-  color: #ff0000;
-}
-select:focus,
-select:hover,
-select:active,
-input:focus,
-input:hover,
-input:active {
-  outline: none !important;
-  box-shadow: none;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    background-color : transparent !important; 
-	-webkit-text-fill-color: #fff;
-     box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    transition: background-color 5000s ease-in-out 0s;
-    font-size : 22px;
-}
-
-input:autofill,
-input:autofill:hover,
-input:autofill:focus,
-input:autofill:active {
-    background-color : transparent !important; 
-	-webkit-text-fill-color: #fff;
-    box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
-    transition: background-color 5000s ease-in-out 0s;
-    font-size : 22px;
-}
-
-@media screen and (max-width: 1024px) {
-  input:autofill,
-  input:autofill:hover,
-  input:autofill:focus,
-  input:autofill:active {
-    font-size : 19px;
-  }
-
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    font-size : 19px;
-  }
 }
 
