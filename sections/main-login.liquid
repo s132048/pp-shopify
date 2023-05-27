@@ -50,6 +50,9 @@
       {% endif %}
     {%- endform -%}
   </div>
+  {%- if recover_success == true -%}
+    $('.customer').attr('data-status', 'recover_success');
+  {% endif %}
   <!--  로그인 -->    
   <span class='account_title' id='login'>
     Login
@@ -131,9 +134,6 @@
     </div>
   {%- endif -%}
 </div>
-<script>
-  $('#recover')
-</script>
 {% schema %}
 {
   "name": "t:sections.main-login.name",
