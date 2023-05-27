@@ -171,7 +171,7 @@
     const gridType = sessionStorage.getItem('gridType') === null ? 'cover' : sessionStorage.getItem('gridType');
     $('#product-grid').removeClass('cover').removeClass('index').addClass(gridType);
     $('.btn-grid-type').css('display', 'none');
-    $(`.btn-grid-type[data="${gridType}"]`).css('display', 'inherit');
+    $(`.btn-grid-type[data="${gridType}"]`).css('display', 'inherit !important;');
     console.log($(`.btn-grid-type[data="${gridType}"]`));
     $('.section-{{ section.id }}-padding').removeClass('grid-loading');
   }
