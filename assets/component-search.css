@@ -269,6 +269,9 @@ input::-webkit-search-results-decoration{
     padding: 3px 0 3px 0;
     border-bottom: none;
   }
+  .search-menu-item{
+    border-bottom: 1px solid #000;
+  }
   .search_menu_list > div .title .open-list,
   .search_menu_list > div .title .close-list{
     display:block;
