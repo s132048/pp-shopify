@@ -134,5 +134,14 @@ input::-webkit-search-results-decoration{
 }
 
 .snize-ac-results-list{
-  display: grid;
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
 }
+
+@media screen and (max-width: 1024px) {
+  .snize-ac-results-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
