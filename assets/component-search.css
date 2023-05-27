@@ -259,7 +259,7 @@ input::-webkit-search-results-decoration{
     position: absolute;
     right:0;
     top:2px;
-    width:10px
+    width:10px;
     height:10px;
   }
   .search_menu_list > div .title .open-list.hide,
