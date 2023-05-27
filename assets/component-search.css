@@ -237,7 +237,10 @@ body.snize-instant-widget-is-open .snize-ac-results-content{
 body.overflow-hidden.snize-instant-widget-is-open .snize-ac-results-content{
   display: block !important;  
 }
+  
 body.overflow-hidden.snize-instant-widget-is-open .search_menu_list{
   display: none !important;
 }
-
+body.overflow-hidden .search_menu_list{
+  display: block !important;
+}
