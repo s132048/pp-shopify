@@ -144,7 +144,7 @@ input::-webkit-search-results-decoration{
   }
 }
 
-.snize-ac-results-list li {
+.snize-ac-results-list li.snize-product {
   display: grid;
   grid-template-rows: 1fr; 
   align-items: stretch;
@@ -153,9 +153,7 @@ input::-webkit-search-results-decoration{
 .snize-ac-results-list li .snize-item{
   flex-direction: column;
 }
-.snize-product{
-  padding:0;
-}
+
 .snize-product-info .snize-description,
 .snize-product-info .snize-ac-prices-container,
 .snize-product-info .snize-labels-wrapper{
