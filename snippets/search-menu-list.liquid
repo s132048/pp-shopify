@@ -1,9 +1,19 @@
 <div class='search_menu_list'>
-    <div>
+    <div class="search-menu-item" data-index="1">
         <span class="title">
           Categories
+            <span class="open-list" data-open="1">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="9.006" height="9.291" viewBox="0 0 9.006 9.291">
+                  <path id="패스_228" data-name="패스 228" d="M0,0H-3.8V-3.952H-5.187V0H-9.006V1.349h3.819v3.99H-3.8V1.349H0Z" transform="translate(9.006 3.952)" fill="#2b2e34"/>
+                </svg>
+            </span>
+            <span class="close-list" data-close="1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8.303" height="1.387" viewBox="0 0 8.303 1.387">
+                  <path id="패스_219" data-name="패스 219" d="M397.519-676.157h8.3v-1.387h-8.3Z" transform="translate(-397.519 677.544)" fill="#2b2e34"/>
+                </svg>
+            </span>
         </span>
-        <div class="nav-list">
+        <div class="nav-list search-menu-list" data-status="close" data-list-index="3">
             {%- for link in section.settings.menu.links -%}
                 <!-- 네비게이션 1depth 메뉴 리스트-->
                 <div class="nav-item">
@@ -46,11 +56,21 @@
             {%- endfor -%}
         </div>
     </div>
-    <div>
+    <div class="search-menu-item" data-index="2">
         <span class="title">
           Keywords
+            <span class="open-list" data-open="2">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="9.006" height="9.291" viewBox="0 0 9.006 9.291">
+                  <path id="패스_228" data-name="패스 228" d="M0,0H-3.8V-3.952H-5.187V0H-9.006V1.349h3.819v3.99H-3.8V1.349H0Z" transform="translate(9.006 3.952)" fill="#2b2e34"/>
+                </svg>
+            </span>
+            <span class="close-list" data-close="2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8.303" height="1.387" viewBox="0 0 8.303 1.387">
+                  <path id="패스_219" data-name="패스 219" d="M397.519-676.157h8.3v-1.387h-8.3Z" transform="translate(-397.519 677.544)" fill="#2b2e34"/>
+                </svg>
+            </span>
         </span>
-        <div>
+        <div class="search-menu-list" data-status="close" data-list-index="2">
             <ul>
                 <li>
                     <a href="/">
@@ -65,11 +85,21 @@
             </ul>
         </div>
     </div>
-    <div>
+    <div class="search-menu-item" data-index="3">
         <span class="title">
           Publishers
+            <span class="open-list" data-open="3">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="9.006" height="9.291" viewBox="0 0 9.006 9.291">
+                  <path id="패스_228" data-name="패스 228" d="M0,0H-3.8V-3.952H-5.187V0H-9.006V1.349h3.819v3.99H-3.8V1.349H0Z" transform="translate(9.006 3.952)" fill="#2b2e34"/>
+                </svg>
+            </span>
+            <span class="close-list" data-close="3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8.303" height="1.387" viewBox="0 0 8.303 1.387">
+                  <path id="패스_219" data-name="패스 219" d="M397.519-676.157h8.3v-1.387h-8.3Z" transform="translate(-397.519 677.544)" fill="#2b2e34"/>
+                </svg>
+            </span>
         </span>
-        <div>
+        <div class="search-menu-list" data-status="close" data-list-index="3">
             <ul>
                 <li>
                     <a href="/">
@@ -86,3 +116,6 @@
     </div>
 </div>
 
+<script>
+
+</script>
