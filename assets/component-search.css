@@ -171,6 +171,7 @@ input::-webkit-search-results-decoration{
   
 }
 .snize-ac-results .snize-product-info .snize-title{
+  display: block'
   overflow: hidden; 
   display: -webkit-box; 
   -webkit-line-clamp: 1;
