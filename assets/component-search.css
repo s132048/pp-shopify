@@ -171,7 +171,8 @@ input::-webkit-search-results-decoration{
 .snize-ac-results .snize-product-info{
   margin :0;
   font-size:inherit;
-  line-height: interit;
+  line-height: inherit;
+  font-weight: inherit;
   grid-row: 2; 
   
 }
