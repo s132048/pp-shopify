@@ -1136,3 +1136,7 @@ variant-radios, variant-selects {
 .btn-grid-type {
   display: none;
 }
+
+.grid-loading {
+  display: none;
+}
