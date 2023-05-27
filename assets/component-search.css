@@ -1,6 +1,7 @@
-.header__search *{
+.search-modal *{
   color: #000 !important;
 }
+
 .search-modal{
   position:fixed;
   top: 0;
