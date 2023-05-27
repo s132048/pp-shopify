@@ -122,8 +122,8 @@ input::-webkit-search-results-decoration{
   position: fixed;
   display: block !important;
   width: 100%;
-  height: calc(100% - 40px);
-  top: 40px;
+  height: calc(100% - 50px);
+  top: 50px;
   left:0;
   padding: 0;
   background: transparent;
