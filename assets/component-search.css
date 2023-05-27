@@ -127,9 +127,8 @@ input::-webkit-search-results-decoration{
   left:0;
   padding: 0 10px;
   background: transparent;
+  box-shadow: none;
 }
-
-
 
 .snize-ac-results-list{
   width: 100%;
