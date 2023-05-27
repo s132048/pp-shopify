@@ -1,5 +1,5 @@
-.header__search .menu-list *{
-  color: #000;
+.header__search *{
+  color: #000 !important;
 }
 .search-modal{
   position:fixed;
