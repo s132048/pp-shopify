@@ -263,8 +263,7 @@ input::-webkit-search-results-decoration{
   .search_menu_list{
     top: 34px;
     height: calc(100% - 34px);
-    grid-template-columns: repeat(1, 1fr);
-    gap:0;
+    display:block;
   }
   .search_menu_list > div .title{
     padding: 3px 0 3px 0;
