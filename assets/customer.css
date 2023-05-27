@@ -41,8 +41,10 @@ body{
   margin-bottom: 0;
 }
 .customer .account_title{
-  display: block;
+  display: flex;
   height: 35px;
+  align-items:center;
+  justify-content: center;
 }
 .customer a, .customer button{
   margin: 0;
