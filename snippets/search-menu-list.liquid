@@ -1,55 +1,88 @@
 <div class='search_menu_list'>
-              <div>
-                <span class="title">
-                  Categories
-                </span>
-                <div class="nav-list">
-                  {%- for link in section.settings.menu.links -%}
-                  <!-- 네비게이션 1depth 메뉴 리스트-->
-                  <div class="nav-item">
+    <div>
+        <span class="title">
+          Categories
+        </span>
+        <div class="nav-list">
+            {%- for link in section.settings.menu.links -%}
+                <!-- 네비게이션 1depth 메뉴 리스트-->
+                <div class="nav-item">
                     {%- if link.links != blank -%}
-                    <!-- 네비게이션 1depth 메뉴 타이틀(Books, merchandise..) -->
-                      <div class="depth-title{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">{{ link.title | escape }}</div>
-                      <!-- 네비게이션 2depth 메뉴 리스트-->
-                      <div class="depth-list" role="list" tabindex="-1">
-                        {%- for childlink in link.links -%}
-                          <div class="depth-tiem">
-                            {%- if childlink.links == blank -%}
-                              <a href="{{ childlink.url }}" class="{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                {{ childlink.title | escape }}
-                              </a>
-                            {%- else -%}
-                                <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                                  <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                    {{ childlink.title | escape }}
-                                  </a>
-                                  {%- for grandchildlink in childlink.links -%}
-                                    <li>
-                                      <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                        {{ grandchildlink.title | escape }}
-                                      </a>
-                                    </li>
-                                  {%- endfor -%}
-                                </ul>
-                            {%- endif -%}
-                          </div>
-                        {%- endfor -%}
-                      </div>
+                        <!-- 네비게이션 1depth 메뉴 타이틀(Books, merchandise..) -->
+                        <div class="depth-title{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">{{ link.title | escape }}</div>
+                        <!-- 네비게이션 2depth 메뉴 리스트-->
+                        <div class="depth-list" role="list" tabindex="-1">
+                            {%- for childlink in link.links -%}
+                                <div class="depth-tiem">
+                                    {%- if childlink.links == blank -%}
+                                        <a href="{{ childlink.url }}"
+                                           class="{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                            {{ childlink.title | escape }}
+                                        </a>
+                                    {%- else -%}
+                                        <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                            <a href="{{ childlink.url }}"
+                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                                {{ childlink.title | escape }}
+                                            </a>
+                                            {%- for grandchildlink in childlink.links -%}
+                                                <li>
+                                                    <a href="{{ grandchildlink.url }}"
+                                                       class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                        {{ grandchildlink.title | escape }}
+                                                    </a>
+                                                </li>
+                                            {%- endfor -%}
+                                        </ul>
+                                    {%- endif -%}
+                                </div>
+                            {%- endfor -%}
+                        </div>
                     {%- else -%}
-                      <a href="{{ link.url }}" class="{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>
+                        <a href="{{ link.url }}"
+                           class="{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>
                     {%- endif -%}
-                  </div>
-                  {%- endfor -%}
                 </div>
-              </div>
-              <div>
-                <span class="title">
-                  Keywords
-                </span>
-              </div>
-              <div>
-                <span class="title">
-                  Publishers
-                </span>
-              </div>
-            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+    <div>
+        <span class="title">
+          Keywords
+        </span>
+        <div>
+            <ul>
+                <li>
+                    <a href="/">
+                        Airport
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        1017 Alyx 9sm
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <span class="title">
+          Publishers
+        </span>
+        <div>
+            <ul>
+                <li>
+                    <a href="/">
+                        A Magazine
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Abrams
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
