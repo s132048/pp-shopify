@@ -130,8 +130,8 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="product-item">
-<!--                   {% render 'card-product-new',
+<!--                 <li class="product-item">
+                  {% render 'card-product-new',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,
@@ -141,7 +141,9 @@
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id,
                     is_index: is_index
-                  %} -->
+                  %}
+                </li> -->
+                <li>
                   {{ product.title }}
                 </li>
               {%- endfor -%}
