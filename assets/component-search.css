@@ -226,9 +226,9 @@ input::-webkit-search-results-decoration{
 
 .search_menu_list{
   position:absolute;
-  top: 46px;
+  top: 40px;
   left: 0px;
-  height: calc(100% - 46px);
+  height: calc(100% - 40px);
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
