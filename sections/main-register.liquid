@@ -62,11 +62,11 @@
     </div>
     <!-- 회원가입 에러 -->
 
-    {%- if form.errors contains 'email' -%}
+<!--     {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
         {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
       </span>
-    {%- endif -%}
+    {%- endif -%} -->
     <div class="account_error_box">
      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
