@@ -268,9 +268,6 @@ input::-webkit-search-results-decoration{
   .search_menu_list > div .title{
     border-top: 1px solid #000;
   }
-  .search_menu_list > div .title:first-child{
-    border-top:none;
-  }
   .search_menu_list > div .title .open-list,
   .search_menu_list > div .title .close-list{
     display:block;
