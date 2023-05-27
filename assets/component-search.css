@@ -163,9 +163,9 @@ input::-webkit-search-results-decoration{
 }
 
 
-.snize-ac-results-list li .snize-item:hover,
-.snize-ac-results-list li .snize-item:focus,
-.snize-ac-results-list li .snize-item:active{
+.snize-ac-results-list li:hover,
+.snize-ac-results-list li:focus,
+.snize-ac-results-list li:active{
   background: transparent;
 }
   
