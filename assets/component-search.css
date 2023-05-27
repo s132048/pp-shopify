@@ -168,13 +168,17 @@ input::-webkit-search-results-decoration{
   font-size:inherit;
   line-height: interit;
   grid-row: 2; 
-  overflow: visible; 
+  
+}
+.snize-ac-results .snize-product-info .snize-title{
+  overflow: hidden; 
   display: -webkit-box; 
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical; 
   text-overflow: ellipsis; 
-  
+  font-size: inherit;
 }
+  
 .snize-ac-results .snize-item-image{
   width: 100%;
   height: auto;
