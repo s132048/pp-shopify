@@ -151,6 +151,7 @@ input::-webkit-search-results-decoration{
   display: grid;
   grid-template-rows: 1fr; 
   align-items: stretch;
+  flex-direction: column;
 }
 .snize-ac-results .snize-thumbnail{
   max-height : none;
@@ -160,9 +161,14 @@ input::-webkit-search-results-decoration{
   align-items: flex-end;
   aspect-ratio: 4/5;
 }
-.snize-ac-results-list li .snize-item{
-  flex-direction: column;
+
+
+.snize-ac-results-list li .snize-item:hover,
+.snize-ac-results-list li .snize-item:focus,
+.snize-ac-results-list li .snize-item:active{
+  background: transparent;
 }
+  
 .snize-ac-results .snize-product-info{
   margin :0;
   font-size:inherit;
