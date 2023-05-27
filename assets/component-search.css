@@ -262,6 +262,10 @@ input::-webkit-search-results-decoration{
     width:10px
     height:10px;
   }
+  .search_menu_list > div .title .open-list.hide,
+  .search_menu_list > div .title .close-list.hide{
+    display:none;
+  }
 }
 
   
