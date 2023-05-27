@@ -273,6 +273,12 @@ input::-webkit-search-results-decoration{
   .search-menu-item{
     border-bottom: 1px solid #000;
   }
+  .search-menu-item-list[data-status='close']{
+    display:none;
+  }
+  .search-menu-item-list[data-status='open']{
+    display:block;
+  }
   .search_menu_list > div .title .open-list,
   .search_menu_list > div .title .close-list{
     display:block;
