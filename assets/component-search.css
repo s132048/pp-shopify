@@ -258,9 +258,14 @@ input::-webkit-search-results-decoration{
     display:block;
     position: absolute;
     right:0;
-    top:2px;
     width:10px;
     height:10px;
+  }
+  .search_menu_list > div .title .open-list{
+    top: 5px;
+  }
+  .search_menu_list > div .title .close-list{
+    top: 2px;
   }
   .search_menu_list > div .title .open-list.hide,
   .search_menu_list > div .title .close-list.hide{
