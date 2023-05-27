@@ -148,8 +148,11 @@ input::-webkit-search-results-decoration{
   display: grid;
   grid-template-rows: 1fr; 
   align-items: stretch;
+  padding: 0;
 }
-
+.snize-ac-results .snize-thumbnail{
+  max-height : auto;
+}
 .snize-ac-results-list li .snize-item{
   flex-direction: column;
 }
