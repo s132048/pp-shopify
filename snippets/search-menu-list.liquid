@@ -66,8 +66,10 @@ mobileSearchMenuTitles.forEach((title) => {
         let isOpen = searchMenuList.getAttribute('data-status') === 'open';
 
         searchMenuItems.forEach((menuItem) => {
-            menuItem.setAttribute('data-status', 'close');
-            menuItem.classList.add('hide');
+            if (menuItem !== searchMenuList) {
+                menuItem.setAttribute('data-status', 'close');
+                menuItem.classList.add('hide');
+            }
         });
 
         if (isOpen) {
