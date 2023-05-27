@@ -125,6 +125,9 @@
             <div class="loading-overlay gradient"></div>
 
             <ul id="product-grid" data-id="{{ section.id }}" class="product-grid-list">
+          {% for product in collections['all'].products %}
+    <div>{{product.title}}</div>
+{% endfor %}
 <!--               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
