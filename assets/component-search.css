@@ -256,6 +256,8 @@ input::-webkit-search-results-decoration{
   .search_menu_list > div .title .open-list,
   .search_menu_list > div .title .close-list{
     position: absolute;
+    right:0;
+    top:5px;
   }
 }
 
