@@ -132,3 +132,7 @@ input::-webkit-search-results-decoration{
 .snize-label{
   display:none;
 }
+
+.snize-ac-results-list{
+  display: grid;
+}
