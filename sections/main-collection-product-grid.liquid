@@ -177,7 +177,8 @@
   }
 
   $('.btn-grid-type').on('click', function(){
-    sessionStorage.setItem('gridType', $(this).attr('data'));
+    const next = $(this).attr('data') === 'cover' ? 'index' : 'cover';
+    sessionStorage.setItem('gridType', next);
     render();
   });
   render();
