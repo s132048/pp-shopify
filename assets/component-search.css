@@ -91,7 +91,16 @@ input:autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     font-size : 22px;
 }
-
+input::-ms-clear,
+input::-ms-reveal{
+	display:none;width:0;height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
 @media screen and (max-width: 1024px) {
   input:autofill,
   input:autofill:hover,
