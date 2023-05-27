@@ -150,6 +150,10 @@ input::-webkit-search-results-decoration{
   align-items: stretch;
 }
 
+.snize-ac-results-list li .snize-item{
+  flex-direction: column;
+}
+
 .snize-ac-results-list li.snize-label, .snize-ac-results-list li.snize-separator{
   display:none;
 }
