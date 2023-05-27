@@ -42,6 +42,7 @@ body{
 }
 .customer .account_title{
   display: block;
+  height: 35px;
 }
 .customer a, .customer button{
   margin: 0;
@@ -60,7 +61,6 @@ body{
   border-bottom: 1.5px solid #fff;
   padding: 3px 0;
   text-align: left;
-  height: 35px;
 }
 .account_form_box select,
 .account_form_box input,
