@@ -231,7 +231,6 @@ input::-webkit-search-results-decoration{
   height: calc(100% - 50px);
   width: 100%;
   padding: 0 10px;
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
@@ -252,5 +251,5 @@ body.overflow-hidden.snize-instant-widget-is-open .search_menu_list{
   display: none !important;
 }
 body.overflow-hidden .search_menu_list{
-  display: block !important;
+  display: grid !important;
 }
