@@ -1121,6 +1121,6 @@ variant-radios, variant-selects {
   width: 100%;
 }
 
-.product-grid.index > .product-item-index {
+.product-grid .index > .product-item-index {
   display: block !important;
 }

@@ -224,11 +224,20 @@ input::-webkit-search-results-decoration{
   font-size:inherit;
 }
 
-
+.search_menu_list{
+  position:fixed;
+  top: 50px;
+  left: 0px;
+  height: calc(100% - 50px);
+  width: 100%;
+}
 body.snize-instant-widget-is-open .snize-ac-results-content{
   display: none !important;
 }
-
 body.overflow-hidden.snize-instant-widget-is-open .snize-ac-results-content{
   display: block !important;  
 }
+body.overflow-hidden.snize-instant-widget-is-open .search_menu_list{
+  display: none !important;
+}
+
