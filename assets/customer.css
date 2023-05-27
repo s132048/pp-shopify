@@ -398,6 +398,10 @@ label[for='AddressProvinceNew'] {
 #recover:target ~ #login + div {
   display: none;
 }
+.customer[data-status='recover_success'] #recover,
+.customer[data-status='recover_success'] #recover + div{
+  display: block;
+}
 
 /* input 스타일 */
 input placeholder{
