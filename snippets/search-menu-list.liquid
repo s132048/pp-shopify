@@ -1,6 +1,6 @@
 <div class='search_menu_list'>
     <div class="search-menu-item" data-index="1">
-        <span class="title" title-index='1'>
+        <span class="mobile-search-menu-title" data-title-index='1'>
           Categories
             <span class="open-list" data-open="1">
                  <svg xmlns="http://www.w3.org/2000/svg" width="9.006" height="9.291" viewBox="0 0 9.006 9.291">
@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="search-menu-item" data-index="2">
-        <span class="title" title-index='1'>
+        <span class="mobile-search-menu-title" data-title-index='2'>
           Keywords
             <span class="open-list" data-open="2">
                  <svg xmlns="http://www.w3.org/2000/svg" width="9.006" height="9.291" viewBox="0 0 9.006 9.291">
@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="search-menu-item" data-index="3">
-        <span class="title" title-index='3'>
+        <span class="mobile-search-menu-title" data-title-index='3'>
           Publishers
             <span class="open-list">
                  <svg xmlns="http://www.w3.org/2000/svg" width="9.006" height="9.291" viewBox="0 0 9.006 9.291">
@@ -117,5 +117,24 @@
 </div>
 
 <script>
+let mobileSearchMenuTitles = document.querySelectorAll('.mobile-search-menu-title');
+let searchMenuItems = document.querySelectorAll('.search-menu-item-list');
 
+mobileSearchMenuTitles.forEach((title) => {
+    title.addEventListener('click', () => {
+        let dataIndex = title.getAttribute('data-title-index');
+        let searchMenuList = document.querySelector(`[data-list-index="${dataIndex}"]`);
+        let isOpen = searchMenuList.getAttribute('data-status') === 'open';
+
+        searchMenuItems.forEach((menuItem) => {
+            menuItem.setAttribute('data-status', 'close');
+        });
+
+        if (isOpen) {
+            searchMenuList.setAttribute('data-status', 'close');
+        } else {
+            searchMenuList.setAttribute('data-status', 'open');
+        }
+    });
+});
 </script>
