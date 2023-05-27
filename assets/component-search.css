@@ -129,9 +129,7 @@ input::-webkit-search-results-decoration{
   background: transparent;
 }
 
-.snize-label{
-  display:none;
-}
+
 
 .snize-ac-results-list{
   width: 100%;
@@ -152,3 +150,6 @@ input::-webkit-search-results-decoration{
   align-items: stretch;
 }
 
+.snize-label, .snize-separator{
+  display:none;
+}
