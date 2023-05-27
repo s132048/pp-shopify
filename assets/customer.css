@@ -42,7 +42,6 @@ body{
 }
 .customer .account_title{
   display: block;
-  height: 35px;
 }
 .customer a, .customer button{
   margin: 0;
