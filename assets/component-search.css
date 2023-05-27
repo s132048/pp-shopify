@@ -211,3 +211,7 @@ input::-webkit-search-results-decoration{
 .snize-instant-widget-is-open [tabindex="-1"]{
   display: block !important;
 }
+
+.snize-popular-suggestions-view-all-products-text{
+  display: none;
+}
