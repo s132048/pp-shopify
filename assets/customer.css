@@ -19,7 +19,7 @@ body{
 .empty_box,
 .contents_box{
   border-top: 1.5px solid #fff;
-  padding: 7px 0;
+  padding: 3px 0;
   text-align : left;
 }
 .menu-list *{
@@ -59,7 +59,7 @@ body{
 }
 .account_form_box .form_title{
   border-bottom: 1.5px solid #fff;
-  padding: 7px 0;
+  padding: 3px 0;
   text-align: left;
 }
 .account_form_box select,
@@ -71,18 +71,18 @@ body{
   border:none;
   border-bottom : 1.5px solid #fff;
   width : 100%;
-  padding : 7px 0;
+  padding : 3px 0;
   background-color: transparent;
 }
 
 .account_form_box .account_buttons{
   display : flex;
   gap: 20px;
-  padding : 7px 0;
+  padding : 3px 0;
   border-bottom: 1.5px solid #fff;
 }
 .account_error_box, .account_message {
-  padding : 7px 0;
+  padding : 3px 0;
   border-bottom: 1.5px solid #fff;
 }
 .account_error_box span{
@@ -98,7 +98,7 @@ body{
 .customer .account_checkbox{
   display: flex;
   justify-content:space-between;
-  padding : 7px 0;
+  padding : 3px 0;
   border-bottom: 1.5px solid #fff;
   text-align: left;
 }
@@ -262,7 +262,7 @@ body{
 }
 .addresses .address_list li,
 .customer .order_list li{
-  padding: 7px 0;
+  padding: 3px 0;
   position: relative;
   border-bottom: 1.5px solid #fff;
 }
