@@ -52,11 +52,6 @@
       </label>
       <input type="checkbox" id='newsletter'/>
     </div>
-    {%- if form.errors contains 'password' -%}
-      <span id="RegisterForm-password-error" class="form__message">
-        {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
-      </span>
-    {%- endif -%}
     <div class="account_buttons">
       <button>
         Register
@@ -76,6 +71,11 @@
      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
         {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
+      </span>
+    {%- endif -%}
+    {%- if form.errors contains 'password' -%}
+      <span id="RegisterForm-password-error" class="form__message">
+        {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
     </div>
