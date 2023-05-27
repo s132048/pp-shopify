@@ -1132,3 +1132,7 @@ variant-radios, variant-selects {
 #product-grid.cover > .product-item {
   display: block !important;
 }
+
+.btn-grid-type {
+  display: none;
+}
