@@ -265,6 +265,12 @@ input::-webkit-search-results-decoration{
     height: calc(100% - 37px);
     grid-template-columns: repeat(1, 1fr);
   }
+  .search_menu_list > div .title{
+    border-top: 1px solid #000;
+  }
+  .search_menu_list > div .title:first-child{
+    border:none;
+  }
   .search_menu_list > div .title .open-list,
   .search_menu_list > div .title .close-list{
     display:block;
