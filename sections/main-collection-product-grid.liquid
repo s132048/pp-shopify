@@ -176,7 +176,8 @@
   }
 
   $('.btn-grid-type').on('click', function(){
-    console.log($(this).attr('data'));
+    sessionStorage.setItem('gridType', $(this).attr('data'));
+    render();
   });
   render();
   
