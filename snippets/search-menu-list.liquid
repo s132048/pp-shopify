@@ -153,6 +153,16 @@ mobileSearchMenuTitles.forEach((title) => {
             openButton.classList.add('hide');
             closeButton.classList.remove('hide');
         }
+
+        // Remove 'hide' class from other title buttons
+        mobileSearchMenuTitles.forEach((otherTitle) => {
+            if (otherTitle !== title) {
+                let otherOpenButton = otherTitle.querySelector('.open-list');
+                let otherCloseButton = otherTitle.querySelector('.close-list');
+                otherOpenButton.classList.remove('hide');
+                otherCloseButton.classList.add('hide');
+            }
+        });
     });
 });
 </script>
