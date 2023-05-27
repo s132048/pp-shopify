@@ -17,11 +17,9 @@
   border-bottom: 1px solid #000;
 }
 
-
-.search__input.field__input {
-  padding-right: 5rem;
+.field__label{
+  color: #000;
 }
-
 .search__button {
   right: var(--inputs-border-width);
   top: var(--inputs-border-width);
