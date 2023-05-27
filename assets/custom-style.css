@@ -1116,11 +1116,19 @@ variant-radios, variant-selects {
     margin-left: 10px;
 }
 
+.product-item {
+  display: none;
+}
+
 .product-item-index {
   display: none;
   width: 100%;
 }
 
 #product-grid.index > .product-item-index {
+  display: block !important;
+}
+
+#product-grid.cover > .product-item {
   display: block !important;
 }
