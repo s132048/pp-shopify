@@ -403,6 +403,10 @@ label[for='AddressProvinceNew'] {
   display: block;
 }
 
+.customer[data-status='recover_success'] #recover:target ~ #login,
+.customer[data-status='recover_success'] #recover:target ~ #login + div {
+  display: none;
+}
 /* input 스타일 */
 input placeholder{
   color: #959595;
