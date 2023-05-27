@@ -161,6 +161,8 @@ input::-webkit-search-results-decoration{
 .snize-ac-results .snize-item-image{
   width: 100%;
   height: auto;
+  max-height: auto;
+  max-width: auto;
 }
 .snize-product-info .snize-description,
 .snize-product-info .snize-ac-prices-container,
