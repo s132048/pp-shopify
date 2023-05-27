@@ -10,7 +10,7 @@
 
 .search__input{
   background: transparent;
-  padding: 7px 0 !important;
+  padding: 0 0 7px 0 !important;
   border:none;
   width: 100%;
   border-radius:none;
