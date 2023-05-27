@@ -150,6 +150,6 @@ input::-webkit-search-results-decoration{
   align-items: stretch;
 }
 
-.snize-label, .snize-separator{
+.snize-ac-results-list li.snize-label, .snize-ac-results-list li.snize-separator{
   display:none;
 }
