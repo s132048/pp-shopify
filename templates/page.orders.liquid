@@ -6,6 +6,7 @@
     </span>
     <div>
         {%- if customer.orders.size > 0 -%}
+          {% paginate customer.orders by 20 %}
           <ul class='order_list'>
             {%- for order in customer.orders -%}
             <li class='order_item'>
@@ -33,13 +34,7 @@
             </li>
             {% endfor %}
           </ul>
-        {%- else -%}
-          <div class='empty_box'>
-            Your order history is empty
-          </div>
-        {%- endif -%}
-
-        {%- if paginate.pages > 1 -%}
+      {%- if paginate.pages > 1 -%}
           {%- if paginate.parts.size > 0 -%}
               <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
                 <ul role="list">
@@ -80,6 +75,14 @@
               </nav>
           {%- endif -%}
         {%- endif -%}
+      {% endpaginate %}
+        {%- else -%}
+          <div class='empty_box'>
+            Your order history is empty
+          </div>
+        {%- endif -%}
+
+        
     </div>
 
   </div>
