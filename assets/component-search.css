@@ -154,7 +154,9 @@ input::-webkit-search-results-decoration{
   flex-direction: column;
 }
 .snize-ac-results .snize-product-info{
- margin :0;  
+ margin :0;
+  font-size:inherit;
+  line-height: interit;
 }
 
 .snize-product-info .snize-description,
