@@ -116,3 +116,11 @@ input::-webkit-search-results-decoration{
     font-size : 19px;
   }
 }
+
+/* 서치모달 */
+.snize-ac-results{
+  posision: fixed;
+  display: block !important;
+  width: 100%;
+  height: 100%;
+}
