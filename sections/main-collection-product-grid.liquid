@@ -169,6 +169,7 @@
   });
   const render = () => {
     const gridType = sessionStorage.getItem('gridType') === null ? 'cover' : sessionStorage.getItem('gridType');
+    console.log(gridType);
     $('#product-grid').removeClass('cover').removeClass('index').addClass(gridType);
   }
   render();
