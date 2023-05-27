@@ -233,18 +233,33 @@ input::-webkit-search-results-decoration{
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-@media screen and (max-width: 1024px){
-  .search_menu_list{
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 
 .search_menu_list > div .title{
+  position:relative;
   display: block;
   border-bottom: 1px solid #000;
   margin:0 0 2px 0;
   padding: 0 0 2px 0;
 }
+
+.search_menu_list > div .title .open-list,
+.search_menu_list > div .title .close-list{
+  display: none;
+}
+
+
+@media screen and (max-width: 1024px){
+  .search_menu_list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .search_menu_list > div .title .open-list,
+  .search_menu_list > div .title .close-list{
+    position: absolute;
+  }
+}
+
+  
 .search_menu_list > div ul,
 .search_menu_list > div ul li{
   list-style:none;
