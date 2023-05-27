@@ -8,7 +8,7 @@
   <div class='form_title'>
       We will send an email to reset your password.
   </div>
-    {%- form 'recover_customer_password' -%}
+    {%- form 'recover_customer_password', action:'/account/login#recover'-%}
       {% assign recover_success = form.posted_successfully? %}
         <input type="email"
           value=""
