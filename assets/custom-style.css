@@ -157,7 +157,7 @@ a {
 
 .product-name {
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     top: 0;
     left: 0;
     padding: 0 10px;
@@ -1117,5 +1117,10 @@ variant-radios, variant-selects {
 }
 
 .product-item-index {
+  display: none;
   width: 100%;
+}
+
+.product-grid.index > .product-item-index {
+  display: block !important;
 }
