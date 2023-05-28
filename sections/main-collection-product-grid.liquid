@@ -112,9 +112,16 @@
             </div>
           </div>
         {%- else -%}
+          <div class="index-title">
+            <div class="index-row">
+              <div class="index-item">Categories</div>
+              <div class="index-item">Title</div>
+              <div class="index-item">Author</div>
+              <div class="index-item">Publisher</div>
+            </div>
+          </div>
           <div class="collection">
             <div class="loading-overlay gradient"></div>
-
             <ul id="product-grid" data-id="{{ section.id }}" class="product-grid-list">
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
@@ -135,10 +142,12 @@
                   %}
                 </li>
                 <li class="product-item-index">
-                  {{ product.type }}
-                  {{ product.title }}
-                  {{ product.metafields.custom.author }}
-                  {{ product.vendor }}
+                  <div class="index-row" onclick="location.href='{{ product.url }}'">
+                    <div class="index-item">{{ product.type }}</div>
+                    <div class="index-item">{{ product.title }}</div>
+                    <div class="index-item">{{ product.metafields.custom.author }}</div>
+                    <div class="index-item">{{ product.vendor }}</div>
+                  </div>
                 </li>
               {%- endfor -%}
             </ul>
@@ -164,6 +173,7 @@
   const render = () => {
     const gridType = sessionStorage.getItem('gridType') === null ? 'cover' : sessionStorage.getItem('gridType');
     $('#product-grid').removeClass('cover').removeClass('index').addClass(gridType);
+    $('.index-title').removeClass('cover').removeClass('index').addClass(gridType);
     $('.btn-grid-type').css('display', 'none');
     $(`.btn-grid-type[data="${gridType}"]`).css('display', 'inherit');
     $('.section-{{ section.id }}-padding').removeClass('grid-loading');
