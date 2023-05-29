@@ -1,6 +1,12 @@
 #admin-bar {
   display: none !important;
 }
+
+input {
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
+}
+
 /* account 관련 배경, 텍스트 색상 설정 */
 body{
   background-color : #000 !important; 
