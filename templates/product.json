@@ -55,7 +55,7 @@
             "button_show_icon": true,
             "icon_size": 18,
             "icon_stroke_width": 1.5,
-            "icon_offset_vertical": 0
+            "icon_offset_vertical": -2
           }
         },
         "description": {
