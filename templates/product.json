@@ -40,6 +40,24 @@
             "show_dynamic_checkout": false
           }
         },
+        "73c6a7d2-c78f-4365-b851-9553371e545b": {
+          "type": "shopify:\/\/apps\/wishlist-king\/blocks\/wishlist-button-block\/194f5011-a43c-4b22-b12e-eaf20dc4506a",
+          "settings": {
+            "button_style": "plain_accent_1",
+            "button_alignment": "center",
+            "button_content_alignment": "center",
+            "button_margin_top": 0,
+            "button_margin_bottom": 0,
+            "button_max_width": 0,
+            "button_padding_horizontal": 15,
+            "button_full_width": false,
+            "button_show_text": true,
+            "button_show_icon": true,
+            "icon_size": 18,
+            "icon_stroke_width": 1.5,
+            "icon_offset_vertical": 0
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -101,6 +119,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "73c6a7d2-c78f-4365-b851-9553371e545b",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
