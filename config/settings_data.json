@@ -121,6 +121,12 @@
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/pp_logotype_e4546912-6312-44e5-8233-83d90cebec3b.jpg",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#e9e9e9",
+    "checkout_button_color": "#e9e9e9",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
