@@ -26,8 +26,8 @@
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
     <div class="filter-list">
-        <div class="filter-item selected">New to old</div>
-        <div class="filter-item">Old to new</div>
+        <div class="filter-item sort-btn" data='created-descending'>New to old</div>
+        <div class="filter-item sort-btn" data=created-ascending>Old to new</div>
         <div class="filter-item">In stock</div>
         <div class="filter-item">Out of stock</div>
         <div class="filter-item"></div>
@@ -742,3 +742,13 @@
         </facet-filters-form>
     {%- endif -%}
 </div>
+<script type='module'>
+  const searchParams = new URLSearchParams(window.location.search);
+  const sortParam = searchParams.get('sort_by');
+  if (sortParam) $(`.sort-btn[data="${sortParam}"]`).addClass('selected');
+  $('.sort-btn').on('click', function (){
+    searchParams.set('sort_by', $(this).attr('id'));
+    const newUrl = `${window.location.origin}${window.location.pathname}?${searchParams.toString()}`;
+  location.href = newUrl;
+});
+</script>
