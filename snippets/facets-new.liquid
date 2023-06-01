@@ -747,6 +747,7 @@
   const sortParam = searchParams.get('sort_by');
   if (sortParam) $(`.sort-btn[data="${sortParam}"]`).addClass('selected');
   $('.sort-btn').on('click', function (){
+    if ($(this).hasClass('selected')) {console.log('selected')}
     searchParams.set('sort_by', $(this).attr('id'));
     const newUrl = `${window.location.origin}${window.location.pathname}?${searchParams.toString()}`;
   location.href = newUrl;
