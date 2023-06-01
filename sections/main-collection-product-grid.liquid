@@ -86,10 +86,11 @@
         {%- endif -%}
       </div>
       <div class="collection-nav-list">
-        <div class="collection-nav-item">
+        <div class="collection-nav-item switch-btn">
             <div class='btn-grid-type' data='cover'>Index</div>
             <div class='btn-grid-type' data='index'>Cover</div>
         </div>
+        <div class="collection-nav-item reset-btn">Reset</div>
         <div class="collection-nav-item filter-btn">Filter</div>
       </div>
       <div class="collection-title">
@@ -165,11 +166,23 @@
 
 <script type='module'>
   const filterBtn = document.querySelector('.filter-btn');
+  const resetBtn = document.querySelector('.reset-btn');
+  const switchBtn = document.querySelector('.switch-btn');
   const filter = document.querySelector('.facets-wrap');
 
   filterBtn.addEventListener('click', function() {
     filter.classList.toggle('on');
+    if(filter.classList.contains('on')){
+      resetBtn.classList.add('on');
+      switchBtn.classList.add('off');
+      filterBtn.innerHTML = 'Close';
+    }else{
+      resetBtn.classList.remove('on');
+      switchBtn.classList.remove('off');
+      filterBtn.innerHTML = 'Filter';
+    }
   });
+
   const render = () => {
     const gridType = sessionStorage.getItem('gridType') === null ? 'cover' : sessionStorage.getItem('gridType');
     $('#product-grid').removeClass('cover').removeClass('index').addClass(gridType);

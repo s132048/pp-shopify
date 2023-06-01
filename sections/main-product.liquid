@@ -42,7 +42,14 @@
                 <!--   작가 -->
                 <div>{{ product.metafields.custom.author }}</div>
                 <!--   출판사 -->
-                <div>{{ product.vendor }}</div>
+                <div>
+                    {% if product.metafields.custom.category_text %}
+                        {{ product.metafields.custom.category_text }}
+                    {% else %}
+                        Published by
+                    {% endif %}
+                    <a href="/collections/{{ product.vendor | replace: " ", "-" }}">{{ product.vendor }}</a>
+                </div>
                 <!--   제품설명 -->
                 <div class="product-desc">{{ product.description }}</div>
             </div>

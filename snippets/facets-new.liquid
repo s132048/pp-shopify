@@ -25,8 +25,15 @@
 -%}
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
+    <div class="filter-list">
+        <div class="filter-item selected">New to old</div>
+        <div class="filter-item">Old to new</div>
+        <div class="filter-item">In stock</div>
+        <div class="filter-item">Out of stock</div>
+        <div class="filter-item"></div>
+    </div>
     {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
-        <facet-filters-form class="facets small-hide">
+        <facet-filters-form class="facets" style="display: none">
             <form id="FacetFiltersForm" class="{% if filter_type == 'horizontal' %}facets__form{% else %}facets__form-vertical{% endif %}">
                 {%- if results.terms -%}
                     <input type="hidden" name="q" value="{{ results.terms | escape }}">
