@@ -27,9 +27,9 @@
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
     <div class="filter-list">
         <div class="filter-item sort-btn" data='created-descending'>New to old</div>
-        <div class="filter-item sort-btn" data=created-ascending>Old to new</div>
-        <div class="filter-item">In stock</div>
-        <div class="filter-item">Out of stock</div>
+        <div class="filter-item sort-btn" data='created-ascending'>Old to new</div>
+        <div class="filter-item filter-btn" data='1'>In stock</div>
+        <div class="filter-item filter-btn" data='0'>Out of stock</div>
         <div class="filter-item"></div>
     </div>
     {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
@@ -754,5 +754,16 @@
     }
     const newUrl = `${window.location.origin}${window.location.pathname}?${searchParams.toString()}`;
   location.href = newUrl;
-});
+  });
+  const filterParam = searchParams.get('filter.v.availability');
+  if (filterParam) $(`.filter-btn[data="${filterParam}"]`).addClass('selected');
+  $('.filter-btn').on('click', function (){
+    if ($(this).hasClass('selected')) {
+      searchParams.delete('filter.v.availability');
+    } else {
+      searchParams.set('filter.v.availability', $(this).attr('data'));
+    }
+    const newUrl = `${window.location.origin}${window.location.pathname}?${searchParams.toString()}`;
+  location.href = newUrl;
+  });
 </script>
