@@ -1239,7 +1239,19 @@ variant-radios, variant-selects {
     margin-left: 4px;
 }
 
-.pp .filter-item.selected + .filter-item {
+.pp .filter-list.act1 .sort-btn.selected {
+    color: #000;
+}
+
+.pp .filter-list.act1 .sort-btn:not(.selected) {
+    color: #E9E9E9;
+}
+
+.pp .filter-list.act2 .stock-btn.selected {
+    color: #000;
+}
+
+.pp .filter-list.act2 .stock-btn:not(.selected) {
     color: #E9E9E9;
 }
 

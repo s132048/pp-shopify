@@ -766,4 +766,11 @@
     const newUrl = `${window.location.origin}${window.location.pathname}?${searchParams.toString()}`;
   location.href = newUrl;
   });
+
+  if(sortParam) {
+      $('.filter-list').addClass('act1');
+  }
+  if(filterParam) {
+      $('.filter-list').addClass('act2');
+  }
 </script>
