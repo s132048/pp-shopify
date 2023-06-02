@@ -1422,3 +1422,7 @@ variant-radios, variant-selects {
     text-overflow: ellipsis;
     word-break: break-all;
 }
+
+.pp .menu-item:last-child {
+    display: none !important;
+}
