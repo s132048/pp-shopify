@@ -205,7 +205,7 @@ class PredictiveSearch extends HTMLElement {
     this.removeAttribute('open');
     this.input.setAttribute('aria-expanded', false);
     this.resultsMaxHeight = false
-    this.predictiveSearchResults.removeAttribute('style');
+    // this.predictiveSearchResults.removeAttribute('style');
 
     this.isOpen = false;
   }
