@@ -109,8 +109,8 @@ class PredictiveSearch extends HTMLElement {
     activeElement.setAttribute('aria-selected', true);
     if (selectedElement) selectedElement.setAttribute('aria-selected', false);
 
-    // this.setLiveRegionText(activeElement.textContent);
-    // this.input.setAttribute('aria-activedescendant', activeElement.id);
+    this.setLiveRegionText(activeElement.textContent);
+    this.input.setAttribute('aria-activedescendant', activeElement.id);
   }
 
   selectOption() {
@@ -153,7 +153,7 @@ class PredictiveSearch extends HTMLElement {
     this.statusElement = this.statusElement || this.querySelector('.predictive-search-status');
     this.loadingText = this.loadingText || this.getAttribute('data-loading-text');
 
-    // this.setLiveRegionText(this.loadingText);
+    this.setLiveRegionText(this.loadingText);
     this.setAttribute('loading', true);
   }
 
@@ -176,7 +176,7 @@ class PredictiveSearch extends HTMLElement {
 
   setLiveRegionResults() {
     this.removeAttribute('loading');
-    // this.setLiveRegionText(this.querySelector('[data-predictive-search-live-region-count-value]').textContent);
+    this.setLiveRegionText(this.querySelector('[data-predictive-search-live-region-count-value]').textContent);
   }
 
   getResultsMaxHeight() {
@@ -205,7 +205,7 @@ class PredictiveSearch extends HTMLElement {
     this.removeAttribute('open');
     this.input.setAttribute('aria-expanded', false);
     this.resultsMaxHeight = false
-    // this.predictiveSearchResults.removeAttribute('style');
+    this.predictiveSearchResults.removeAttribute('style');
 
     this.isOpen = false;
   }
