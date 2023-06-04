@@ -327,3 +327,7 @@ body.overflow-hidden .search_menu_list{
     display: block !important;
   }
 }
+
+.predictive-search__loading-state{
+  display: none !important;
+}
