@@ -109,8 +109,8 @@ class PredictiveSearch extends HTMLElement {
     activeElement.setAttribute('aria-selected', true);
     if (selectedElement) selectedElement.setAttribute('aria-selected', false);
 
-    this.setLiveRegionText(activeElement.textContent);
-    this.input.setAttribute('aria-activedescendant', activeElement.id);
+    // this.setLiveRegionText(activeElement.textContent);
+    // this.input.setAttribute('aria-activedescendant', activeElement.id);
   }
 
   selectOption() {
