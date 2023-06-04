@@ -144,13 +144,12 @@
                     <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
                   {%- endif -%}
                     <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-                      <div class="field">
-                        <input class="search__input field__input"
+                        <input class="search__input"
                           id="Search-In-Modal"
                           type="search"
                           name="q"
                           value=""
-                          placeholder="{{ 'general.search.search' | t }}"
+                          placeholder="Type something..."
                           {%- if settings.predictive_search_enabled -%}
                             role="combobox"
                             aria-expanded="false"
@@ -164,35 +163,23 @@
                             spellcheck="false"
                           {%- endif -%}
                         >
-                        <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                         <input type="hidden" name="options[prefix]" value="last">
-                        <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+<!--                         <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                           <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                             <use href="#icon-search">
                           </svg>
-                        </button>
-                      </div>
+                        </button> -->
         
-                      {%- if settings.predictive_search_enabled -%}
-                        <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-                          <div class="predictive-search__loading-state">
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                            </svg>
-                          </div>
-                        </div>
-        
-                        <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-                      {%- endif -%}
                     </form>
                   {%- if settings.predictive_search_enabled -%}
                     </predictive-search>
                   {%- endif -%}
                   <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                    <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                      <use href="#icon-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
+                      <path id="패스_686" data-name="패스 686" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#2b2e34"/>
                     </svg>
                   </button>
+                  {% render 'search-menu-list' %}
                 </div>
               </div>
             </details>
@@ -200,16 +187,14 @@
         </div>
         <div class="menu-item">
           <!-- 카트 --> 
-          <a href="{{ routes.cart_url }}" class="" id="cart-icon-bubble">
+          <a href="{{ routes.cart_url }}" class="cart-icon-bubble" id="cart-icon-bubble">
             Cart
             <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
             {%- if cart != empty -%}
-              <div class="cart-count-bubble">
-                {%- if cart.item_count < 100 -%}
-                  <span aria-hidden="true">{{ cart.item_count }}</span>
-                {%- endif -%}
-                <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-              </div>
+              {%- if cart.item_count < 100 -%}
+                <span aria-hidden="true"> ({{ cart.item_count }})</span>
+              {%- endif -%}
+              <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             {%- endif -%}
           </a>
         </div>
@@ -268,10 +253,10 @@
     <div class="nav-col nav-col--2">
       <div class="etc-list">
         <div class="etc-item">
-          <a href="pages/events">Events</a>
+          <a href="/pages/events">Events</a>
         </div>
         <div class="etc-item">
-          <a href="pages/information">Information</a>
+          <a href="/pages/information">Information</a>
         </div>
       </div>
     </div>
@@ -291,13 +276,12 @@
                     <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
                   {%- endif -%}
                     <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-                      <div class="field">
-                        <input class="search__input field__input"
+                        <input class="search__input"
                           id="Search-In-Modal"
                           type="search"
                           name="q"
                           value=""
-                          placeholder="{{ 'general.search.search' | t }}"
+                          placeholder="Type something..."
                           {%- if settings.predictive_search_enabled -%}
                             role="combobox"
                             aria-expanded="false"
@@ -311,35 +295,23 @@
                             spellcheck="false"
                           {%- endif -%}
                         >
-                        <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                         <input type="hidden" name="options[prefix]" value="last">
-                        <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+<!--                         <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                           <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                             <use href="#icon-search">
                           </svg>
-                        </button>
-                      </div>
+                        </button> -->
         
-                      {%- if settings.predictive_search_enabled -%}
-                        <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-                          <div class="predictive-search__loading-state">
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                            </svg>
-                          </div>
-                        </div>
-        
-                        <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-                      {%- endif -%}
                     </form>
                   {%- if settings.predictive_search_enabled -%}
                     </predictive-search>
                   {%- endif -%}
                   <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                    <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                      <use href="#icon-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
+                      <path id="패스_686" data-name="패스 686" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#2b2e34"/>
                     </svg>
                   </button>
+                  {% render 'search-menu-list' %}
                 </div>
               </div>
             </details>
@@ -347,18 +319,19 @@
         </div>
         <div class="util-item">
           <!-- 카트 --> 
-          <a href="{{ routes.cart_url }}" class="" id="cart-icon-bubble">
+          <a href="{{ routes.cart_url }}" class="cart-icon-bubble" id="cart-icon-bubble-2">
             Cart
             <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
             {%- if cart != empty -%}
-              <div class="cart-count-bubble">
-                {%- if cart.item_count < 100 -%}
-                  <span aria-hidden="true">{{ cart.item_count }}</span>
-                {%- endif -%}
-                <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-              </div>
+              {%- if cart.item_count < 100 -%}
+                <span aria-hidden="true"> ({{ cart.item_count }})</span>
+              {%- endif -%}
+              <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             {%- endif -%}
           </a>
+        </div>
+        <div class="util-item">
+          <a href="/apps/wishlist">Wishlist</a>
         </div>
       </div>
       <div class="account-list">
