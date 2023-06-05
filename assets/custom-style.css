@@ -1177,6 +1177,16 @@ variant-radios, variant-selects {
     }
 }
 
+.index-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    cursor: pointer;
+}
+
+.index-item {
+    display: flex;
+}
+
 .index-title.index {
     display: block;
     position: sticky;
@@ -1189,20 +1199,12 @@ variant-radios, variant-selects {
 .index-title .index-row {
     border-bottom: 1.5px solid #000;
     height: 100%;
+    cursor: default;
 }
 
 .index-title .index-item {
     align-items: center;
     height: 100%;
-}
-
-.index-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-}
-
-.index-item {
-    display: flex;
 }
 
 .index-item:empty {
