@@ -296,7 +296,7 @@
     }
   },
   "localization": {
-    "country_label": "국가\/지역",
+    "country_label": "Country\/Region",
     "language_label": "언어",
     "update_language": "언어 업데이트",
     "update_country": "국가\/지역 업데이트"
