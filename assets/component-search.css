@@ -266,7 +266,7 @@ input::-webkit-search-results-decoration{
   }
   .search_menu_list{
     top: 34px;
-    height: calc(100% - 34px);
+    height: calc(100% - 40px);
   }
   .search_menu_list > div .mobile-search-menu-title{
     padding: 3px 0 3px 0;
