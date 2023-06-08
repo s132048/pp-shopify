@@ -8,6 +8,7 @@ class PredictiveSearch extends HTMLElement {
     this.isOpen = false;
 
     this.setupEventListeners();
+    this.addBodyClassOnInputChange();
   }
 
   setupEventListeners() {
