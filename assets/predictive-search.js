@@ -211,6 +211,19 @@ class PredictiveSearch extends HTMLElement {
 
     this.isOpen = false;
   }
+
+  addBodyClassOnInputChange() {
+    var inputElement = this.input;
+    
+
+    inputElement.addEventListener('input', function() {
+      var bodyElement = document.body;
+      console.log('..');
+      if (window.innerWidth <= 768 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
+        bodyElement.classList.add('snize-instant-widget-is-open');
+      }
+    });
+  }
 }
 
 customElements.define('predictive-search', PredictiveSearch);
