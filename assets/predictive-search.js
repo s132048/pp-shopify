@@ -1,4 +1,5 @@
 class PredictiveSearch extends HTMLElement {
+    
   constructor() {
     super();
     this.cachedResults = {};
@@ -213,3 +214,15 @@ class PredictiveSearch extends HTMLElement {
 }
 
 customElements.define('predictive-search', PredictiveSearch);
+
+document.addEventListener('DOMContentLoaded', function() {
+  var inputElement = document.getElementById('Search-In-Modal');
+
+  inputElement.addEventListener('change', function() {
+    var bodyElement = document.body;
+
+    if (window.innerWidth <= 768 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
+      bodyElement.classList.add('snize-instant-widget-is-open');
+    }
+  });
+});
