@@ -485,7 +485,20 @@
 
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
-
+<script>
+  // #Search-In-Modal 입력 엘리먼트 가져오기
+  var searchInput = document.querySelector("#Search-In-Modal");
+  
+  // 입력과 동시에 클릭되는 함수 정의
+  function handleClick() {
+    // #Search-In-Modal 클릭 이벤트를 여기에 처리하는 코드 작성
+    console.log("#Search-In-Modal이 클릭되었습니다.");
+    // 추가로 원하는 동작을 수행할 수 있습니다.
+  }
+  
+  // 입력 엘리먼트에 이벤트 리스너 추가
+  searchInput.addEventListener("input", handleClick);
+</script>
 
 <script type="application/ld+json">
   {
