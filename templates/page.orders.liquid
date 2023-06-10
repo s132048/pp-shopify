@@ -11,15 +11,15 @@
             {%- for order in customer.orders -%}
             <li class='order_item'>
               {% assign fulfillment_label = '' %}
-              {% if order.fulfillment_status == 'unfulfilled' %}
+              {% if order.fulfillment_status == 'Unfulfilled' %}
                 {% assign fulfillment_label = order.fulfillment_status %}
-              {% elsif order.fulfillment_status == 'fulfilled' %}
+              {% elsif order.fulfillment_status == 'Fulfilled' %}
                 {% assign fulfillment_label = 'Shipping' %}
               {% endif %}
               <span>{{ order.created_at | time_tag: format: 'date' | date: "%b. %d, 20%y" }}</span>
+              <span>Order no. {{ order.name | replace:'#','' }}</span>
               <span>{{ fulfillment_label }}</span>
               <span>{{ order.line_items.size }} items</span>
-              <span>Order no. {{ order.name | replace:'#','' }}</span>
               <span>{{ order.total_price | money }}</span>
               <div class='button_set'>
                 <span>
