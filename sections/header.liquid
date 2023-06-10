@@ -486,17 +486,17 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 <script>
-  var searchInput = document.querySelector("#Search-In-Modal");
+var searchInput = document.querySelector("#Search-In-Modal");
 
-// 포커스되는 함수 정의
-function handleFocus() {
-  // #Search-In-Modal 포커스 처리 코드 작성
-  console.log("#Search-In-Modal이 포커스되었습니다.");
+// 터치되는 함수 정의
+function handleTouch() {
+  // #Search-In-Modal 터치 처리 코드 작성
+  console.log("#Search-In-Modal이 터치되었습니다.");
   // 추가로 원하는 동작을 수행할 수 있습니다.
 }
 
 // 입력 엘리먼트에 이벤트 리스너 추가
-searchInput.addEventListener("input", handleFocus);
+searchInput.addEventListener("touchstart", handleTouch);
 </script>
 
 <script type="application/ld+json">
