@@ -505,31 +505,7 @@ searchInput.addEventListener("input", function() {
 // 터치 이벤트에 대한 리스너 추가
 searchInput.addEventListener("touchstart", handleTouch);
 
-// body 요소를 선택
-var bodyElement = document.querySelector("body");
-
-// MutationObserver 생성
-var observer = new MutationObserver(function(mutationsList) {
-  // mutationsList를 순회하며 변경 사항을 확인
-  for (var mutation of mutationsList) {
-    // 변경 사항이 있을 경우
-    if (mutation.type === "attributes" && mutation.attributeName === "class") {
-      // body 요소의 클래스 목록에 overflow-hidden 클래스가 없다면
-      if (!bodyElement.classList.contains("overflow-hidden")) {
-        // overflow-hidden 클래스를 제거
-        bodyElement.classList.remove("overflow-hidden");
-      }
-    }
-  }
-});
-
-// body 요소의 속성 변화를 관찰하도록 설정
-observer.observe(bodyElement, { attributes: true });
-
-// 사용 예시:
-// body 요소의 클래스 중 하나를 제거하면 overflow-hidden 클래스도 제거됩니다.
-bodyElement.classList.remove("other-class");
-
+  
 </script>
 
 <script type="application/ld+json">
