@@ -350,3 +350,6 @@ body.overflow-hidden .search_menu_list{
   display: block;
   background-color: transparent;
 }
+.snize-clear-button-container{
+  display : none;
+}
