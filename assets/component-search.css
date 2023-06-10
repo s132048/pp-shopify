@@ -339,6 +339,7 @@ body.overflow-hidden .search_menu_list{
   display: none !important;
 }
 .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel{
+  position : relatvie;
   background-color : transparent !important;
   height: auto !important;
   border: none !important;
@@ -357,5 +358,6 @@ body.overflow-hidden .search_menu_list{
 .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow{
   background-image: url('https://cdn.shopify.com/s/files/1/0702/4522/0637/files/search_close.svg?v=1686387638')
   width: 1rem;
+  position: absolute;
   
 }
