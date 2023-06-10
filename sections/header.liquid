@@ -485,18 +485,7 @@
 
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
-<script>
-  var inputElement = document.getElementById('Search-In-Modal');
 
-  inputElement.addEventListener('change', function() {
-    var bodyElement = document.body;
-    console.log('ddd')
-
-    if (window.innerWidth <= 768 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
-      bodyElement.classList.add('snize-instant-widget-is-open');
-    }
-  });
-</script>
 
 <script type="application/ld+json">
   {
