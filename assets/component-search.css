@@ -362,5 +362,6 @@ body.overflow-hidden .search_menu_list{
   position: absolute;
   right: 0;
   height: 1rem;
+  background-size : 1rem 1rem;
   
 }
