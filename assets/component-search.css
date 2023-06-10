@@ -369,6 +369,7 @@ body.overflow-hidden .search_menu_list{
   padding: 0;
 }
 .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style{
+  height : 32px;
   margin: 0;
   font-size: 19px;
   line-height: 24px;
