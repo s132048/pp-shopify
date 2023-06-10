@@ -339,11 +339,11 @@ body.overflow-hidden .search_menu_list{
   display: none !important;
 }
 .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel{
-  position : relatvie;
   background-color : transparent !important;
   height: auto !important;
   border: none !important;
   display: block !important;
+  margin-bottom : 8px;
 }
 .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel.se-sticky-search-form-focused {
   outline: none !important;
@@ -373,6 +373,5 @@ body.overflow-hidden .search_menu_list{
   margin: 0;
   font-size: 19px;
   line-height: 24px;
-  margin-bottom 8px;
   
 }
