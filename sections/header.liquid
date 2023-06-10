@@ -492,8 +492,13 @@ let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
-  mobileSearchInput.placeholder = newPlaceholder;
-  changePlaceholder("Type something...");
+  if (searchInputMobile.length === 0) {
+    setTimeout(handleTouch, 1000); 
+  } else {
+    searchInputMobile.forEach(function(mobileSearchInput) {
+      changePlaceholder(mobileSearchInput, "Type something...");
+    });
+  }
 }
 
 
