@@ -337,3 +337,9 @@ body.overflow-hidden .search_menu_list{
 .predictive-search-status{
   display: none !important;
 }
+.snize-ac-results.snize-ac-results-mobile.snize-mobile-top-panel{
+  background-color : transparant !important;
+  height: auto !important;
+  barder: none !important;
+  display: block !important;
+}
