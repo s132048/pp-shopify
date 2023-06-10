@@ -496,6 +496,14 @@ function handleTouch() {
 }
 
 // 입력 엘리먼트에 이벤트 리스너 추가
+searchInput.addEventListener("input", function() {
+  // 입력 이벤트 발생 시 touchstart 이벤트를 강제로 트리거
+  var touchEvent = new Event("touchstart");
+  searchInput.dispatchEvent(touchEvent);
+  console.log('xx')
+});
+
+// 터치 이벤트에 대한 리스너 추가
 searchInput.addEventListener("touchstart", handleTouch);
 </script>
 
