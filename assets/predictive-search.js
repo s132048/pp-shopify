@@ -133,7 +133,6 @@ class PredictiveSearch extends HTMLElement {
     fetch(`${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&${encodeURIComponent('resources[type]')}=product&${encodeURIComponent('resources[limit]')}=4&section_id=predictive-search`)
       .then((response) => {
         if (!response.ok) {
-          console.log(response)
           var error = new Error(response.status);
           this.close();
           throw error;
