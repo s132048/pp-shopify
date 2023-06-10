@@ -17,7 +17,7 @@
               <span>
                 {% assign fulfillment_label = '' %}
                 {% if order.fulfillment_status == 'unfulfilled' %}
-                  {% assign fulfillment_label = order.fulfillment_status %}
+                  {% assign fulfillment_label = 'Unfulfilled' %}
                 {% elsif order.fulfillment_status == 'fulfilled' %}
                   {% assign fulfillment_label = 'Shipping' %}
                 {% endif %}
