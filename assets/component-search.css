@@ -368,3 +368,9 @@ body.overflow-hidden .search_menu_list{
 .snize-ac-results.snize-ac-results-mobile .snize-ac-results-content{
   padding: 0;
 }
+.search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style{
+  margin: 0;
+  font-size19px;
+  line-height: auto;
+  
+}
