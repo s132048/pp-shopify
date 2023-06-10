@@ -16,18 +16,12 @@
               <span>{{ order.line_items.size }} items</span>
               <span>
                 {% assign fulfillment_label = '' %}
-                {% if order.fulfillment_status == 'Unfulfilled' %}
+                {% if order.fulfillment_status == 'unfulfilled' %}
                   {% assign fulfillment_label = order.fulfillment_status %}
-                {% elsif order.fulfillment_status == 'Fulfilled' %}
+                {% elsif order.fulfillment_status == 'fulfilled' %}
                   {% assign fulfillment_label = 'Shipping' %}
                 {% endif %}
                 {{ fulfillment_label }}
-                {% assign fulfillment_label = '' %}
-                  {% if order.fulfillment_status == 'unfulfilled' %}
-                    {% assign fulfillment_label = order.fulfillment_status %}
-                  {% elsif order.fulfillment_status == 'fulfilled' %}
-                    {% assign fulfillment_label = 'Shipping' %}
-                {% endif %}
               </span>
               <span>{{ order.total_price | money }}</span>
               <div class='button_set'>
