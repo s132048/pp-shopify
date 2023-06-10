@@ -493,26 +493,15 @@ function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
   if (searchInputMobile.length === 0) {
-    setTimeout(handleTouch, 100); 
+    setTimeout(handleTouch, 1000); 
   } else {
     searchInputMobile.forEach(function(mobileSearchInput) {
       changePlaceholder(mobileSearchInput, "Type something...");
-      removeAllTouchEvents();
       
     });
   }
   function changePlaceholder(inputElement, newPlaceholder) {
     inputElement.placeholder = newPlaceholder;
-  }
-  function removeAllTouchEvents() {
-    var resultsMobile = document.querySelector(".snize-ac-results-mobile");
-    var allElements = resultsMobile.querySelectorAll("*");
-  
-    for (var i = 0; i < allElements.length; i++) {
-      var element = allElements[i];
-      var cloneElement = element.cloneNode(true);
-      element.parentNode.replaceChild(cloneElement, element);
-    }
   }
 }
 
