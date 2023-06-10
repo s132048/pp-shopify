@@ -378,4 +378,5 @@ body.overflow-hidden .search_menu_list{
   }
   .snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text{
    font-size : 19px; 
+  padding:0;
   }
