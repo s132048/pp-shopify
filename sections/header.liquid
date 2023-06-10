@@ -486,28 +486,25 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 <script>
-var searchInputs = document.querySelectorAll("#Search-In-Modal");
+let searchInputs = document.querySelectorAll("#Search-In-Modal");
 
 // 터치되는 함수 정의
 function handleTouch() {
-  // #Search-In-Modal 터치 처리 코드 작성
   console.log("#Search-In-Modal이 터치되었습니다.");
-  // 추가로 원하는 동작을 수행할 수 있습니다.
+  let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
+  mobileSearchInput.placeholder = newPlaceholder;
+  changePlaceholder("Type something...");
 }
+
 
 // 각 입력 엘리먼트에 이벤트 리스너 추가
 searchInputs.forEach(function(searchInput) {
   searchInput.addEventListener("input", function() {
-    // 입력 이벤트 발생 시 touchstart 이벤트를 강제로 트리거
-    var touchEvent = new Event("touchstart");
+    let touchEvent = new Event("touchstart");
     searchInput.dispatchEvent(touchEvent);
   });
-
-  // 터치 이벤트에 대한 리스너 추가
   searchInput.addEventListener("touchstart", handleTouch);
 });
-
-
   
 </script>
 
