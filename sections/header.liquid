@@ -497,11 +497,16 @@ function handleTouch() {
   } else {
     searchInputMobile.forEach(function(mobileSearchInput) {
       changePlaceholder(mobileSearchInput, "Type something...");
-      
+      let resultsContent = document.querySelector(".snize-ac-results-content");
+      removeAllEventListeners(resultsContent);
     });
   }
   function changePlaceholder(inputElement, newPlaceholder) {
     inputElement.placeholder = newPlaceholder;
+  }
+  function removeAllEventListeners(element) {
+    let clonedElement = element.cloneNode(true);
+    element.parentNode.replaceChild(clonedElement, element);
   }
 }
 
