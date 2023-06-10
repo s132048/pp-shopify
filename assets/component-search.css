@@ -338,7 +338,7 @@ body.overflow-hidden .search_menu_list{
   display: none !important;
 }
 .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel{
-  background-color : transparant !important;
+  background-color : transparent !important;
   height: auto !important;
   border: none !important;
   display: block !important;
