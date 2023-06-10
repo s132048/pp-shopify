@@ -343,6 +343,7 @@ body.overflow-hidden .search_menu_list{
   border: none !important;
   display: block !important;
 }
-.snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel:focus {
-  border: none !important;
+.snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel.se-sticky-search-form-focused {
+  outline: none !important;
 }
+
