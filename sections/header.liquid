@@ -493,7 +493,7 @@ function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
   if (searchInputMobile.length === 0) {
-    setTimeout(handleTouch, 300); 
+    setTimeout(handleTouch, 100); 
   } else {
     searchInputMobile.forEach(function(mobileSearchInput) {
       changePlaceholder(mobileSearchInput, "Type something...");
