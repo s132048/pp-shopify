@@ -3,7 +3,7 @@
 }
 
 .search-modal,
-.snize-ac-results-mobile {
+.overflow-hidden .snize-ac-results-mobile {
   position:fixed;
   top: 0;
   left:0;
