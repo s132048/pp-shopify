@@ -18,8 +18,8 @@
         </div>
         <div class='line_item_details' style='padding-top: 3px;'>
           <span class='line_title'>{{ line_item.title }}</span>
-          <span>{{ line_item.original_price | money }}</span>
           <span>QTY {{ line_item.quantity }}</span>
+          <span>{{ line_item.original_price | money }}</span>
         </div>
       </div>
     {% endfor %}
