@@ -229,4 +229,49 @@ class PredictiveSearch extends HTMLElement {
 
 customElements.define('predictive-search', PredictiveSearch);
 
+let mobileSearchMenuTitles = document.querySelectorAll('.mobile-search-menu-title');
+let searchMenuItems = document.querySelectorAll('.search-menu-item-list');
 
+mobileSearchMenuTitles.forEach((title) => {
+    title.addEventListener('click', () => {
+        let dataIndex = title.getAttribute('data-title-index');
+        let searchMenuList = document.querySelector(`[data-list-index="${dataIndex}"]`);
+        let isOpen = searchMenuList.getAttribute('data-status') === 'open';
+
+        searchMenuItems.forEach((menuItem) => {
+            if (menuItem !== searchMenuList) {
+                menuItem.setAttribute('data-status', 'close');
+                menuItem.classList.add('hide');
+            }
+        });
+
+        if (isOpen) {
+            searchMenuList.setAttribute('data-status', 'close');
+            searchMenuList.classList.add('hide');
+        } else {
+            searchMenuList.setAttribute('data-status', 'open');
+            searchMenuList.classList.remove('hide');
+        }
+
+        let openButton = title.querySelector('.open-list');
+        let closeButton = title.querySelector('.close-list');
+
+        if (isOpen) {
+            openButton.classList.remove('hide');
+            closeButton.classList.add('hide');
+        } else {
+            openButton.classList.add('hide');
+            closeButton.classList.remove('hide');
+        }
+
+        // Remove 'hide' class from other title buttons
+        mobileSearchMenuTitles.forEach((otherTitle) => {
+            if (otherTitle !== title) {
+                let otherOpenButton = otherTitle.querySelector('.open-list');
+                let otherCloseButton = otherTitle.querySelector('.close-list');
+                otherOpenButton.classList.remove('hide');
+                otherCloseButton.classList.add('hide');
+            }
+        });
+    });
+});
