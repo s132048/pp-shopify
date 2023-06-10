@@ -340,6 +340,6 @@ body.overflow-hidden .search_menu_list{
 .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel{
   background-color : transparant !important;
   height: auto !important;
-  barder: none !important;
+  border: none !important;
   display: block !important;
 }
