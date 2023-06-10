@@ -24,16 +24,6 @@
                 {{ fulfillment_label }}
               </span>
               <span>{{ order.total_price | money }}</span>
-              <div class='button_set'>
-                <span>
-                  <a href='{{ order.fulfillment.tracking_url }}'>Track</a>
-                </span>
-                <span>
-                  <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
-                   Details 
-                  </a>
-                </span>
-              </div>
               </a>
             </li>
             {% endfor %}
