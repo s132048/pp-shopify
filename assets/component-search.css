@@ -363,6 +363,8 @@ body.overflow-hidden .search_menu_list{
   right: 0;
   height: 1rem;
   top: 10px;
-  background-size : 0.8rem 0.8rem;
-  
+  background-size : 0.8rem 0.8rem; 
+}
+.snize-ac-results.snize-ac-results-mobile .snize-ac-results-content{
+  padding: 0;
 }
