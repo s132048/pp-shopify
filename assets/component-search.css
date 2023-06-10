@@ -13,7 +13,8 @@
   padding: 10px;
 }
 
-.search__input{
+.search__input,
+.snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
   background: transparent;
   padding: 0 0 7px 0 !important;
   border:none;
