@@ -328,7 +328,7 @@ body.overflow-hidden .search_menu_list{
   }
 }
 .predictive-search.predictive-search--header {
-  display:none;
+  display:none !important;
 }
 .predictive-search__loading-state{
   display: none !important;
