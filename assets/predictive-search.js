@@ -219,9 +219,9 @@ class PredictiveSearch extends HTMLElement {
     inputElement.addEventListener('input', function() {
       var bodyElement = document.body;
       console.log('..');
-      if (window.innerWidth <= 768 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
-        bodyElement.classList.add('snize-instant-widget-is-open');
-      }
+      // if (window.innerWidth <= 768 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
+      //   bodyElement.classList.add('snize-instant-widget-is-open');
+      // }
     });
   }
 }
