@@ -2948,6 +2948,7 @@ details-disclosure > details {
 .nav-country {
   border: 0;
   background: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
