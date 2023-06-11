@@ -536,6 +536,7 @@ searchInputs.forEach(function(searchInput) {
 </script>
 <script type='module'>
   $('.nav-intl').on('click', () => {
+    console.log('xx');
     if (!window.location.pathname.startsWith('/en')) {
       console.log('xx');
       window.location = '/en' + window.location.pathname;
