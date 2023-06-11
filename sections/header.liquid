@@ -521,7 +521,7 @@ function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
   removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
-   if (window.innerWidth <= 768 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
+   if (window.innerWidth <= 1024 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
         bodyElement.classList.add('snize-instant-widget-is-open');
       }
   if (searchInputMobile.length === 0) {
