@@ -530,10 +530,10 @@ function handleTouch() {
     if (searchInputMobile.length === 0) {
       setTimeout(handleTouch, 50); 
     } else {
+      isHandleTouchExecuted = true; // 상태 변수 변경
       searchInputMobile.forEach(function(mobileSearchInput) {
         changePlaceholder(mobileSearchInput, "Type something...");
       });
-      isHandleTouchExecuted = true; // 상태 변수 변경
     }
   }
 
@@ -559,6 +559,7 @@ searchInputs.forEach(function(searchInput) {
     if (!isHandleTouchExecuted) {
       handleTouch();
     }
+    event.stopPropagation(); // 중복 이벤트 전파 중단
   });
 });
 
