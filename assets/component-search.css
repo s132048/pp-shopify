@@ -1,3 +1,8 @@
+input {
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
+}
+
 .search-modal *{
   color: #000 !important;
 }
