@@ -30,11 +30,5 @@
           </button>
         </div>
       </div>
-      {%- if form.errors contains 'email' -%} -->
-        <span id="{{ formId }}-email-error" class="input-error-message">
-          <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-          <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
-        </span>
-       {%- endif -%}
     {% endform %}
     <!-- End newsletter signup form -->
