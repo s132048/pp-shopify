@@ -534,7 +534,13 @@ searchInputs.forEach(function(searchInput) {
 });
   
 </script>
-
+<script type='module'>
+  $('.nav-intl').on('click', () => {
+    if (!window.location.pathname.startsWith('/en')) {
+      window.location = '/en' + window.location.pathname;
+    }
+  });
+</script>
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
