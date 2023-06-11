@@ -493,6 +493,15 @@
 
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
+<script type='module'>
+  $('.nav-intl').on('click', function() {
+    console.log('xx');
+    if (!window.location.pathname.startsWith('/en')) {
+      console.log('xx');
+      window.location = '/en' + window.location.pathname;
+    }
+  });
+</script>
 <script>
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
 
@@ -533,15 +542,6 @@ searchInputs.forEach(function(searchInput) {
   searchInput.addEventListener("touchstart", handleTouch);
 });
   
-</script>
-<script type='module'>
-  $('.nav-intl').on('click', function() {
-    console.log('xx');
-    if (!window.location.pathname.startsWith('/en')) {
-      console.log('xx');
-      window.location = '/en' + window.location.pathname;
-    }
-  });
 </script>
 <script type="application/ld+json">
   {
