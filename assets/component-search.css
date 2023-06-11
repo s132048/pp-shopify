@@ -243,7 +243,7 @@ input::-webkit-search-results-decoration{
 .search_menu_list > div .mobile-search-menu-title{
   position:relative;
   display: block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1.5px solid #000;
   margin:0 0 2px 0;
   padding: 0 0 2px 0;
 }
@@ -275,7 +275,7 @@ input::-webkit-search-results-decoration{
     border-bottom: none;
   }
   .search-menu-item{
-    border-bottom: 1px solid #000;
+    border-bottom: 1.5px solid #000;
   }
   .search-menu-item-list[data-status='close']{
     display:none;
