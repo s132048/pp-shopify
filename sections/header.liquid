@@ -494,13 +494,14 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 <script type='module'>
-  console.log('xx');
-  console.log($('.nav-intl'));
   $(document).on('click', '.nav-intl', function() {
-    console.log('xx');
     if (!window.location.pathname.startsWith('/en')) {
-      console.log('xx');
       window.location = '/en' + window.location.pathname;
+    }
+  });
+  $(document).on('click', '.nav-kr', function() {
+    if (window.location.pathname.startsWith('/en')) {
+      window.location = window.location.pathname.slice(3);
     }
   });
 </script>
