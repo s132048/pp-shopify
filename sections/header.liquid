@@ -518,14 +518,14 @@ let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function removeDisplayNone() {
   var headerElement = document.querySelector("#shopify-section-header");
   const remove = headerElement.removeAttribute("style");
-  console.log(remove);
+  console.log('dddd');
 }
 // 터치되는 함수 정의
 function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
   removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
-   
+   if (window.innerWidth <= 1024) {
       if (searchInputMobile.length === 0) {
           setTimeout(handleTouch, 50); 
         } else {
@@ -545,14 +545,12 @@ function handleTouch() {
 
 // 각 입력 엘리먼트에 이벤트 리스너 추가
 searchInputs.forEach(function(searchInput) {
-  if (window.innerWidth <= 1024) {
   searchInput.addEventListener("input", function() {
     let touchEvent = new Event("touchstart");
     searchInput.dispatchEvent(touchEvent);
     removeDisplayNone();
   });
   searchInput.addEventListener("touchstart", handleTouch);
-  }
 });
   
 </script>
