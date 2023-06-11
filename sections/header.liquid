@@ -525,13 +525,13 @@ function handleTouch() {
     setTimeout(handleTouch, 50); 
   } else {
     searchInputMobile.forEach(function(mobileSearchInput) {
-      changePlaceholder(mobileSearchInput, "Type something...");\
+      changePlaceholder(mobileSearchInput, "Type something...");
     });
   }
   function removeDisplayNone() {
     var headerElement = document.querySelector("#shopify-section-header");
     headerElement.style.display = ""; // display 속성을 빈 문자열로 설정하여 제거
-  
+    console.log('dddd')
     // headerElement.style.display = null;
   }
 
