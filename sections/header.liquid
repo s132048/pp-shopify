@@ -515,32 +515,26 @@
 </script>
 <script>
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
-let isHandleTouchExecuted = false; // 상태 변수
 
 // 터치되는 함수 정의
 function handleTouch() {
-  if (isHandleTouchExecuted) {
-    return; // 이미 실행되었으면 중단
-  }
-  
   console.log("#Search-In-Modal이 터치되었습니다.");
   removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
-  if (window.innerWidth <= 768) {
-    if (searchInputMobile.length === 0) {
-      setTimeout(handleTouch, 50); 
-    } else {
-      isHandleTouchExecuted = true; // 상태 변수 변경
-      searchInputMobile.forEach(function(mobileSearchInput) {
-        changePlaceholder(mobileSearchInput, "Type something...");
-      });
-    }
+   if (window.innerWidth <= 768 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
+        bodyElement.classList.add('snize-instant-widget-is-open');
+      }
+  if (searchInputMobile.length === 0) {
+    setTimeout(handleTouch, 50); 
+  } else {
+    searchInputMobile.forEach(function(mobileSearchInput) {
+      changePlaceholder(mobileSearchInput, "Type something...");
+    });
   }
-
   function removeDisplayNone() {
     var headerElement = document.querySelector("#shopify-section-header");
     headerElement.removeAttribute("style");
-    console.log('dddd');
+    console.log('dddd')
     // headerElement.style.display = null;
   }
 
@@ -549,20 +543,16 @@ function handleTouch() {
   }
 }
 
+
 // 각 입력 엘리먼트에 이벤트 리스너 추가
 searchInputs.forEach(function(searchInput) {
   searchInput.addEventListener("input", function() {
     let touchEvent = new Event("touchstart");
     searchInput.dispatchEvent(touchEvent);
   });
-  searchInput.addEventListener("touchstart", function(event) {
-    if (!isHandleTouchExecuted) {
-      handleTouch();
-    }
-    event.stopPropagation(); // 중복 이벤트 전파 중단
-  });
+  searchInput.addEventListener("touchstart", handleTouch);
 });
-
+  
 </script>
 <script type="application/ld+json">
   {
