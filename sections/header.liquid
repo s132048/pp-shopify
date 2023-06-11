@@ -515,7 +515,11 @@
 </script>
 <script>
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
-
+function removeDisplayNone() {
+  var headerElement = document.querySelector("#shopify-section-header");
+  headerElement.removeAttribute("style");
+  console.log('dddd')
+}
 // 터치되는 함수 정의
 function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
@@ -531,11 +535,7 @@ function handleTouch() {
         }
       }
   
-  function removeDisplayNone() {
-    var headerElement = document.querySelector("#shopify-section-header");
-    headerElement.removeAttribute("style");
-    console.log('dddd')
-  }
+
 
   function changePlaceholder(inputElement, newPlaceholder) {
     inputElement.placeholder = newPlaceholder;
@@ -548,6 +548,7 @@ searchInputs.forEach(function(searchInput) {
   searchInput.addEventListener("input", function() {
     let touchEvent = new Event("touchstart");
     searchInput.dispatchEvent(touchEvent);
+    removeDisplayNone();
   });
   searchInput.addEventListener("touchstart", handleTouch);
 });
