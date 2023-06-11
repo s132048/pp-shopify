@@ -518,7 +518,6 @@ let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function removeDisplayNone() {
   var headerElement = document.querySelector("#shopify-section-header");
   const remove = headerElement.removeAttribute("style");
-  console.log('dddd');
 }
 // 터치되는 함수 정의
 function isMobileDevice() {
@@ -526,7 +525,6 @@ function isMobileDevice() {
   return mediaQuery.matches;
 }
 function handleTouch() {
-  console.log("#Search-In-Modal이 터치되었습니다.");
   removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
    if (isMobileDevice()) {
