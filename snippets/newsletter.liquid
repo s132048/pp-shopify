@@ -24,18 +24,18 @@
             data-form-status
           {% endif %}
           >
-        <span class="input-group__btn">
+        <div class="input-group__btn">
           <button type="submit" class="btn" name="commit">
             <span>Subscribe</span>
           </button>
-        </span>
+        </div>
       </div>
-<!--       {%- if form.errors contains 'email' -%} -->
-<!--         <span id="{{ formId }}-email-error" class="input-error-message"> -->
-<!--           <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span> -->
-<!--           {% include 'icon-error' %} -->
-<!--           <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span> -->
-<!--         </span> -->
-<!--       {%- endif -%} -->
+      {%- if form.errors contains 'email' -%} -->
+        <span id="{{ formId }}-email-error" class="input-error-message">
+          <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+          {% include 'icon-error' %}
+          <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+        </span>
+       {%- endif -%}
     {% endform %}
     <!-- End newsletter signup form -->
