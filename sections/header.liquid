@@ -537,6 +537,7 @@ searchInputs.forEach(function(searchInput) {
 <script type='module'>
   $('.nav-intl').on('click', () => {
     if (!window.location.pathname.startsWith('/en')) {
+      console.log('xx');
       window.location = '/en' + window.location.pathname;
     }
   });
