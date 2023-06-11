@@ -519,24 +519,21 @@ let searchInputs = document.querySelectorAll("#Search-In-Modal");
 // 터치되는 함수 정의
 function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
+  removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
   if (searchInputMobile.length === 0) {
     setTimeout(handleTouch, 50); 
   } else {
     searchInputMobile.forEach(function(mobileSearchInput) {
-      changePlaceholder(mobileSearchInput, "Type something...");
-      removeDisplayNone();
+      changePlaceholder(mobileSearchInput, "Type something...");\
     });
   }
   function removeDisplayNone() {
-  var headerElement = document.querySelector("#shopify-section-header");
-  headerElement.style.display = ""; // display 속성을 빈 문자열로 설정하여 제거
-
-  // 또는 아래와 같이 display 속성을 null로 설정할 수도 있습니다.
-  // headerElement.style.display = null;
-}
-
-// removeDisplayNone 함수 호출
+    var headerElement = document.querySelector("#shopify-section-header");
+    headerElement.style.display = ""; // display 속성을 빈 문자열로 설정하여 제거
+  
+    // headerElement.style.display = null;
+  }
 
   function changePlaceholder(inputElement, newPlaceholder) {
     inputElement.placeholder = newPlaceholder;
