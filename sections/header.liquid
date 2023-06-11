@@ -521,11 +521,15 @@ function removeDisplayNone() {
   console.log('dddd');
 }
 // 터치되는 함수 정의
+function isMobileDevice() {
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+  return mediaQuery.matches;
+}
 function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
   removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
-   if (window.innerWidth <= 1024) {
+   if (isMobileDevice()) {
       if (searchInputMobile.length === 0) {
           setTimeout(handleTouch, 50); 
         } else {
