@@ -2,7 +2,7 @@
     {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
       {%- if form.posted_successfully? -%}
         <p class="form-message form-message--success" tabindex="-1" data-form-status>
-          {{ 'general.newsletter_form.confirmation' | t }}
+<!--           {{ 'general.newsletter_form.confirmation' | t }} -->
         </p>
       {%- endif -%}
       <input type="hidden" name="contact[tags]" value="newsletter">
