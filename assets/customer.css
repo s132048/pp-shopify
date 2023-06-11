@@ -473,3 +473,7 @@ input:autofill:active {
   }
 }
 
+.nav-country {
+  border: 0;
+  background: none;
+}
