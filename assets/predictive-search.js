@@ -152,10 +152,10 @@ class PredictiveSearch extends HTMLElement {
   }
 
   setLiveRegionLoadingState() {
-    this.statusElement = this.statusElement || this.querySelector('.predictive-search-status');
-    this.loadingText = this.loadingText || this.getAttribute('data-loading-text');
+    // this.statusElement = this.statusElement || this.querySelector('.predictive-search-status');
+    // this.loadingText = this.loadingText || this.getAttribute('data-loading-text');
 
-    this.setLiveRegionText(this.loadingText);
+    // this.setLiveRegionText(this.loadingText);
     // this.setAttribute('loading', true);
   }
 
