@@ -767,6 +767,10 @@
   location.href = newUrl;
   });
 
+  $('.reset-btn').on('click', function() {
+    location.href = `${window.location.origin}${window.location.pathname}`;
+  })
+
   if(sortParam) {
       $('.filter-list').addClass('act1');
   }
