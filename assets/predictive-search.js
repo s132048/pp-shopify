@@ -156,7 +156,7 @@ class PredictiveSearch extends HTMLElement {
     this.loadingText = this.loadingText || this.getAttribute('data-loading-text');
 
     this.setLiveRegionText(this.loadingText);
-    this.setAttribute('loading', true);
+    // this.setAttribute('loading', true);
   }
 
   setLiveRegionText(statusText) {
