@@ -2944,6 +2944,9 @@ details-disclosure > details {
   }
 }
 
+.doubly-float {
+  display: none;
+}
 
 .nav-country {
   border: 0;
