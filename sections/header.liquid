@@ -496,7 +496,7 @@
 <script type='module'>
   console.log('xx');
   console.log($('.nav-intl'));
-  $('.nav-intl').on('click', function() {
+  $(document).on('click', '.nav-intl', function() {
     console.log('xx');
     if (!window.location.pathname.startsWith('/en')) {
       console.log('xx');
