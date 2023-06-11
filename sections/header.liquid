@@ -521,16 +521,16 @@ function handleTouch() {
   console.log("#Search-In-Modal이 터치되었습니다.");
   removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
-   if (window.innerWidth <= 1024 && !bodyElement.classList.contains('snize-instant-widget-is-open')) {
-        bodyElement.classList.add('snize-instant-widget-is-open');
-      }
-  if (searchInputMobile.length === 0) {
+   if (window.innerWidth <= 1024) {
+       if (searchInputMobile.length === 0) {
     setTimeout(handleTouch, 50); 
   } else {
     searchInputMobile.forEach(function(mobileSearchInput) {
       changePlaceholder(mobileSearchInput, "Type something...");
     });
   }
+      }
+  
   function removeDisplayNone() {
     var headerElement = document.querySelector("#shopify-section-header");
     headerElement.removeAttribute("style");
