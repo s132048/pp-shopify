@@ -517,8 +517,8 @@
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function removeDisplayNone() {
   var headerElement = document.querySelector("#shopify-section-header");
-  headerElement.removeAttribute("style");
-  console.log('dddd')
+  const remove = headerElement.removeAttribute("style");
+  console.log(remove);
 }
 // 터치되는 함수 정의
 function handleTouch() {
