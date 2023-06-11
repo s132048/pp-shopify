@@ -472,14 +472,3 @@ input:autofill:active {
     font-size : 19px;
   }
 }
-
-.nav-country {
-  border: 0;
-  background: none;
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-pc {
-    display: none;
-  }
-}
