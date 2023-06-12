@@ -434,6 +434,11 @@
       "customer": {
         "invalid_credentials": "This account is not valid."
       }
+    },
+    "checkout": {
+      "stock": {
+        "empty_cart_label": "Your cart is empty"
+      }
     }
   },
   "customer_accounts": {
