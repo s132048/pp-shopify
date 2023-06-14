@@ -235,7 +235,7 @@
       "title": "카트",
       "caption": "카트 품목",
       "remove_title": "{{ title }} 제거",
-      "subtotal": "소계",
+      "subtotal": "Subtotal",
       "new_subtotal": "새로 계산된 소계",
       "note": "주문 특별 지침",
       "checkout": "결제",
@@ -406,7 +406,7 @@
       "tracking_url": "추적 링크",
       "tracking_company": "배송업체",
       "tracking_number": "추적 번호",
-      "subtotal": "소계",
+      "subtotal": "Subtotal",
       "total_duties": "관세"
     }
   },
