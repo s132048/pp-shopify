@@ -360,7 +360,7 @@
       "order_number_link": "Order number: {{ number }}",
       "date": "날짜",
       "payment_status": "결제 상태",
-      "fulfillment_status": "주문 처리 상태",
+      "fulfillment_status": "Fulfillment status",
       "total": "총계",
       "none": "아직 주문이 없습니다."
     },
