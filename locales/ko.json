@@ -327,7 +327,7 @@
       "company": "회사",
       "address1": "Address1",
       "address2": "Address2",
-      "city": "구\/군\/시",
+      "city": "City",
       "country": "국가\/지역",
       "province": "시\/도",
       "zip": "우편 번호",
