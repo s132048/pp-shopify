@@ -318,7 +318,7 @@
       "cancel": "초대 거절"
     },
     "addresses": {
-      "title": "주소",
+      "title": "Address",
       "default": "기본값",
       "add_new": "새 주소 추가",
       "edit_address": "주소 편집",
