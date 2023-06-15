@@ -428,7 +428,8 @@
   "shopify": {
     "page_titles": {
       "account": "Account",
-      "create_account": "Register"
+      "create_account": "Register",
+      "addresses": "Address"
     },
     "notices": {
       "customer": {
