@@ -236,7 +236,7 @@
       "caption": "카트 품목",
       "remove_title": "{{ title }} 제거",
       "subtotal": "Subtotal",
-      "new_subtotal": "새로 계산된 소계",
+      "new_subtotal": "New subtotal",
       "note": "주문 특별 지침",
       "checkout": "결제",
       "empty": "카트가 비어 있습니다",
@@ -438,6 +438,10 @@
     "checkout": {
       "stock": {
         "empty_cart_label": "Your cart is empty"
+      },
+      "order_summary": {
+        "subtotal_label": "Subtotal label",
+        "recurring_subtotal_label": "Recurring subtotal label"
       }
     }
   },
@@ -446,6 +450,9 @@
       "account_menu": {
         "label": "Account"
       }
+    },
+    "order_details": {
+      "subtotal": "Subtotal"
     }
   }
 }
