@@ -329,7 +329,7 @@
       "address2": "Address2",
       "city": "City",
       "country": "국가\/지역",
-      "province": "시\/도",
+      "province": "Province",
       "zip": "우편 번호",
       "phone": "전화",
       "set_default": "기본 주소로 설정",
