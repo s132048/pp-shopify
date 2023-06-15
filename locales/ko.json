@@ -239,7 +239,7 @@
       "new_subtotal": "New subtotal",
       "note": "주문 특별 지침",
       "checkout": "결제",
-      "empty": "카트가 비어 있습니다",
+      "empty": "Your cart is empty.",
       "cart_error": "카트를 업데이트하는 중 오류가 발생했습니다. 다시 시도하십시오.",
       "cart_quantity_error_html": "카트에는 이 품목을 {{ quantity }}개만 추가할 수 있습니다.",
       "taxes_and_shipping_policy_at_checkout_html": "결제 시 세금 및<a href=\"{{ link }}\"> 배송료<\/a>가 계산됨",
