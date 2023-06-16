@@ -312,8 +312,8 @@
     "activate_account": {
       "title": "Activate account",
       "subtext": "Create a password to activate your account.",
-      "password": "비밀번호",
-      "password_confirm": "비밀번호 확인",
+      "password": "Password",
+      "password_confirm": "Password confirm",
       "submit": "Activate",
       "cancel": "초대 거절"
     },
