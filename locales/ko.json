@@ -429,7 +429,8 @@
     "page_titles": {
       "account": "Account",
       "create_account": "Register",
-      "addresses": "Address"
+      "addresses": "Address",
+      "reset_account": "Reset account"
     },
     "notices": {
       "customer": {
