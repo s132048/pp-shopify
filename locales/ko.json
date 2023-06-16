@@ -310,11 +310,11 @@
     },
     "account_fallback": "Account",
     "activate_account": {
-      "title": "계정 활성화",
-      "subtext": "계정을 활성화하려면 비밀번호를 생성하십시오.",
+      "title": "Activate account",
+      "subtext": "Create a password to activate your account.",
       "password": "비밀번호",
       "password_confirm": "비밀번호 확인",
-      "submit": "계정 활성화",
+      "submit": "Activate",
       "cancel": "초대 거절"
     },
     "addresses": {
@@ -378,7 +378,7 @@
       "submit": "생성"
     },
     "reset_password": {
-      "title": "계정 비밀번호 재설정",
+      "title": "Reset password",
       "subtext": "새 비밀번호 입력",
       "password": "비밀번호",
       "password_confirm": "비밀번호 확인",
