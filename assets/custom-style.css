@@ -1432,6 +1432,9 @@ variant-radios, variant-selects {
     .pp .page-section #snize-search-results-grid-mode ul {
       padding: 8px 7px 90px;
     }
+    .pp .page-section .snize-header {
+      padding: 0 7px;
+    }
 }
 
 
