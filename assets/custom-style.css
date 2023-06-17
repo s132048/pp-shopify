@@ -1377,7 +1377,7 @@ variant-radios, variant-selects {
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    padding: 8px 5px 90px;
+    padding: 8px 10px 90px;
     box-sizing: border-box;
     width: 100%;
 }
@@ -1428,6 +1428,9 @@ variant-radios, variant-selects {
         width: 50%;
         padding: 0 5px;
         margin-bottom: 8px;
+    }
+    .pp .page-section #snize-search-results-grid-mode ul {
+      padding: 8px 7px 90px;
     }
 }
 
