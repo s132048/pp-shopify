@@ -384,6 +384,12 @@ label[for='AddressProvinceNew'] {
   .customer .account_checkbox {
     padding : 4px 0;
   }
+  .account_form_box .form_title{
+    padding: 4px 0;
+  }
+  .account_form_box .account_buttons{
+    padding : 4px 0;
+  }
 }
 
 .customer.order .line_item_list img{
