@@ -1379,7 +1379,6 @@ variant-radios, variant-selects {
 
 .pp .page-section #snize-search-results-grid-mode.snize-five-columns li.snize-product {
     width: 20% !important;
-    padding: 0 5px;
     margin: 0 0 36px;
     box-sizing: border-box;
     display: block;
@@ -1426,7 +1425,6 @@ variant-radios, variant-selects {
 
     .pp .page-section #snize-search-results-grid-mode.snize-five-columns li.snize-product {
         width: 50%;
-        padding: 0 5px;
         margin-bottom: 8px;
     }
     .pp .page-section #snize-search-results-grid-mode ul {
