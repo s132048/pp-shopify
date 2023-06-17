@@ -372,6 +372,9 @@ label[for='AddressProvinceNew'] {
   .customer .account_title{
     height: 33.5px;
   }
+  .customer .submit_add_address{
+    padding: 0px 7px;
+}
 }
 
 .customer.order .line_item_list img{
