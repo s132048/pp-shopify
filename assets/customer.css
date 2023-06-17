@@ -351,6 +351,12 @@ label[for='AddressProvinceNew'] {
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
+.customer.order .line_item_list .line_item_box {
+  display: grid;
+  grid-template-rows: 1fr; 
+  align-items: stretch;
+  margin-bottom: 35px;
+}
 @media screen and (max-width: 1024px) {
   .customer.order .line_item_list{
     grid-template-columns: repeat(2, 1fr);
@@ -364,12 +370,6 @@ label[for='AddressProvinceNew'] {
   .customer.order .line_item_list .line_item_box {
     margin-bottom: 16px;
   }
-}
-.customer.order .line_item_list .line_item_box {
-  display: grid;
-  grid-template-rows: 1fr; 
-  align-items: stretch;
-  margin-bottom: 35px;
 }
 
 .customer.order .line_item_list img{
