@@ -2939,6 +2939,10 @@ details-disclosure > details {
   cursor: pointer;
 }
 
+.nav-country.disables {
+  color: #dcdcdc;
+}
+
 .nav-mobile {
   display: none;
   margin-top: 30px;
