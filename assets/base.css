@@ -1652,8 +1652,6 @@ details[open] > .share-button__fallback {
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
   border-radius: var(--inputs-radius);
-  height: 35.5px;
-  min-height: 35.5px;
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
   border: 0;
