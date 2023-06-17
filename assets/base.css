@@ -551,7 +551,7 @@ blockquote {
 .form__label,
 .select__select {
   font-size: 1.3rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
+  line-height: 28px;
   letter-spacing: 0.04rem;
 }
 
