@@ -350,6 +350,7 @@ label[for='AddressProvinceNew'] {
   display:grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 1024px) {
   .customer.order .line_item_list{
