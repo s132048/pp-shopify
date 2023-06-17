@@ -1593,4 +1593,7 @@ variant-radios, variant-selects {
   .info-list {
     padding-bottom: 0;
   }
+  .info-page {
+    padding: 0 7px;
+  }
 }
