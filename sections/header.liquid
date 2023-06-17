@@ -502,6 +502,11 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 <script type='module'>
+  if (!window.location.pathname.startsWith('/en')) {
+    $('.nav-intl').addClass('disabled');
+  } else {
+    $('.nav-kr').addClass('disabled');
+  }
   $(document).on('click', '.nav-intl', function() {
     if (!window.location.pathname.startsWith('/en')) {
       window.location = '/en' + window.location.pathname;
