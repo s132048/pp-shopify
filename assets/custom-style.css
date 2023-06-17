@@ -1590,5 +1590,7 @@ variant-radios, variant-selects {
 }
 
 @media screen and (max-width: 1024px) {
-  padding-bottom: 0px;
+  .info-list {
+    padding-bottom: 200px;
+  }
 }
