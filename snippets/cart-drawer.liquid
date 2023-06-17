@@ -260,11 +260,6 @@
                 {{ 'sections.cart.update' | t }}
               </button>
             </noscript>
-
-            <a href="{{ routes.all_products_collection_url }}">
-              Continue shopping
-            </a>
-
             <button type="submit" id="CartDrawer-Checkout" class="cart__checkout-button button" name="checkout" form="CartDrawer-Form"{% if cart == empty %} disabled{% endif %}>
               Checkout
             </button>
