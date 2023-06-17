@@ -1584,6 +1584,9 @@ variant-radios, variant-selects {
         line-height: 24px;
         margin-bottom: 0;
     }
+    .pp div.snize li.snize-no-products-found {
+    padding: 0 7px;
+    }
 }
 
 .info-list {
