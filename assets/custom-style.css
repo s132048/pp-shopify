@@ -925,6 +925,7 @@ variant-radios, variant-selects {
 .info-title {
     position: relative;
     display: block;
+    height: 35px;
 }
 
 .info-title:after {
