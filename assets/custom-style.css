@@ -923,7 +923,9 @@ variant-radios, variant-selects {
 }
 
 .info-title-2 {
+    display: block;
     height: 35px;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
 }
 
 .info-title {
