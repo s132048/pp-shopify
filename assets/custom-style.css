@@ -567,7 +567,7 @@ variant-radios, variant-selects {
     .pp .product-item {
         width: 50%;
         padding: 0 5px;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
 }
 
