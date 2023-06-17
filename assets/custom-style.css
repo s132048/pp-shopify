@@ -1076,10 +1076,6 @@ variant-radios, variant-selects {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card-img-list-wrap {
-    width: calc(50vw - 24px);
-}
-
 .main-collection-list--2 .card-img-list-wrap {
     width: calc(50vw - 22px);
 }
