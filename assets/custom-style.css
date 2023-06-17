@@ -692,7 +692,7 @@ variant-radios, variant-selects {
 }
 
 .cart-drawer__empty-content {
-    padding: 8px 10px;
+    padding: 3px 10px;
 }
 
 .cart-drawer__empty-content .cart__empty-text {
@@ -948,7 +948,7 @@ variant-radios, variant-selects {
 
 .info-content {
     display: none;
-    padding-bottom: 10px;
+    padding-bottom: 3px;
 }
 
 .info-content p {
