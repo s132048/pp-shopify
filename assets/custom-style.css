@@ -869,7 +869,6 @@ variant-radios, variant-selects {
     line-height: 28px;
     min-width: initial;
     min-height: initial;
-    margin-left: 25px;
 }
 
 #CartDrawer-CartErrors {
