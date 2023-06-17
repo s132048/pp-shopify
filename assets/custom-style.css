@@ -572,7 +572,7 @@ variant-radios, variant-selects {
       padding: 0 3.5px 0 0;
     }
     .pp .product-item:nth-child(4n+3) {
-      padding-left: 0 0 0 3.5px;
+      padding: 0 0 0 3.5px;
     }
 }
 
