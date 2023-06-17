@@ -390,6 +390,9 @@ label[for='AddressProvinceNew'] {
   .account_form_box .account_buttons{
     padding : 4px 0;
   }
+  .account_form_box .account_buttons{
+    gap: 18px;
+  }
 }
 
 .customer.order .line_item_list img{
