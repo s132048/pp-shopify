@@ -1557,6 +1557,13 @@ variant-radios, variant-selects {
     text-decoration: none !important;
 }
 
+
+#snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode ul, #snize_results.snize-mobile-design.snize-new-version #snize-search-results-list-mode ul, #snize_results.snize-mobile-design.snize-new-version div.disabled-opacity {
+      margin-left: 0!important;
+      margin-right: 0!important;
+}
+
+
 @media screen and (max-width: 1024px) {
     .pp div.snize li.snize-no-products-found div.snize-no-products-found-text span {
         font-size: 19px;
