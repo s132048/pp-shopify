@@ -741,10 +741,10 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .cart-item__name {
-        /*overflow: hidden;*/
-        /*white-space: nowrap;*/
-        /*text-overflow: ellipsis;*/
-        /*word-break: break-all;*/
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
     }
 }
 
