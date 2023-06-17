@@ -1194,21 +1194,8 @@ variant-radios, variant-selects {
     cursor: pointer;
 }
 
-.index-item {
-  display: flex;
-  padding-right: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-break: break-all;
-}
-
 .index-item:last-child {
   padding-right: 0px;
-}
-
-.index-item:nth-child(2) {
-  max-width: 33.33333%
 }
 
 .index-title.index {
