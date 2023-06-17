@@ -660,7 +660,7 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .cart-wrapper .cart-drawer .drawer__header {
-        padding: 0 5px;
+        padding: 0 7px;
     }
 
     .drawer__header-inner {
