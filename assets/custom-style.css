@@ -1593,4 +1593,7 @@ variant-radios, variant-selects {
   .info-page {
     padding: 0 7px;
   }
+  .info-title {
+    height: 33.5px;
+  }
 }
