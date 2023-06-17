@@ -739,13 +739,11 @@ variant-radios, variant-selects {
     justify-content: flex-end;
 }
 
-@media screen and (max-width: 1024px) {
-    .cart-item__name {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        word-break: break-all;
-    }
+.cart-item__name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
 }
 
 .cart-drawer .cart-item .quantity {
