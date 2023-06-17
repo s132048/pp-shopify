@@ -35,7 +35,7 @@
             {%- for field in form.errors -%}
               <span id="RecoverEmail-email-error" >
                 {%- if field == 'form' -%}
-                  No account found with thath email.
+                  No account found with that email.
                 {%- endif -%}
               </span>
             {%- endfor -%}
@@ -44,7 +44,7 @@
       {% if form.posted_successfully? %}
         <div class='account_message'>
           <span>
-            Temporary password have been sent by email
+            Temporary password have been sent by email.
           </span>
         </div>
       {% endif %}
