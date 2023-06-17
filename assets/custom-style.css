@@ -1192,7 +1192,8 @@ variant-radios, variant-selects {
 }
 
 .index-item {
-    display: flex;
+  display: flex;
+  padding-right: 10px;
 }
 
 .index-title.index {
