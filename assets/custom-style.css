@@ -122,6 +122,10 @@ a {
     .nav-col--3 {
         grid-area: 1 / 2 / 3 / 3;
     }
+
+    .nav-wrapper {
+      padding: 6px 7px 0;
+    }
 }
 
 .nav-close-btn {
