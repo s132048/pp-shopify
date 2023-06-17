@@ -1156,7 +1156,7 @@ variant-radios, variant-selects {
     width: 100%;
 }
 
-.product-item-index:first-child {
+.product-item-index:2nd-child {
     padding-top: index;
 }
 
