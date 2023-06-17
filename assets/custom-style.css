@@ -568,6 +568,12 @@ variant-radios, variant-selects {
         width: 50%;
         margin-bottom: 16px;
     }
+    .pp .product-item:nth-child(4n+1) {
+      padding-right: 3.5px;
+    }
+    .pp .product-item:nth-child(4n+3) {
+      padding-left: 3.5px;
+    }
 }
 
 .pp .product-item .card {
