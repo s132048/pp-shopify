@@ -29,6 +29,7 @@
   <div class='contents_box'>
     <span>{{ order.created_at | time_tag: format: 'date' | date: "%b. %d, 20%y" }}</span>
     <span>Order no. {{ order.name | replace:'#','' }}</span>
+    <span>{{ order.line_items.size }} items</span>
     <span>
       {% if order.financial_status == 'pending' %}
         Payment is not finished
@@ -38,7 +39,6 @@
       <!--  취소/환불 주문건 텍스트 -->
       {% endif %}
     </span>
-    <span>{{ order.line_items.size }} items</span>
     <span>{{ order.total_price | money }}</span>
   </div>
   <div class='contents_box'>
