@@ -973,7 +973,7 @@ variant-radios, variant-selects {
     .info-img-wrap {
         display: block;
         max-width: none;
-        padding: 26px 0;
+        padding: 26px 0 7px 0;
     }
 
     .info-img-wrap img + img {
