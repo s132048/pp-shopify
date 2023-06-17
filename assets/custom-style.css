@@ -1588,3 +1588,7 @@ variant-radios, variant-selects {
 .info-list {
   padding-bottom: 200px;
 }
+
+@media screen and (max-width: 1024px) {
+  padding-bottom: 0px;
+}
