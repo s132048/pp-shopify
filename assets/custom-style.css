@@ -561,12 +561,11 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .collection .product-grid-list {
-        padding: 8px 0 45px;
+        padding: 8px 7px 45px;
     }
 
     .pp .product-item {
         width: 50%;
-        padding: 0 5px;
         margin-bottom: 16px;
     }
 }
