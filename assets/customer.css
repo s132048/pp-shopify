@@ -374,7 +374,13 @@ label[for='AddressProvinceNew'] {
   }
   .customer .submit_add_address{
     padding: 0px 7px;
-}
+  }
+  .account_form_box select,
+  .account_form_box input,
+  .account_contents > span,
+  .customer .account_contents > button{
+    padding : 4px 0;
+  }
 }
 
 .customer.order .line_item_list img{
