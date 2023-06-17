@@ -142,16 +142,16 @@ a {
 }
 
 .account-list {
-    margin-top: 35px;
+    margin-top: 28px;
 }
 
 @media screen and (max-width: 1024px) {
     .nav-item + .nav-item {
-        margin-top: 30px;
+        margin-top: 24px;
     }
 
     .account-list {
-        margin-top: 30px;
+        margin-top: 24px;
     }
 }
 
