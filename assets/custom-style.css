@@ -926,6 +926,7 @@ variant-radios, variant-selects {
     position: relative;
     display: block;
     height: 35px;
+    line-height: inherit;
 }
 
 .info-title:after {
