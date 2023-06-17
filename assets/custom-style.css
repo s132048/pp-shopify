@@ -1207,6 +1207,10 @@ variant-radios, variant-selects {
   padding-right: 0px;
 }
 
+.index-item:nth-child(2) {
+  max-width: 33.33333%
+}
+
 .index-title.index {
     display: block;
     position: sticky;
