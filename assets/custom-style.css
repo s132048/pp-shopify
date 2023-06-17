@@ -1226,6 +1226,7 @@ variant-radios, variant-selects {
 }
 
 .index-title .index-item {
+    display: flex;
     align-items: center;
     height: 100%;
 }
