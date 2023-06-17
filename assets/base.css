@@ -2939,7 +2939,7 @@ details-disclosure > details {
   cursor: pointer;
 }
 
-.nav-country.disables {
+.nav-country.disabled {
   color: #dcdcdc;
 }
 
