@@ -1014,7 +1014,7 @@ variant-radios, variant-selects {
 }
 
 .main-collection-row--first {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .main-collection-row--last {
