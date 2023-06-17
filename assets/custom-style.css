@@ -1158,7 +1158,6 @@ variant-radios, variant-selects {
 
 #product-grid.index > .product-item-index {
     display: block !important;
-    padding: 2px 0;
 }
 
 #product-grid.cover > .product-item {
