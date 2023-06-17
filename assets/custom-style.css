@@ -1584,3 +1584,7 @@ variant-radios, variant-selects {
         margin-bottom: 0;
     }
 }
+
+.info-list {
+  padding-bottom: 200px;
+}
