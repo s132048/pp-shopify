@@ -1196,6 +1196,10 @@ variant-radios, variant-selects {
   padding-right: 10px;
 }
 
+.index-item:last-child {
+  padding-right: 0px;
+}
+
 .index-title.index {
     display: block;
     position: sticky;
