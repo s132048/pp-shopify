@@ -367,6 +367,7 @@ label[for='AddressProvinceNew'] {
   display: grid;
   grid-template-rows: 1fr; 
   align-items: stretch;
+  margin-bottom: 35px;
 }
 
 .customer.order .line_item_list img{
