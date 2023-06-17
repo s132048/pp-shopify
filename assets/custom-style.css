@@ -569,10 +569,10 @@ variant-radios, variant-selects {
         margin-bottom: 16px;
     }
     .pp .product-item:nth-child(4n+1) {
-      padding-right: 3.5px;
+      padding: 0 3.5px 0 0;
     }
     .pp .product-item:nth-child(4n+3) {
-      padding-left: 3.5px;
+      padding-left: 0 0 0 3.5px;
     }
 }
 
