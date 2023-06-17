@@ -362,7 +362,7 @@ label[for='AddressProvinceNew'] {
     grid-template-columns: repeat(2, 1fr);
   }
   .customer {
-    padding: 0 7px 70px 7px;
+    padding: 0 7px 64px 7px;
   }
   .customer .account_title {
     height: 33.5px;
