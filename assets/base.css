@@ -1658,13 +1658,13 @@ details[open] > .share-button__fallback {
   appearance: none;
   background-color: rgb(var(--color-background));
   color: rgb(var(--color-foreground));
-  font-size: 1.6rem;
+  font-size: 22px;
   width: 100%;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
   border-radius: var(--inputs-radius);
-  height: 4.5rem;
-  min-height: calc(var(--inputs-border-width) * 2);
+  height: 35px;
+  min-height: 35px;
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
   border: 0;
