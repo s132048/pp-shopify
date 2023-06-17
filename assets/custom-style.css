@@ -922,6 +922,10 @@ variant-radios, variant-selects {
     border-bottom: 1.5px solid #fff;
 }
 
+.info-title-2 {
+    height: 35px;
+}
+
 .info-title {
     position: relative;
     display: block;
@@ -1595,6 +1599,9 @@ variant-radios, variant-selects {
     padding: 0 7px;
   }
   .info-title {
+    height: 33.5px;
+  }
+  .info-title-2 {
     height: 33.5px;
   }
 }
