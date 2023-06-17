@@ -1197,6 +1197,10 @@ variant-radios, variant-selects {
 .index-item {
   display: flex;
   padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 .index-item:last-child {
