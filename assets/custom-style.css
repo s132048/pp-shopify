@@ -1352,11 +1352,6 @@ variant-radios, variant-selects {
 
 }
 
-.pp .page-section .snize-header {
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
 .pp .page-section .snize-search-results-header,
 .pp .page-section .snize-search-results-header * {
     color: #000;
@@ -1395,6 +1390,11 @@ variant-radios, variant-selects {
     cursor: pointer;
     transition: none;
     align-self: end;
+}
+
+.pp .page-section .snize-header {
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
