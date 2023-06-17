@@ -652,8 +652,7 @@ variant-radios, variant-selects {
     position: relative;
     width: 100%;
     height: 35px;
-    display: flex;
-    align-items: center;
+    line-height: 34px;
     text-align: center;
     border-bottom: 1.5px solid #fff;
 }
@@ -665,6 +664,7 @@ variant-radios, variant-selects {
 
     .drawer__header-inner {
         height: 32px;
+        line-height: 31px;
     }
 }
 
