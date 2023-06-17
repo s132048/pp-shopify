@@ -53,7 +53,7 @@
         <button class="cart-close-btn" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">×</button>
       </div>
       <cart-drawer-items {% if cart == empty %}class=" is-empty"{% endif %}>
-        <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
+        <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post" style="margin-top:-5px;">
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper cart-items-wrapper">
