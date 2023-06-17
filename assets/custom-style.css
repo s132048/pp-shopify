@@ -1434,7 +1434,7 @@ variant-radios, variant-selects {
       padding: 0 7px;
     }
     .pp .page-section .snize-search-results-header {
-      height: 33.5px;
+      min-height: 33.5px;
     }
 }
 
