@@ -988,7 +988,7 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .main-collection-section {
-        padding: 0 5px 64px;
+        padding: 0 7px 64px;
     }
 }
 
