@@ -273,6 +273,7 @@ body{
   padding: 3px 0;
   position: relative;
   border-bottom: 1.5px solid #fff;
+  list-style-type: none;
 }
 .customer .order_list li span {
   display: block;
