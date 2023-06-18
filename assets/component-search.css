@@ -386,6 +386,3 @@ body.overflow-hidden .search_menu_list{
   font-size : 22px; 
   padding:0;
 }
-.search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style::placeholder {
-  color: red !important;
-}
