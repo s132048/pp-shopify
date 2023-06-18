@@ -379,10 +379,13 @@ body.overflow-hidden .search_menu_list{
   font-size: 22px;
   line-height: 28px; 
 }
-  .snize-ac-results.snize-ac-results-mobile .snize-nothing-found span, .snize-ac-results.snize-ac-results-mobile .snize-noresults-html span {
-    margin: 0;
-  }
-  .snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text{
-    font-size : 22px; 
-    padding:0;
-  }
+.snize-ac-results.snize-ac-results-mobile .snize-nothing-found span, .snize-ac-results.snize-ac-results-mobile .snize-noresults-html span {
+  margin: 0;
+}
+.snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text{
+  font-size : 22px; 
+  padding:0;
+}
+.search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style::placeholder {
+  color: red;
+}
