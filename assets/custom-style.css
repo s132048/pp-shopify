@@ -183,6 +183,9 @@ a {
     .product-price-inner {
       height: 33.5px !important;
     }
+    .detail-info .product-desc {
+      padding: 3px 0;
+    }
 }
 
 .product-name-inner {
