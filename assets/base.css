@@ -2519,8 +2519,8 @@ details[open] .modal-overlay::after {
   position: absolute;
   width: 1.4rem !important;
   height: 2.4rem !important;
-  right: 0.2rem;
-  top: 0.2rem;
+  right: 0;
+  top: 8px;
 }
 
 /* Header menu drawer */
