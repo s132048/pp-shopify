@@ -174,7 +174,7 @@ a {
 @media screen and (max-width: 1024px) {
     .product-name {
         padding: 0 7px;
-        min-height: 32px;
+        min-height: 33.5px;
     }
 }
 
@@ -199,7 +199,7 @@ a {
 
 @media screen and (max-width: 1024px) {
     .product-name-inner {
-        min-height: 32px;
+        min-height: 33.5px;
     }
 
     .detail-top {
