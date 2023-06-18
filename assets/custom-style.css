@@ -392,7 +392,7 @@ variant-radios, variant-selects {
 }
 
 .detail-visual {
-    width: 66.66vw;
+    width: 65.5vw;
 }
 
 @media screen and (max-width: 1024px) {
