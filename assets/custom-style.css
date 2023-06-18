@@ -350,6 +350,7 @@ variant-radios, variant-selects {
 .pp .product-form__buttons {
     display: flex;
     max-width: none;
+    margin: 0 25px;
 }
 
 .pp .custom-btn:before,
