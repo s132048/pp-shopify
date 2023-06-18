@@ -314,6 +314,9 @@ input::-webkit-search-results-decoration{
   .snize-ac-results.snize-ac-results-mobile .snize-product {
     padding-right: 0px !important;
   }
+  .snize-ac-results-list {
+    gap: 16px 10px;
+  }
 }
 
   
