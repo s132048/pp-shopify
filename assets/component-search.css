@@ -317,6 +317,9 @@ input::-webkit-search-results-decoration{
   .snize-ac-results-list {
     gap: 16px 10px;
   }
+  .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel {
+    margin-bottom: 3px;
+  }
 }
 
   
