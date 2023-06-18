@@ -1251,7 +1251,7 @@ variant-radios, variant-selects {
         grid-template-columns: 1fr 1fr;
     }
 
-    .index-item:nth-child(0) {
+    .index-item:nth-child(2) {
         padding-right: 7px;
     }
   
