@@ -1,15 +1,15 @@
 @font-face {
-    font-family: 'Diatype Pre';
-    src: url('https://cdn.shopify.com/s/files/1/0702/4522/0637/files/DiatypePre-Regular.woff2?v=1683291536') format('woff2'),
-    url('https://cdn.shopify.com/s/files/1/0702/4522/0637/files/DiatypePre-Regular.woff?v=1683291536') format('woff'),
-    url('https://cdn.shopify.com/s/files/1/0702/4522/0637/files/DiatypePre-Regular.ttf?v=1683291536') format('truetype');
+    font-family: 'ABC Diatype';
+    src: url('https://cdn.shopify.com/s/files/1/0702/4522/0637/files/ABCDiatype-Regular.woff2?v=1687055901') format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0702/4522/0637/files/ABCDiatype-Regular.woff?v=1687055902') format('woff'),
+    url('https://cdn.shopify.com/s/files/1/0702/4522/0637/files/ABCDiatype-Regular.ttf?v=1687055902') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body * {
-    font-family: 'Diatype Pre', 'Noto Sans KR', sans-serif;
+    font-family: 'ABC Diatype', 'Noto Sans KR', sans-serif;
     letter-spacing: 0;
     color: #000;
     font-size: 22px;
