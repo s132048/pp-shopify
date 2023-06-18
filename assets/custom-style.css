@@ -184,6 +184,7 @@ a {
       height: 33.5px !important;
     }
     .detail-info .product-desc {
+      margin-top: 24px;
       padding: 3px 0;
     }
 }
