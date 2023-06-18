@@ -308,6 +308,9 @@ input::-webkit-search-results-decoration{
   .search_menu_list > div .mobile-search-menu-title .close-list.hide{
     display:none;
   }
+  .search-modal, .overflow-hidden .snize-ac-results-mobile {
+    padding: 0 7px;
+  }
 }
 
   
