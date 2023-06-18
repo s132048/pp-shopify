@@ -194,7 +194,7 @@ a {
     gap: 0 8px;
     width: 100%;
     height: calc(100vh - 120px);
-    padding: calc(34px + 6px) 10px 6px;
+    padding: calc(34px + 3px) 10px 6px;
 }
 
 @media screen and (max-width: 1024px) {
