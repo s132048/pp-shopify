@@ -171,6 +171,14 @@ a {
     background-color: #fff;
 }
 
+.detail-info .product-desc {
+    margin-top: 28px;
+}
+
+.detail-info .product-desc p {
+    margin: 0;
+}
+
 @media screen and (max-width: 1024px) {
     .product-name {
         padding: 0 7px;
@@ -226,14 +234,6 @@ a {
 
 .detail-info {
 
-}
-
-.detail-info .product-desc {
-    margin-top: 28px;
-}
-
-.detail-info .product-desc p {
-    margin: 0;
 }
 
 .product-price {
