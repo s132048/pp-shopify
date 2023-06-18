@@ -173,7 +173,7 @@ a {
 
 @media screen and (max-width: 1024px) {
     .product-name {
-        padding: 0 5px;
+        padding: 0 7px;
         min-height: 32px;
     }
 }
@@ -455,7 +455,7 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .product-recommendations {
-        padding: 0 5px calc(62px + 32px) !important;
+        padding: 0 7px calc(62px + 32px) !important;
     }
 
     .product-recommendations-title {
