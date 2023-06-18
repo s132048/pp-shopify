@@ -2523,6 +2523,11 @@ details[open] .modal-overlay::after {
   top: 8px;
 }
 
+@media screen and (max-width: 1024px) { 
+  .search-modal__close-button {
+    top: 6px;
+  }
+}
 /* Header menu drawer */
 .header__icon--menu .icon {
   display: block;
