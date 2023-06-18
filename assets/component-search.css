@@ -311,6 +311,9 @@ input::-webkit-search-results-decoration{
   .search-modal, .overflow-hidden .snize-ac-results-mobile {
     padding: 0 7px;
   }
+  .snize-ac-results.snize-ac-results-mobile .snize-product {
+    padding-right: 0px !important;
+  }
 }
 
   
