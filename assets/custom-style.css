@@ -181,7 +181,7 @@ a {
       align-content: center;
     }
     .product-price-inner {
-      height: 33.5px;
+      height: 33.5px !important;
     }
 }
 
