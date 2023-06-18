@@ -225,7 +225,7 @@
 }
 
 .card__heading:hover {
-   color:red;
+   color: #dcdcdc;
 }
 
 @media screen and (min-width: 990px) {
