@@ -195,6 +195,9 @@ a {
       margin-top: 24px;
       padding: 3px 0;
     }
+    .recommend-item {
+      margin-bottom: 16px;
+    }
 }
 
 .product-name-inner {
