@@ -1665,3 +1665,12 @@ variant-radios, variant-selects {
     height: 33.5px;
   }
 }
+
+.pp .search-modal__close-button {
+    line-height: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 19px;
+}

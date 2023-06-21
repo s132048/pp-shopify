@@ -264,7 +264,7 @@ input::-webkit-search-results-decoration{
 
 @media screen and (max-width: 1024px){
   .search-modal__close-button{
-    width:1rem !important;
+    width:30px;
     right:0;
   }
   .search-modal__close-button svg{
