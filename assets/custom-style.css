@@ -134,8 +134,8 @@ a {
     top: -8px;
     right: -10px;
     cursor: pointer;
-    width: 33px;
-    height: 33px;
+    width: 32px;
+    height: 32px;
     line-height: initial;
     display: flex;
     justify-content: center;
@@ -537,7 +537,7 @@ variant-radios, variant-selects {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 35px;
+    height: 34px;
     border-bottom: 1.5px solid #000;
 }
 
@@ -553,7 +553,7 @@ variant-radios, variant-selects {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 35px;
+    height: 34px;
     border-bottom: 1.5px solid #000;
 }
 
@@ -681,7 +681,7 @@ variant-radios, variant-selects {
 .drawer__header-inner {
     position: relative;
     width: 100%;
-    height: 35px;
+    height: 34px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -705,8 +705,8 @@ variant-radios, variant-selects {
     appearance: none;
     border: 0;
     padding: 0;
-    width: 33px;
-    height: 33px;
+    width: 32px;
+    height: 32px;
     line-height: initial;
     display: flex;
     justify-content: center;
@@ -865,7 +865,7 @@ variant-radios, variant-selects {
     left: 0;
     padding: 0 10px;
     width: 100%;
-    height: 35px;
+    height: 34px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -929,7 +929,7 @@ variant-radios, variant-selects {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 35px;
+    height: 34px;
     border-bottom: 1.5px solid #fff;
 }
 
@@ -951,14 +951,14 @@ variant-radios, variant-selects {
 
 .info-title-2 {
     display: block;
-    height: 35px;
+    height: 34px;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
 }
 
 .info-title {
     position: relative;
     display: block;
-    height: 35px;
+    height: 34px;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
 }
 
@@ -970,7 +970,7 @@ variant-radios, variant-selects {
 }
 
 .info-title.on:after {
-    content: '-';
+    content: '–';
 }
 
 .info-content {
@@ -1133,7 +1133,7 @@ variant-radios, variant-selects {
     top: 0;
     left: 0;
     width: 100%;
-    height: 35px;
+    height: 34px;
     background: #fff;
     padding: 0 10px;
 }
@@ -1209,7 +1209,7 @@ variant-radios, variant-selects {
 .index-title {
     display: none;
     padding: 0 10px;
-    height: 35px;
+    height: 34px;
 }
 
 @media screen and (max-width: 1024px) {
