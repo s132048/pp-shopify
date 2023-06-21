@@ -131,16 +131,21 @@ a {
 
 .nav-close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -8px;
+    right: -10px;
     cursor: pointer;
-    line-height: 0;
+    width: 33px;
+    height: 33px;
+    line-height: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-close-btn svg {
-    width: 10px;
-    height: 10px;
-}
+/*.nav-close-btn svg {*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*}*/
 
 .nav-item + .nav-item {
     margin-top: 28px;
