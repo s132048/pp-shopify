@@ -224,10 +224,6 @@
   outline: 0;
 }
 
-.card__heading:hover {
-   color: #dcdcdc;
-}
-
 @media screen and (min-width: 990px) {
   .card .media.media--hover-effect > img:only-child,
   .card-wrapper .media.media--hover-effect > img:only-child {

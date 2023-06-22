@@ -1720,6 +1720,10 @@ variant-radios, variant-selects {
     .pp .main-header-item:hover {
         color: #dcdcdc;
     }
+
+    .card__heading a:hover {
+        color: #dcdcdc;
+    }
 }
 
 @media (hover: hover) {
@@ -1758,6 +1762,7 @@ variant-radios, variant-selects {
 
 .main-collection-title {
     position: relative;
+    display: inline-block;
 }
 
 .main-collection-title a {
@@ -1776,7 +1781,7 @@ variant-radios, variant-selects {
     padding: 3px 0 3px;
 }
 
-.main-collection-title:hover a {
+.main-collection-title a:hover {
     color: transparent;
 }
 
