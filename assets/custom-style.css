@@ -1213,7 +1213,7 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .index-title {
-        padding: 0 5px;
+        padding: 0 7px;
     }
     .main-header-row a + a {
       margin-left: 15px;
