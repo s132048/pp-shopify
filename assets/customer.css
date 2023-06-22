@@ -510,3 +510,7 @@ input:autofill:active {
     font-size : 19px;
   }
 }
+
+.customer a {
+  display: inline-block;
+}
