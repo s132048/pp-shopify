@@ -84,7 +84,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     background-color : transparent !important; 
-	-webkit-text-fill-color: #646464;
+	-webkit-text-fill-color: #fff;
      box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
     -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
     transition: background-color 5000s ease-in-out 0s;
@@ -96,7 +96,7 @@ input:autofill:hover,
 input:autofill:focus,
 input:autofill:active {
     background-color : transparent !important; 
-	-webkit-text-fill-color: #646464;
+	-webkit-text-fill-color: #s;
     box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
     -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
     transition: background-color 5000s ease-in-out 0s;
