@@ -870,8 +870,8 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .cart__ctas {
-        padding: 0 5px;
-        height: 32px;
+        padding: 1px 7px;
+        height: inherit;
     }
 }
 
