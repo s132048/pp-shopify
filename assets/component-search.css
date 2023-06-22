@@ -134,7 +134,7 @@ input::-webkit-search-results-decoration{
   display: block !important;
   width: 100%;
   height: calc(100% - 60px);
-  top: 35px;
+  top: 40px;
   left:0;
   padding: 0 10px;
   background: transparent;
