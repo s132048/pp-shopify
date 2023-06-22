@@ -966,6 +966,7 @@ variant-radios, variant-selects {
     display: block;
     height: 34px;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
+    cursor: pointer;
 }
 
 .info-title:after {
@@ -1719,4 +1720,25 @@ variant-radios, variant-selects {
     .pp .main-header-item:hover {
         color: #dcdcdc;
     }
+}
+
+@media (hover: hover) {
+    .info-content .btn:hover *,
+    .info-title-2:hover,
+    .info-content a:hover,
+    .info-title:hover,
+    .account_buttons a:hover,
+    .account_buttons button:hover,
+    .pp .cart__ctas .cart__checkout-button:hover,
+    .cart-item__name:hover,
+    .cart-drawer .cart-item .quantity__button:hover,
+    .cart-close-btn:hover {
+        color: #969696;
+        cursor: pointer;
+    }
+}
+
+.pp #recover:target + div {
+    display: flex;
+    flex-direction: column;
 }
