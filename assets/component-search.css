@@ -237,7 +237,7 @@ input::-webkit-search-results-decoration{
 
 .search_menu_list{
   position:absolute;
-  top: 40px;
+  top: 35px;
   left: 0px;
   height: calc(100% - 40px);
   width: 100%;
