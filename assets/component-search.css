@@ -152,6 +152,9 @@ input::-webkit-search-results-decoration{
   .snize-ac-results-list{
     grid-template-columns: repeat(2, 1fr);
   }
+  .snize-ac-results-content {
+    padding: 0 7px;
+  }
 }
 
 .snize-ac-results-list li.snize-product {
