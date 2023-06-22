@@ -201,9 +201,6 @@ body{
     margin-top: 7rem;
     margin-bottom: 10rem;
   }
-  .addressPop{
-    padding: 0 7px 70px 7px;
-  }
 }
 
 .customer .pagination ul {
@@ -395,6 +392,9 @@ label[for='AddressProvinceNew'] {
   }
   .account_form_box .account_buttons{
     gap: 18px;
+  }
+  .addressPop{
+    padding: 0 7px 70px 7px;
   }
 }
 
