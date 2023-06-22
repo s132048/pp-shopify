@@ -396,6 +396,9 @@ label[for='AddressProvinceNew'] {
   .addressPop{
     padding: 0 7px 70px 7px;
   }
+  .customer.order .line_item_list {
+    gap: 7px;
+  }
 }
 
 .customer.order .line_item_list img{
