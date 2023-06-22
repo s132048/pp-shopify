@@ -1755,3 +1755,31 @@ variant-radios, variant-selects {
 .account_form_box input:focus {
     color: #646464;
 }
+
+.main-collection-title {
+    position: relative;
+}
+
+.main-collection-title a {
+    position: relative;
+    z-index: 1;
+}
+
+.main-collection-title:after {
+    content: 'Explore more';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    color: transparent;
+    padding: 3px 0 3px;
+}
+
+.main-collection-title:hover a {
+    color: transparent;
+}
+
+.main-collection-title:hover:after {
+    color: #000;
+}
