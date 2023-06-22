@@ -1111,11 +1111,11 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .card-img-list-wrap {
-        width: calc(100vw - 10px);
+        width: calc(100vw - 14px);
     }
 
     .main-collection-list--2 .card-img-list-wrap {
-        width: calc(100vw - 10px);
+        width: calc(100vw - 14px);
     }
 }
 
