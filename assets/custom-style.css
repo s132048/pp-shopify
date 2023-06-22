@@ -1723,6 +1723,10 @@ variant-radios, variant-selects {
 }
 
 @media (hover: hover) {
+    .pp .line_title:hover,
+    .pp .order_item a:hover,
+    .pp .customer button:hover,
+    .pp .account_contents a:hover,
     .info-content .btn:hover *,
     .info-title-2:hover,
     .info-content a:hover,

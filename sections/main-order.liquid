@@ -17,7 +17,7 @@
           </a>
         </div>
         <div class='line_item_details' style='padding-top: 3px;'>
-          <span class='line_title'>{{ line_item.title }}</span>
+          <span class='line_title' onclick="location.href='{{ line_item.url }}'">{{ line_item.title }}</span>
           <span>QTY {{ line_item.quantity }}</span>
           <span>{{ line_item.original_price | money }}</span>
         </div>
