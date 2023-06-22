@@ -1682,6 +1682,10 @@ variant-radios, variant-selects {
   .info-title-2 {
     height: 33.5px;
   }
+  .info-page-title {
+    padding: 4px 0;
+    height: fit-content;
+  }
 }
 
 .pp .search-modal__close-button {
