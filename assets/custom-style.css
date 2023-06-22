@@ -1216,7 +1216,7 @@ variant-radios, variant-selects {
         padding: 0 5px;
     }
     .main-header-row a + a {
-      margin-left: 18px;
+      margin-left: 15px;
     }
 }
 
