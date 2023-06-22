@@ -289,7 +289,7 @@ variant-radios, variant-selects {
 }
 
 .pp .product-default .product-form__quantity {
-    margin: 0 10px 0 0;
+    margin: 0;
     min-width: auto;
     max-width: none;
     border-bottom: 0;
