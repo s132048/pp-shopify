@@ -1673,3 +1673,7 @@ variant-radios, variant-selects {
     text-decoration: none;
     font-size: 19px;
 }
+
+.eo-sh-loading-text {
+  display: none;
+}
