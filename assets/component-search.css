@@ -287,10 +287,11 @@ input::-webkit-search-results-decoration{
     border-bottom: 1.5px solid #000;
   }
   .search-menu-item-list[data-status='close']{
-    display:none;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    height: 0;
   }
   .search-menu-item-list[data-status='open']{
-    display:block;
     padding-bottom: 3px;
   }
   .search_menu_list > div .mobile-search-menu-title .open-list,

@@ -2466,11 +2466,6 @@ menu-drawer + .header__search {
   display: none;
 }
 
-details[open] > .search-modal {
-  opacity: 1;
-  animation: animateMenuOpen var(--duration-default) ease;
-}
-
 details[open] .modal-overlay {
   display: block;
 }
