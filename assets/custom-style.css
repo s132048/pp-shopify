@@ -1751,6 +1751,6 @@ variant-radios, variant-selects {
     color: #969696;
 }
 
-.account_form_box input:hover {
-    color: 646464;
+.account_form_box:hover input {
+    color: #646464;
 }
