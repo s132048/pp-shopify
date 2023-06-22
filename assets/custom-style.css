@@ -186,6 +186,7 @@ a {
 
 @media screen and (max-width: 1024px) {
     .product-name {
+        position: sticky;
         padding: 0 7px;
         min-height: 33.5px;
     }
@@ -239,7 +240,7 @@ a {
         gap: 0 8px;
         width: 100%;
         height: auto;
-        padding: 32px 7px 0;
+        padding: 0 7px 0;
     }
 
 }
@@ -1843,4 +1844,15 @@ aside#main-collection-filters {
 .pp .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+    .pp .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 2px !important;
+    }
 }
