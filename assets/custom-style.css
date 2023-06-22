@@ -555,9 +555,10 @@ variant-radios, variant-selects {
 }
 
 .collection-title {
+    margin: auto;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 34px;
     border-bottom: 1.5px solid #000;
 }
@@ -1247,6 +1248,7 @@ variant-radios, variant-selects {
 @media screen and (max-width: 1024px) {
     .index-title {
         padding: 0 5px;
+        height: 32px;
     }
 
     .main-header-row a + a {
@@ -1267,10 +1269,21 @@ variant-radios, variant-selects {
 .index-title.index {
     display: block;
     position: sticky;
-    top: 68px;
+    top: 34px;
     left: 0;
     width: 100%;
     background: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .index-title.index {
+        display: block;
+        position: sticky;
+        top: 32px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+    }
 }
 
 .index-title .index-row {
@@ -1950,4 +1963,34 @@ details[open] > .search-modal {
 .drawer__header-inner span {
     display: inline-block;
     margin: auto;
+}
+
+#collection-result {
+    display: none;
+    margin: auto;
+    align-items: center;
+    width: calc(100% - 20px);
+    height: 34px;
+    border-bottom: 1.5px solid #000;
+}
+
+@media screen and (max-width: 1024px) {
+    .pp .collection-nav-list {
+        height: 32px;
+    }
+
+    .collection-title {
+        width: calc(100% - 14px);
+        height: 32px;
+    }
+
+    #collection-result {
+        width: calc(100% - 14px);
+        height: 32px;
+        display: flex;
+    }
+}
+
+#collection-result > div {
+    margin-right: 24px;
 }

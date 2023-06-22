@@ -87,17 +87,23 @@
       </div>
       <div class="collection-nav-list">
         <div class="collection-nav-item switch-btn">
-            <div class='btn-grid-type' data='cover'>Index</div>
-            <div class='btn-grid-type' data='index'>Cover</div>
+          <div class='btn-grid-type' data='cover'>Index</div>
+          <div class='btn-grid-type' data='index'>Cover</div>
         </div>
         <div class="collection-nav-item reset-btn">Reset</div>
         <div class="collection-nav-item filter-btn">Filter</div>
       </div>
-      <div class="collection-title">
+    </div>
+
+    <div class="collection-title">
         <span>
         {{- collection.title | escape -}}
         </span>
-      </div>
+    </div>
+
+    <div id="collection-result">
+      <div class="sort-wrap"></div>
+      <div class="stock-wrap"></div>
     </div>
 
     <div class="product-grid-container" id="ProductGridContainer">

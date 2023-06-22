@@ -755,6 +755,23 @@
     const newUrl = `${window.location.origin}${window.location.pathname}?${searchParams.toString()}`;
   location.href = newUrl;
   });
+  if(sortParam == 'created-descending'){
+      $('#collection-result').css({
+          'display':'flex'
+      });
+      $('#collection-result').find('.sort-wrap').html(`
+            <div class="filter-item sort-btn selected" data='created-descending'>New to old</div>
+      `);
+  }
+  if(sortParam == 'created-ascending'){
+      $('#collection-result').css({
+          'display':'flex'
+      });
+      $('#collection-result').find('.sort-wrap').html(`
+            <div class="filter-item sort-btn selected" data='created-ascending'>Old to new</div>
+      `);
+  }
+
   const filterParam = searchParams.get('filter.v.availability');
   if (filterParam) $(`.stock-btn[data="${filterParam}"]`).addClass('selected');
   $('.stock-btn').on('click', function (){
@@ -767,8 +784,27 @@
   location.href = newUrl;
   });
 
+  if(filterParam == '1'){
+      $('#collection-result').css({
+          'display':'flex'
+      });
+      $('#collection-result').find('.stock-wrap').html(`
+            <div class="filter-item stock-btn selected" data='1'>In stock</div>
+      `);
+  }
+  if(filterParam == '0'){
+      $('#collection-result').css({
+          'display':'flex'
+      });
+      $('#collection-result').find('.stock-wrap').html(`
+            <div class="filter-item stock-btn selected" data='0'>Out of stock</div>
+      `);
+  }
+
   $('.reset-btn').on('click', function() {
     location.href = `${window.location.origin}${window.location.pathname}`;
+      $('#collection-result').find('.stock-wrap').html(``);
+      $('#collection-result').hide();
   })
 
   if(sortParam) {
