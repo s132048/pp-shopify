@@ -96,7 +96,7 @@ input:autofill:hover,
 input:autofill:focus,
 input:autofill:active {
     background-color : transparent !important; 
-	-webkit-text-fill-color: #fff;
+	-webkit-text-fill-color: #646464;
     box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
     -webkit-box-shadow: 0 0 0 0 rgb(var(--color-background)) inset !important;
     transition: background-color 5000s ease-in-out 0s;
