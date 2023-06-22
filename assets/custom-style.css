@@ -1566,17 +1566,17 @@ variant-radios, variant-selects {
     display: none;
 }
 
-.card-img--main img:first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 300ms ease-out;
-}
+/*.card-img--main img:first-child {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    opacity: 0;*/
+/*    transition: opacity 300ms ease-out;*/
+/*}*/
 
-.card-img--main:hover img:first-child {
-    opacity: 1;
-}
+/*.card-img--main:hover img:first-child {*/
+/*    opacity: 1;*/
+/*}*/
 
 .pp div.snize li.snize-no-products-found {
     position: absolute;
