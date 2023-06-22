@@ -435,7 +435,7 @@ label[for='AddressProvinceNew'] {
 }
 
 #recover:target + div {
-  display: block;
+  display: flex;
 }
 
 #recover:target ~ #login,
