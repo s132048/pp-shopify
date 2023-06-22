@@ -629,10 +629,14 @@ variant-radios, variant-selects {
     color: #000;
 }
 
-.pp .collection .product-item .card__information.off .card__heading a {
-    font-size: 0;
-    color: transparent;
-    height: 0;
+/*.pp .collection .product-item .card__information.off .card__heading a {*/
+/*    font-size: 0;*/
+/*    color: transparent;*/
+/*    height: 0;*/
+/*}*/
+
+.product-more-info {
+    display: none !important;
 }
 
 @media (hover: hover) {
@@ -1789,4 +1793,8 @@ variant-radios, variant-selects {
     .main-collection-title:hover:after {
         color: #000;
     }
+}
+
+.card--standard .card__inner.off {
+    opacity: 0.5;
 }
