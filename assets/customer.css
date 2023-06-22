@@ -373,7 +373,7 @@ label[for='AddressProvinceNew'] {
     height: 33.5px;
   }
   .customer .submit_add_address{
-    padding: 0px 7px;
+    padding: 1px 7px;
   }
   .account_form_box select,
   .account_form_box input,
