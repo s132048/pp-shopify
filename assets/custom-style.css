@@ -1273,6 +1273,10 @@ variant-radios, variant-selects {
     .index-item:nth-child(2) {
         padding-right: 3.5px;
     }
+
+    .index-item:nth-child(4) {
+        padding-left: 3.5px;
+    }
   
     .index-item:nth-child(1),
     .index-item:nth-child(3) {
