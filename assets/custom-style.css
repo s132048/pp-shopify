@@ -224,8 +224,8 @@ a {
     grid-template-columns: 1fr 2fr;
     gap: 0 8px;
     width: 100%;
-    height: calc(100vh - 120px);
-    padding: calc(34px + 3px) 10px 6px;
+    /*height: calc(100vh - 120px);*/
+    padding: calc(34px + 3px) 10px 3px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -415,7 +415,7 @@ variant-radios, variant-selects {
 }
 
 .detail-visual {
-    width: 65.5vw;
+    width: calc(((100vw - 10px) / 3) * 2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1125,7 +1125,6 @@ variant-radios, variant-selects {
     /*.card-img-list-wrap {*/
     /*    width: calc(100% - 10px);*/
     /*}*/
-
     /*.main-collection-list--2 .card-img-list-wrap {*/
     /*    width: calc(100% - 10px);*/
     /*}*/
@@ -1246,7 +1245,7 @@ variant-radios, variant-selects {
 .index-title.index {
     display: block;
     position: sticky;
-    top: 70px;
+    top: 68px;
     left: 0;
     width: 100%;
     background: #fff;
@@ -1797,4 +1796,51 @@ variant-radios, variant-selects {
 
 .card--standard .card__inner.off {
     opacity: 0.5;
+}
+
+aside#main-collection-filters {
+    height: 34px;
+}
+
+.pp .collection-nav .facets-wrap .facets-container {
+    height: 100%;
+}
+
+.pp .filter-list {
+    align-items: center;
+    height: 100%;
+}
+
+.pp .product-item .card__heading a::after {
+    display: none;
+}
+
+.card--media .card__inner .card__content {
+    cursor: pointer;
+}
+
+.index-item:nth-child(2) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.product-item-index.off * {
+    color: #dcdcdc;
+}
+
+@media (hover: hover) {
+    .product-item-index.off:hover * {
+        color: #e9e9e9;
+    }
+
+    .pp .swiper-pagination-bullet:hover {
+        background: #000;
+    }
+}
+
+.pp .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
 }

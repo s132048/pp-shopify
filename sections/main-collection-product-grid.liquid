@@ -142,7 +142,7 @@
                     is_index: is_index
                   %}
                 </li>
-                <li class="product-item-index">
+                <li class="product-item-index {% if product.available == false %} off{% endif %}">
                   <div class="index-row" onclick="location.href='{{ product.url }}'">
                     <div class="index-item">{{ product.type }}</div>
                     <div class="index-item">{{ product.title }}</div>
