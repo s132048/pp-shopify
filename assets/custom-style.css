@@ -693,7 +693,7 @@ variant-radios, variant-selects {
     }
 
     .drawer__header-inner {
-        height: 32px;
+      padding: 4px 0;
     }
 }
 
