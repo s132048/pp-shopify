@@ -871,7 +871,7 @@ variant-radios, variant-selects {
 @media screen and (max-width: 1024px) {
     .pp .cart__ctas {
         padding: 1px 7px;
-        height: inherit;
+        height: fit-content;
     }
 }
 
