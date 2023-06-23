@@ -1031,7 +1031,7 @@ variant-radios, variant-selects {
 }
 
 .info-img-wrap--pc {
-    display: block;
+    display: grid;
 }
 
 .info-img-wrap--m {
