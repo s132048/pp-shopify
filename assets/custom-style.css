@@ -1030,6 +1030,14 @@ variant-radios, variant-selects {
     height: auto;
 }
 
+.info-img-wrap--pc {
+    display: block;
+}
+
+.info-img-wrap--m {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .info-img-wrap {
         display: block;
@@ -1039,6 +1047,20 @@ variant-radios, variant-selects {
 
     .info-img-wrap img + img {
         margin-top: 7px;
+    }
+
+    .info-img-wrap--pc {
+        display: none;
+    }
+
+    .info-img-wrap--m {
+        display: block;
+    }
+
+    .info-img-wrap--m img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 
