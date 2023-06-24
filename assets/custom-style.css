@@ -1844,6 +1844,10 @@ variant-radios, variant-selects {
     .account_form_box select:hover {
         color: #969696;
     }
+
+    .customer input[type=checkbox]:hover {
+        background: #969696;
+    }
 }
 
 .pp #recover:target + div {
