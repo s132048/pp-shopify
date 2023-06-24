@@ -2084,3 +2084,21 @@ details[open] > .search-modal {
     display: inline-block;
     width: fit-content;
 }
+
+.pp div.snize li.snize-no-products-found div.snize-no-products-found-text span a {
+    color: #000;
+}
+
+.pp .snize-ac-results .snize-nothing-found-text {
+    color: #000;
+}
+
+.pp .search-modal__close-button {
+    color: #969696 !important;
+}
+
+@media (hover: hover) {
+    .pp .search-modal__close-button:hover {
+        color: #000 !important;
+    }
+}
