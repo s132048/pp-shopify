@@ -43,3 +43,7 @@ $('#view-all-btn').on('click', function (){
     let keyword = $('.search__input').val();
     window.location.href = `/pages/search-results-page?q=${keyword}`;
 });
+
+$('.modal__toggle').on('click', function () {
+    $('.search__input').val('');
+});
