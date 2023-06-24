@@ -2228,6 +2228,7 @@ details[open] > .search-modal {
     left: 0;
     width: 100%;
     text-align: center;
+    border-top: 1.5px solid #000;
 }
 
 #view-all-btn > div {
@@ -2250,4 +2251,13 @@ details[open] > .search-modal {
     cursor: pointer;
     transition: none;
     align-self: end;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+.pp .snize-ac-results {
+    margin-top: 0;
+    top: 30px !important;
 }
