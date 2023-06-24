@@ -228,8 +228,9 @@ class PredictiveSearch extends HTMLElement {
 customElements.define('predictive-search', PredictiveSearch);
 let mobileSearchMenuTitles = document.querySelectorAll('.mobile-search-menu-title');
 let searchMenuItems = document.querySelectorAll('.search-menu-item-list');
+let searchMenuItemsMo = document.querySelectorAll('.search-menu-item-list--m');
 
-searchMenuItems.forEach((item) => {
+searchMenuItemsMo.forEach((item) => {
   item.style.height = '0';
   item.style.overflow = 'hidden';
   item.style.transition = 'height 400ms ease';

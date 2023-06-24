@@ -1161,6 +1161,10 @@ variant-radios, variant-selects {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.main-collection-list--ex {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .card-img-list-wrap {
     /*     width: calc(50vw - 24px); */
 }
@@ -1359,6 +1363,7 @@ variant-radios, variant-selects {
 .pp .filter-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pp .filter-item + .filter-item {
@@ -1366,8 +1371,18 @@ variant-radios, variant-selects {
 }
 
 @media screen and (max-width: 1024px) {
+    .pp .filter-list {
+        max-width: 240px;
+        margin: auto;
+    }
+
+    .pp .filter-item {
+        margin-right: 9px;
+        margin-left: 9px;
+    }
+
     .pp .filter-item + .filter-item {
-        margin-left: 5px;
+        margin-left: 9px;
     }
 }
 
@@ -1795,9 +1810,19 @@ variant-radios, variant-selects {
     .card__heading a:hover {
         color: #dcdcdc;
     }
+
+    .product-card-wrapper:hover a {
+        color: #dcdcdc;
+    }
+
+    .nav-country:hover {
+        color: #dcdcdc;
+    }
 }
 
 @media (hover: hover) {
+    .theme-black.pp .menu-item a:hover,
+    .theme-black.pp .menu-item a:hover *,
     .pp .line_title:hover,
     .pp .order_item a:hover,
     .pp .customer button:hover,
@@ -1850,6 +1875,9 @@ variant-radios, variant-selects {
     left: 0;
     color: transparent;
     padding: 3px 0 3px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
 }
 
 @media (hover: hover) {
@@ -1868,6 +1896,12 @@ variant-radios, variant-selects {
 
 aside#main-collection-filters {
     height: 34px;
+}
+
+@media screen and (max-width: 1024px) {
+    aside#main-collection-filters {
+        height: auto;
+    }
 }
 
 .pp .collection-nav .facets-wrap .facets-container {
@@ -2012,10 +2046,24 @@ details[open] > .search-modal {
     #collection-result {
         width: calc(100% - 14px);
         height: 32px;
-        display: flex;
+        /*display: non;*/
+    }
+
+    #collection-result .filter-item {
+        margin: 0;
     }
 }
 
 #collection-result > div {
     margin-right: 24px;
+}
+
+.account-list .nav-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-country {
+    display: inline-block;
+    width: fit-content;
 }
