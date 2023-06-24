@@ -1938,7 +1938,9 @@ aside#main-collection-filters {
     cursor: pointer;
 }
 
-.index-item:nth-child(2) {
+.index-item:nth-child(2),
+.index-item:nth-child(3),
+.index-item:nth-child(4) {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
