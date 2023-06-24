@@ -2130,3 +2130,33 @@ details[open] > .search-modal {
         color: #000 !important;
     }
 }
+
+.swiper-btn-prev {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.swiper-btn-next {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .swiper-btn-prev {
+        display: none;
+    }
+
+    .swiper-btn-next {
+        display: none;
+    }
+}

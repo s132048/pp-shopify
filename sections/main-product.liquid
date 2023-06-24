@@ -437,13 +437,25 @@
                     </div>
                     {% endfor %}
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination">
+
+                </div>
+                <div class="swiper-btn-next">
+
+                </div>
+                <div class="swiper-btn-prev">
+
+                </div>
             </div>
 
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             <script>
                 var swiper = new Swiper(".product-image", {
                     loop: true,
+                    navigation: {
+                        nextEl: ".swiper-btn-next",
+                        prevEl: ".swiper-btn-prev",
+                    },
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
