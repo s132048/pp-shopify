@@ -444,6 +444,10 @@
       "order_summary": {
         "subtotal_label": "Subtotal label",
         "recurring_subtotal_label": "Recurring subtotal label"
+      },
+      "contact": {
+        "address1_label": "주소 1",
+        "address2_label": "주소 2"
       }
     }
   },
