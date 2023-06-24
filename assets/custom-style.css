@@ -2223,6 +2223,7 @@ details[open] > .search-modal {
 #view-all-btn {
     display: none;
     position: absolute;
+    z-index: 100;
     bottom: 0;
     left: 0;
     width: 100%;

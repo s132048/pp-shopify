@@ -16,6 +16,7 @@ navCloseBtn.addEventListener('click', function () {
 searchCloseBtn.addEventListener('click', function () {
     searchPanel.style.width = '100%';
     searchPanel.style.height = '100%';
+    $('.search__input').val('');
 });
 
 $('.size-title').on('click', function () {
@@ -40,5 +41,5 @@ $('.search__input').on('keyup', function () {
 
 $('#view-all-btn').on('click', function (){
     let keyword = $('.search__input').val();
-    console.log(keyword);
+    window.location.href = `/pages/search-results-page?q=${keyword}`;
 });
