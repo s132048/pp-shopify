@@ -1853,8 +1853,12 @@ variant-radios, variant-selects {
         color: #969696;
     }
 
-    .line_item_img:hover + .line_item_details span {
+    .line_item_img:hover + .line_item_details .line_title {
         color: #969696;
+    }
+
+    .account_form_box input:hover{
+        color: #646464;
     }
 }
 
@@ -1865,11 +1869,6 @@ variant-radios, variant-selects {
 
 .account_form_box input {
     color: #969696;
-}
-
-.account_form_box input:hover,
-.account_form_box input:focus {
-    color: #646464;
 }
 
 .main-collection-title {
