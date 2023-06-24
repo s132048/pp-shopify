@@ -332,7 +332,7 @@
       "province": "시\/도",
       "zip": "우편번호",
       "phone": "전화번호",
-      "set_default": "기본 주소로 설정",
+      "set_default": "기본 배송지 설정",
       "add": "주소 추가",
       "update": "주소 업데이트",
       "cancel": "취소",
