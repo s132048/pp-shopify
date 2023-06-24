@@ -111,9 +111,9 @@
             
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
-            <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="Company">
-            <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="Address 1">
-            <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="Address 2">            
+            <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ form.company }}">
+            <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ form.address1 }}">
+            <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ form.address2 }}">            
             <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
             <select
               id="AddressCountryNew"
