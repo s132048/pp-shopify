@@ -295,7 +295,7 @@
           "alignment": "center",
           "image_aspect_ratio": "1\/1",
           "image_object_fit": "cover",
-          "show_vendor": true,
+          "show_vendor": false,
           "show_product_title": true,
           "show_price": true,
           "show_variant_input_label": false
