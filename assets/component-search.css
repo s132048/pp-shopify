@@ -286,13 +286,16 @@ input::-webkit-search-results-decoration{
   .search-menu-item{
     border-bottom: 1.5px solid #000;
   }
+  .search-menu-item-list{
+    display: none;
+    padding-bottom: 3px;
+  }
   .search-menu-item-list[data-status='close']{
     overflow: hidden;
-    transition: height 0.5s ease-in-out;
     height: 0;
   }
   .search-menu-item-list[data-status='open']{
-    padding-bottom: 3px;
+
   }
   .search_menu_list > div .mobile-search-menu-title .open-list,
   .search_menu_list > div .mobile-search-menu-title .close-list{
