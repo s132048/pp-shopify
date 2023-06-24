@@ -281,12 +281,8 @@ body{
 }
 .addresses .address_list li .button_set,
 .order_list li .button_set{
-/*   position:absolute; */
-/*   top: 7px; */
-/*   right: 0; */
   display: flex;
-/*   align-items: flex-end; */
-/*   flex-direction: column; */
+  margin-top: 28px;
   gap: 5px;
 }
 .addresses .address_list li p{
