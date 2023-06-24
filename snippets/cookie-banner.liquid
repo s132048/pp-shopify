@@ -1,20 +1,83 @@
 <style>
     #cookies-banner {
+        /*display: flex;*/
         display: none;
         justify-content: center;
         align-items: center;
-        padding: 1em;
         position: fixed;
-        bottom: 0px;
+        z-index: 1000000;
+        top: 0;
+        left: 0;
         width: 100%;
-        background: #fff;
-        border-top: 1px solid #dcdcdc;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        font-family: 'ABC Diatype', 'Noto Sans KR', sans-serif;
+        letter-spacing: 0;
+        font-size: 22px;
+        line-height: 28px;
+        word-break: keep-all;
+    }
+
+    @media screen and (max-width: 1024px) {
+        #cookies-banner {
+            font-size: 19px;
+            line-height: 24px;
+        }
+    }
+
+    .cb-inner * {
+        color: #fff;
+    }
+
+    .cb-inner > div:first-child {
+        text-align: center;
+    }
+
+    .pc {
+        display: inline-block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .cb-inner > div:first-child {
+            max-width: 280px;
+        }
+
+        .pc {
+            display: none;
+        }
+
+        .mobile {
+            display: inline-block;
+        }
+    }
+
+    .cookie-btn-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 34px;
+    }
+
+    .cookie-btn-list > div {
+        margin: 0 20px;
+        cursor: pointer;
     }
 </style>
 <div id="cookies-banner">
-    <span>This website uses cookies to ensure you get the best experience on our website.</span>
-    <button style="margin-left: 1em;" onclick="handleDecline()">Decline</button>
-    <button style="margin-left: 1em;" onclick="handleAccept()">Accept</button>
+    <div class="cb-inner">
+        <div>
+            <span class="pc">By selecting "Accept" you agree to the use of cookies.</span>
+            <span class="mobile">By selecting "Accept"<br>
+            you agree to the use of cookies.</span>
+        </div>
+        <div class="cookie-btn-list">
+            <div onclick="handleAccept()">Accept</div>
+            <div onclick="handleDecline()">Decline</div>
+        </div>
+    </div>
 </div>
 <script>
     function getBannerEl() {
@@ -26,7 +89,7 @@
     }
 
     function showBanner() {
-        getBannerEl().style.display = 'block';
+        getBannerEl().style.display = 'flex';
     }
 
     function handleAccept(e) {
