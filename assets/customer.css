@@ -395,6 +395,10 @@ label[for='AddressProvinceNew'] {
   .customer.order .line_item_list {
     gap: 7px;
   }
+  .addresses .address_list li .button_set,
+  .order_list li .button_set{
+    margin-top: 24px;
+  }
 }
 
 .customer.order .line_item_list img{
