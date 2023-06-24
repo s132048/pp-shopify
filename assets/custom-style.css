@@ -1848,6 +1848,14 @@ variant-radios, variant-selects {
     .customer input[type=checkbox]:hover:before {
         background: #969696;
     }
+
+    .order_item a:hover * {
+        color: #969696;
+    }
+
+    .line_item_img:hover + .line_item_details span {
+        color: #969696;
+    }
 }
 
 .pp #recover:target + div {
