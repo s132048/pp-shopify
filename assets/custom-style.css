@@ -87,17 +87,24 @@ a {
 .nav-wrapper {
     position: fixed;
     z-index: 10;
-    bottom: -100vh;
+    bottom: -100%;
     left: 0;
     padding: 8px 10px 10px;
     width: 100%;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-color: #fff;
     transition: bottom 400ms ease;
 }
 
 .nav-wrapper.active {
     bottom: 0;
+}
+
+.ps {
+    overflow: hidden;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    touch-action: none;
 }
 
 .nav-inner {
@@ -435,7 +442,8 @@ variant-radios, variant-selects {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 166px);
+    /*height: calc(100vh - 166px);*/
+    height: calc((var(--vh, 1vh) * 100) - 166px);
     overflow: hidden;
     background: #E9E9E9;
 }

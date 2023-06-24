@@ -4,13 +4,27 @@ const navCloseBtn = document.querySelector('.nav-close-btn');
 const searchCloseBtn = document.querySelector('.search-modal__close-button');
 const searchPanel = document.querySelector('.pp .search-modal');
 
+function setSize() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('load', () => {
+    setSize();
+});
+
+window.addEventListener('resize', () => {
+    setSize();
+});
 
 menuBtn.addEventListener('click', function () {
     navPanel.classList.add('active');
+    document.querySelector('body').classList.add('ps');
 });
 
 navCloseBtn.addEventListener('click', function () {
     navPanel.classList.remove('active');
+    document.querySelector('body').classList.remove('ps');
 });
 
 searchCloseBtn.addEventListener('click', function () {
