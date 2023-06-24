@@ -2034,6 +2034,7 @@ details[open] > .search-modal {
 
 
 .pp .search-modal__content {
+    position: relative;
     overflow: hidden;
 }
 
@@ -2217,4 +2218,22 @@ details[open] > .search-modal {
 
 .size-row:last-child {
     border-bottom: 0;
+}
+
+#view-all-btn {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#view-all-btn > div {
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+
 }
