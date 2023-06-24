@@ -46,4 +46,5 @@ $('#view-all-btn').on('click', function (){
 
 $('.modal__toggle').on('click', function () {
     $('.search__input').val('');
+    $('#view-all-btn').hide();
 });

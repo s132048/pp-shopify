@@ -2238,3 +2238,16 @@ details[open] > .search-modal {
 @media screen and (max-width: 1024px) {
 
 }
+
+#snize-search-results-grid-mode.snize-four-columns li.snize-product {
+    width: 100% !important;
+    box-sizing: border-box;
+    display: block;
+    vertical-align: top;
+    border: none;
+    min-width: auto;
+    color: #000;
+    cursor: pointer;
+    transition: none;
+    align-self: end;
+}
