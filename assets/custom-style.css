@@ -1809,6 +1809,10 @@ variant-radios, variant-selects {
         color: #dcdcdc;
     }
 
+    .pp .product-item-index.off:hover * {
+        color: #000;
+    }
+
     .card__heading a:hover {
         color: #dcdcdc;
     }
@@ -1819,6 +1823,10 @@ variant-radios, variant-selects {
 
     .nav-country:hover {
         color: #dcdcdc;
+    }
+
+    .card--standard .card__inner.off:hover {
+        opacity: 1;
     }
 }
 
