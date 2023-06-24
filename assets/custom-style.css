@@ -1141,6 +1141,24 @@ variant-radios, variant-selects {
     height: auto;
 }
 
+.card-img--main {
+    position: relative;
+}
+
+.card-img--main .back-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+@media (hover: hover) {
+    .card-img--main:hover .back-img {
+        opacity: 1;
+    }
+}
+
 .main-collection-list .main-collection-item .card__information {
     padding: 0 !important;
 }
