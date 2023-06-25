@@ -1230,7 +1230,7 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .main-header {
-        padding: 0 5px;
+        padding: 0 7px;
     }
 }
 
