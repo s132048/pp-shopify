@@ -755,7 +755,7 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .cart-drawer__empty-content {
-        padding: 8px 7px;
+        padding: 3px 7px;
     }
 
     .pp .drawer__cart-items-wrapper.cart-items-wrapper {
