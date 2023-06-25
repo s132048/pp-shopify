@@ -415,5 +415,6 @@ body.overflow-hidden .search_menu_list{
     font-size: 19px;
     line-height: 24px;
     padding: 4px 0 !important;
+    height: 100%;
   }
 }
