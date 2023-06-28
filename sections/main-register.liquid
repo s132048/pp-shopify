@@ -44,7 +44,7 @@
       <label for='termspolicy'>
         Agree to our terms & conditions, privacy policy
       </label>
-      <input type="checkbox" id='termspolicy'/>
+      <input type="checkbox" id="termspolicy" name="customer[note][terms_agree]" required>
     </div>
     <div class='account_checkbox'>
       <label for='newsletter'>
@@ -62,11 +62,6 @@
     </div>
     <!-- 회원가입 에러 -->
 
-<!--     {%- if form.errors contains 'email' -%}
-      <span id="RegisterForm-email-error" class="form__message">
-        {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
-      </span>
-    {%- endif -%} -->
     <div class="account_error_box">
      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
@@ -80,11 +75,15 @@
         {% comment %}{{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.{% endcomment %}
       </span>
     {%- endif -%}
+    {% if form.errors contains 'note' %}
+      <span id="termspolicy-error" class="form__message">
+      You must agree to the Terms and Conditions.
+      </span>
+    {% endif %}
     </div>
   {%- endform -%}
   </div>
 </div>
-
 
 {% schema %}
 {
