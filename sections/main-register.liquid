@@ -65,14 +65,14 @@
     <div class="account_error_box">
      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
-        Email can't be blank
-        {% comment %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.{% endcomment %}
+<!--         Email can't be blank -->
+        {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
       </span>
     {%- endif -%}
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
         Password can't be blank
-        {% comment %}{{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.{% endcomment %}
+        {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
     {% if form.errors contains 'note' %}
