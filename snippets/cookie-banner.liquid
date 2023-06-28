@@ -107,7 +107,7 @@
     function initCookieBanner() {
         const userCanBeTracked = window.Shopify.customerPrivacy.userCanBeTracked();
         const userTrackingConsent = window.Shopify.customerPrivacy.getTrackingConsent();
-
+        conosole.log('xx');
         if(!userCanBeTracked && userTrackingConsent === 'no_interaction') {
             showBanner();
         }
