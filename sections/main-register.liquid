@@ -81,16 +81,14 @@
       </span>
     {% endif %}
 
-      
-  <div class="account_error_box">
-    {% for field in form.errors %}
-      {% for message in form.errors[field] %}
-        <span class="form__message" id="{{ field }}-error">
-          {{ message }}
-        </span>
+      {% for field in form.errors %}
+        s
+        {% for message in form.errors[field] %}
+          <span class="form__message" id="{{ field }}-error">
+            {{ message }}
+          </span>
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
-  </div>
     </div>
   {%- endform -%}
   </div>
