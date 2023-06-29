@@ -81,7 +81,7 @@
       </span>
     {% endif %}
 
-      {%- if form.errors.size > 0 -%}
+      
   <div class="account_error_box">
     {% for field in form.errors %}
       {% for message in form.errors[field] %}
@@ -91,7 +91,6 @@
       {% endfor %}
     {% endfor %}
   </div>
-{%- endif -%}
     </div>
   {%- endform -%}
   </div>
