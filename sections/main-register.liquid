@@ -77,6 +77,11 @@
     {%- endif -%}
     {% if form.errors contains 'form' %}
       <span id="termspolicy-error" class="form__message">
+      {{ form.errors.translated_fields['form'] | capitalize }} {{ form.errors.messages['form'] }}.
+      </span>
+    {% endif %}
+    {% if form.errors contains 'note' %}
+      <span id="termspolicy-error" class="form__message">
       You must agree to the Terms and Conditions.
       </span>
     {% endif %}
