@@ -62,8 +62,6 @@
     </div>
     <!-- 회원가입 에러 -->
      {%- if form.errors -%}
-       ddddd
-       {%- endif -%}
     <div class="account_error_box">
      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
@@ -86,6 +84,7 @@
       </span>
     {% endif %}
     </div>
+    {%- endif -%}
   {%- endform -%}
   </div>
 </div>
