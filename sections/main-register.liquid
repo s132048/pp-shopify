@@ -75,7 +75,7 @@
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
-    {% if form.errors contains 'note' %}
+    {% if form.errors contains 'form' %}
       <span id="termspolicy-error" class="form__message">
       You must agree to the Terms and Conditions.
       </span>
