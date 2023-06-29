@@ -120,32 +120,6 @@
 }
 {% endschema %}
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var registerForm = document.querySelector('form[name="create_customer"]');
-    var passwordInput = document.getElementById('RegisterForm-password');
-    var confirmPasswordInput = document.getElementById('customer_password_confirmation');
-    var errorBox = document.querySelector('.account_error_box');
-    
-    registerForm.addEventListener('submit', function(event) {
-      if (passwordInput.value !== confirmPasswordInput.value) {
-        event.preventDefault();
-        showError('Passwords do not match.');
-      } else {
-        clearError();
-      }
-    });
-    
-    function showError(errorMessage) {
-      errorBox.innerHTML = '<span class="form__message">' + errorMessage + '</span>';
-    }
-    
-    function clearError() {
-      errorBox.innerHTML = '';
-    }
-  });
-</script>
-
 
 
 
