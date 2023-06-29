@@ -85,15 +85,6 @@
       You must agree to the Terms and Conditions.
       </span>
     {% endif %}
-
-      {% for field in form.errors %}
-        {{ field }}
-        {% for message in form.errors[field] %}
-          <span class="form__message" id="{{ field }}-error">
-            {{ message }}
-          </span>
-        {% endfor %}
-      {% endfor %}
     </div>
   {%- endform -%}
   </div>
