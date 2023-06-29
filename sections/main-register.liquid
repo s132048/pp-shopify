@@ -65,13 +65,11 @@
     <div class="account_error_box">
      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
-<!--         Email can't be blank -->
         {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
       </span>
     {%- endif -%}
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
-        Password can't be blank
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
@@ -121,3 +119,34 @@
   ]
 }
 {% endschema %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var registerForm = document.querySelector('form[name="create_customer"]');
+    var passwordInput = document.getElementById('RegisterForm-password');
+    var confirmPasswordInput = document.getElementById('customer_password_confirmation');
+    var errorBox = document.querySelector('.account_error_box');
+    
+    registerForm.addEventListener('submit', function(event) {
+      if (passwordInput.value !== confirmPasswordInput.value) {
+        event.preventDefault();
+        showError('Passwords do not match.');
+      } else {
+        clearError();
+      }
+    });
+    
+    function showError(errorMessage) {
+      errorBox.innerHTML = '<span class="form__message">' + errorMessage + '</span>';
+    }
+    
+    function clearError() {
+      errorBox.innerHTML = '';
+    }
+  });
+</script>
+
+
+
+
+
