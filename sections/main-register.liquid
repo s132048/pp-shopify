@@ -38,11 +38,6 @@
         Agree to our terms & conditions, privacy policy
       </label>
       <input type="checkbox" id="termspolicy" name="customer[note][terms_agree]" required>
-    {% if form.errors contains 'note' %}
-    <span id="termspolicy-error" class="form__message">
-      You must agree to the Terms and Conditions.
-    </span>
-  {% endif %}
     </div>
     <div class='account_checkbox'>
       <label for='newsletter'>
@@ -119,7 +114,20 @@
 }
 {% endschema %}
 
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('#registerForm');
+    form.addEventListener('submit', function(event) {
+      var termsCheckbox = document.querySelector('#termspolicy');
+      if (!termsCheckbox.checked) {
+        event.preventDefault(); // 폼 제출 방지
+        var errorElement = document.querySelector('#termspolicy-error');
+        errorElement.textContent = 'You must agree to the Terms and Conditions.';
+        errorElement.style.display = 'block'; // 에러 메시지 표시
+      }
+    });
+  });
+</script>
 
 
 
