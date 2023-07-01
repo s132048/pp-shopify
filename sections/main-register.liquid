@@ -39,11 +39,10 @@
       </label>
       <input type="checkbox" id="termspolicy" name="customer[note][terms_agree]" required>
     </div>
-    <div class='account_checkbox'>
-      <label for='newsletter'>
-        Subscribe to our newsletter
-      </label>
-      <input type="checkbox" id='newsletter'/>
+    <div class="accepts-marketing">
+        <label for="accepts-marketing">Subscribe to our newsletter</label>
+        <input type="hidden" name="customer[accepts_marketing]" value="false" />
+        <input type="checkbox" name="customer[accepts_marketing]" />
     </div>
     <div class="account_buttons">
       <button type="submit">
