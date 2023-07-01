@@ -6,7 +6,7 @@
     Register
   </span>
   <div class="account_form_box">
-  {%- form 'create_customer' -%}
+  {%- form 'create_customer', novalidate: 'novalidate' -%}
       <input
         type="email"
         name="customer[email]"
