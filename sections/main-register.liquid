@@ -1,38 +1,37 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
-
 <div class="customer register">
   <span class='account_title'>
     Register
   </span>
   <div class="account_form_box">
-  {%- form 'create_customer', novalidate: 'novalidate' -%}
-      <input
-        type="email"
-        name="customer[email]"
-        id="RegisterForm-email"
-        {% if form.email %} value="{{ form.email }}"{% endif %}
-        spellcheck="false"
-        autocapitalize="off"
-        autocomplete="email"
-        aria-required="true"
-        {% if form.errors contains 'email' %}
-          aria-invalid="true"
-          aria-describedby="RegisterForm-email-error"
-        {% endif %}
-        placeholder="Email"
-      >
-      <input
-        type="password"
-        name="customer[password]"
-        id="RegisterForm-password"
-        aria-required="true"
-        {% if form.errors contains 'password' %}
-          aria-invalid="true"
-          aria-describedby="RegisterForm-password-error"
-        {% endif %}
-        placeholder="Password"
-      >
+    {%- form 'create_customer', novalidate: 'novalidate' -%}
+    <input
+      type="email"
+      name="customer[email]"
+      id="RegisterForm-email"
+      {% if form.email %} value="{{ form.email }}"{% endif %}
+      spellcheck="false"
+      autocapitalize="off"
+      autocomplete="email"
+      aria-required="true"
+      {% if form.errors contains 'email' %}
+        aria-invalid="true"
+        aria-describedby="RegisterForm-email-error"
+      {% endif %}
+      placeholder="Email"
+    >
+    <input
+      type="password"
+      name="customer[password]"
+      id="RegisterForm-password"
+      aria-required="true"
+      {% if form.errors contains 'password' %}
+        aria-invalid="true"
+        aria-describedby="RegisterForm-password-error"
+      {% endif %}
+      placeholder="Password"
+    >
     <div class='account_checkbox'>
       <label for='termspolicy'>
         Agree to our terms & conditions, privacy policy
@@ -40,9 +39,9 @@
       <input type="checkbox" id="termspolicy" name="customer[note][terms_agree]" required>
     </div>
     <div class="accepts-marketing account_checkbox">
-        <label for="accepts-marketing">Subscribe to our newsletter</label>
-        <input type="hidden" name="customer[accepts_marketing]" value="false" />
-        <input type="checkbox" name="customer[accepts_marketing]" />
+      <label for="accepts-marketing">Subscribe to our newsletter</label>
+      <input type="hidden" name="customer[accepts_marketing]" value="false" />
+      <input type="checkbox" name="customer[accepts_marketing]" id="newsletter" />
     </div>
     <div class="account_buttons">
       <button type="submit" style="display: none;" id="submitButton">
@@ -51,36 +50,36 @@
       <button type="button" id="fakeButton" onclick="submitForm()">
         Register
       </button>
-<!--       <a href="{{ routes.account_login_url }}">
-       Sign in
+      <!-- <a href="{{ routes.account_login_url }}">
+        Sign in
       </a> -->
     </div>
     <!-- 회원가입 에러 -->
-     {%- if form.errors -%}
+    {%- if form.errors -%}
     <div class="account_error_box">
-     {%- if form.errors contains 'email' -%}
+      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
         {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
       </span>
-    {%- endif -%}
-    {%- if form.errors contains 'password' -%}
+      {%- endif -%}
+      {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
-    {%- endif -%}
-    {% if form.errors contains 'form' %}
+      {%- endif -%}
+      {% if form.errors contains 'form' %}
       <span id="form-error" class="form__message">
-      {{ form.errors.translated_fields['form'] | capitalize }} {{ form.errors.messages['form'] }}.
+        {{ form.errors.translated_fields['form'] | capitalize }} {{ form.errors.messages['form'] }}.
       </span>
-    {% endif %}
-    {% if form.errors contains 'note' %}
+      {% endif %}
+      {% if form.errors contains 'note' %}
       <span id="termspolicy-error" class="form__message">
-      You must agree to the Terms and Conditions.
+        You must agree to the Terms and Conditions.
       </span>
-    {% endif %}
+      {% endif %}
     </div>
     {%- endif -%}
-  {%- endform -%}
+    {%- endform -%}
   </div>
 </div>
 
@@ -93,7 +92,6 @@
       var termsCheckbox = document.querySelector('#termspolicy');
       if (!termsCheckbox.checked) {
         event.preventDefault(); // 폼 제출 방지
-        console.log('xxx')
         var errorElement = document.querySelector('#termspolicy-error');
         errorElement.textContent = 'You must agree to the Terms and Conditions.';
         errorElement.style.display = 'block'; // 에러 메시지 표시
@@ -146,6 +144,3 @@
   ]
 }
 {% endschema %}
-
-
-
