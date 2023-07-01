@@ -45,7 +45,10 @@
         <input type="checkbox" name="customer[accepts_marketing]" />
     </div>
     <div class="account_buttons">
-      <button type="submit">
+      <button type="submit" style="display: none;" id="submitButton">
+        Register
+      </button>
+      <button type="button" id="fakeButton" onclick="submitForm()">
         Register
       </button>
 <!--       <a href="{{ routes.account_login_url }}">
@@ -115,6 +118,8 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('#registerForm');
+    var submitButton = document.querySelector('#submitButton');
+
     form.addEventListener('submit', function(event) {
       var termsCheckbox = document.querySelector('#termspolicy');
       if (!termsCheckbox.checked) {
@@ -125,8 +130,19 @@
         return false; // 추가적인 폼 제출 방지
       }
     });
+
+    function submitForm() {
+      var newsletterCheckbox = document.querySelector('#newsletter');
+      if (newsletterCheckbox.checked) {
+        submitButton.click(); // 제출 버튼 클릭
+      }
+    }
+
+    var fakeButton = document.querySelector('#fakeButton');
+    fakeButton.addEventListener('click', function() {
+      submitForm();
+    });
   });
 </script>
-
 
 
