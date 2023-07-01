@@ -5,33 +5,33 @@
     Register
   </span>
   <div class="account_form_box">
-    {%- form 'create_customer', novalidate: 'novalidate' -%}
-    <input
-      type="email"
-      name="customer[email]"
-      id="RegisterForm-email"
-      {% if form.email %} value="{{ form.email }}"{% endif %}
-      spellcheck="false"
-      autocapitalize="off"
-      autocomplete="email"
-      aria-required="true"
-      {% if form.errors contains 'email' %}
-        aria-invalid="true"
-        aria-describedby="RegisterForm-email-error"
-      {% endif %}
-      placeholder="Email"
-    >
-    <input
-      type="password"
-      name="customer[password]"
-      id="RegisterForm-password"
-      aria-required="true"
-      {% if form.errors contains 'password' %}
-        aria-invalid="true"
-        aria-describedby="RegisterForm-password-error"
-      {% endif %}
-      placeholder="Password"
-    >
+  {%- form 'create_customer', novalidate: 'novalidate' -%}
+      <input
+        type="email"
+        name="customer[email]"
+        id="RegisterForm-email"
+        {% if form.email %} value="{{ form.email }}"{% endif %}
+        spellcheck="false"
+        autocapitalize="off"
+        autocomplete="email"
+        aria-required="true"
+        {% if form.errors contains 'email' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-email-error"
+        {% endif %}
+        placeholder="Email"
+      >
+      <input
+        type="password"
+        name="customer[password]"
+        id="RegisterForm-password"
+        aria-required="true"
+        {% if form.errors contains 'password' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-password-error"
+        {% endif %}
+        placeholder="Password"
+      >
     <div class='account_checkbox'>
       <label for='termspolicy'>
         Agree to our terms & conditions, privacy policy
@@ -79,14 +79,22 @@
       {% endif %}
     </div>
     {%- endif -%}
-    {%- endform -%}
+  {%- endform -%}
   </div>
 </div>
 
 <script>
+  function submitForm() {
+    var newsletterCheckbox = document.querySelector('#newsletter');
+    if (newsletterCheckbox.checked) {
+      document.querySelector('#submitButton').click(); // 제출 버튼 클릭
+    }
+  }
+</script>
+
+<script>
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('#create_customer');
-    var submitButton = document.querySelector('#submitButton');
 
     form.addEventListener('submit', function(event) {
       var termsCheckbox = document.querySelector('#termspolicy');
@@ -97,18 +105,6 @@
         errorElement.style.display = 'block'; // 에러 메시지 표시
         return false; // 추가적인 폼 제출 방지
       }
-    });
-
-    function submitForm() {
-      var newsletterCheckbox = document.querySelector('#newsletter');
-      if (newsletterCheckbox.checked) {
-        submitButton.click(); // 제출 버튼 클릭
-      }
-    }
-
-    var fakeButton = document.querySelector('#fakeButton');
-    fakeButton.addEventListener('click', function() {
-      submitForm();
     });
   });
 </script>
