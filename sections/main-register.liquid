@@ -101,6 +101,7 @@
       if (!termsCheckbox.checked) {
         event.preventDefault(); // 폼 제출 방지
         var errorElement = document.querySelector('#termspolicy-error');
+        console.log('xxxx')
         errorElement.textContent = 'You must agree to the Terms and Conditions.';
         errorElement.style.display = 'block'; // 에러 메시지 표시
         return false; // 추가적인 폼 제출 방지
