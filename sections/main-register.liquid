@@ -38,6 +38,11 @@
         Agree to our terms & conditions, privacy policy
       </label>
       <input type="checkbox" id="termspolicy" name="customer[note][terms_agree]" required>
+    {% if form.errors contains 'note' %}
+    <span id="termspolicy-error" class="form__message">
+      You must agree to the Terms and Conditions.
+    </span>
+  {% endif %}
     </div>
     <div class='account_checkbox'>
       <label for='newsletter'>
