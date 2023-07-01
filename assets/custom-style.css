@@ -423,7 +423,7 @@ variant-radios, variant-selects {
 }
 
 .detail-visual {
-    width: calc(((100vw - 10px) / 3) * 2);
+    width: calc(((100vw - 40px) / 3) * 2 + 10px);
 }
 
 @media screen and (max-width: 1024px) {
