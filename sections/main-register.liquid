@@ -73,11 +73,13 @@
       {{ form.errors.translated_fields['form'] | capitalize }} {{ form.errors.messages['form'] }}.
       </span>
     {% endif %}
-      <span id="termspolicy-error" class="form__message" style="display:none;">
-      You must agree to the Terms and Conditions.
-      </span>
     </div>
     {%- endif -%}
+    <div class="account_error_box" id="termspolicy-error" style="display:none;">
+       <span class="form__message">
+          You must agree to the Terms and Conditions.
+      </span>
+    </div>
   {%- endform -%}
   </div>
 </div>
