@@ -416,7 +416,7 @@ body.overflow-hidden .search_menu_list{
 
 .pp .search-modal {
     top: initial;
-    bottom: -100%;
+    bottom: -50% !important;
     transition: bottom .4s ease;
     opacity: 1;
 }
