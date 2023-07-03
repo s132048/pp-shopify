@@ -451,8 +451,7 @@
       }
     },
     "errors": {
-      "blank": "can't be blank",
-      "invalid": "{{Invalid}} is wrong."
+      "blank": "can't be blank"
     }
   },
   "customer_accounts": {
