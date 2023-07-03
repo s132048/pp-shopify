@@ -435,8 +435,7 @@ body.overflow-hidden .search_menu_list{
   .search_close_mobile{
     display:flex !important;
   }
-  .fake_button_mobile,
-  .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
+  .fake_button_mobile{
     margin-top: -1px;
     z-index: 10;
     background-repeat: no-repeat;
@@ -447,6 +446,9 @@ body.overflow-hidden .search_menu_list{
     height: 1rem !important;
     top: 17px;
     background-size: 0.8rem 0.8rem;
+  }
+  .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
+    display: none;
   }
   .pp .search-modal__close-button{
     right: 10px;
