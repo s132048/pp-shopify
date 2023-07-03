@@ -422,16 +422,7 @@ body.overflow-hidden .search_menu_list{
   bottom: -100% !important;
   transition: bottom 0.4s ease; 
 }
-.fake_button{
-    margin-top: -1px;
-    z-index: 10;
-    width: 1rem !important;
-    position: absolute;
-    right: -1px;
-    height: 1rem !important;
-    top: 17px;
-    background-size: 0.8rem 0.8rem;
-}
+
 @media screen and (max-width: 1024px) {
   .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
     font-size: 19px;
