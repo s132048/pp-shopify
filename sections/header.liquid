@@ -190,11 +190,12 @@
                       View all
                     </div>
                   </div>
-                  <span id="fake-button" class="fake_button">×</span>
+                  <span id="fake-button" class="fake_button search_close_pc">×</span>
+                  <span id="fake-button" class="fake_button search_close_mobile"></span>
                   <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_pc" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
                     ×
                   </button>
-                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_mobile" aria-label="{{ 'accessibility.close' | t }}">
+                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_mobile" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
                   </button>
                   {% render 'search-menu-list' %}
                 </div>
