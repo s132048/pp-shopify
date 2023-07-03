@@ -514,27 +514,27 @@
   });
 </script>
 <script>
+function clickCloseButton() {
+  let closeButton = document.querySelector('.modal_close_pc_settimeout');
+  closeButton.click();
+  let searchModal = document.querySelector('.search-modal');
+  searchModal.classList.remove('down');
+}
 
-document.getElementById('fake-button').addEventListener('click', function() {
-    let searchModal = document.querySelector('.search-modal');
-    searchModal.classList.add('down');
-    function clickCloseButton() {
-    let closeButton = document.querySelector('.modal_close_pc_settimeout');
-    closeButton.click();
-    searchModal.classList.remove('down');
-  }
-setTimeout(clickCloseButton, 1000); 
-});
-  document.getElementById('fake-button_mobile').addEventListener('click', function() {
-    let searchModal = document.querySelector('.search-modal');
-    searchModal.classList.add('down');
-    function clickCloseButton() {
-    let closeButton = document.querySelector('.modal_close_pc_settimeout');
-    closeButton.click();
-    searchModal.classList.remove('down');
-  }
-setTimeout(clickCloseButton, 1000); 
-});
+function addClickEventToElements(className) {
+  let elements = document.querySelectorAll('.' + className);
+  elements.forEach(function(element) {
+    element.addEventListener('click', function() {
+      let searchModal = document.querySelector('.search-modal');
+      searchModal.classList.add('down');
+      setTimeout(clickCloseButton, 1000);
+    });
+  });
+}
+
+addClickEventToElements('fake-button');
+addClickEventToElements('fake-button_mobile');
+
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function removeDisplayNone() {
   var headerElement = document.querySelector("#shopify-section-header");
