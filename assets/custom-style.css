@@ -1612,7 +1612,7 @@ variant-radios, variant-selects {
     }
 
     .pp .page-section #snize-search-results-grid-mode ul {
-        padding: 8px 7px 90px;
+        padding: 7px 7px 90px;
         grid-template-columns: repeat(2, 1fr);
     }
 
