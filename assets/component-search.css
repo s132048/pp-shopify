@@ -425,10 +425,10 @@ body.overflow-hidden .search_menu_list{
     z-index: 10;
     background-repeat: no-repeat;
     background-image: url(https://cdn.shopify.com/s/files/1/0702/4522/0637/files/search_close.svg?v=1686387638);
-    width: 1rem;
+    width: 1rem !important;
     position: absolute;
     right: -1px;
-    height: 1rem;
+    height: 1rem !important;
     top: 17px;
     background-size: 0.8rem 0.8rem;
   }
