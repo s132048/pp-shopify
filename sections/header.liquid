@@ -554,11 +554,14 @@ function handleTouch() {
         } else {
           let snizeCloseButton = document.querySelector('.snize-close-button');
 
-          let fakeButtonMobile = document.createElement('span');
-          fakeButtonMobile.id = 'fake-button_mobile';
-          fakeButtonMobile.classList.add('fake_button_mobile_sub', 'search_close_mobile');
+          let fakeButtonMobile = document.getElementById('fake-button_mobile');
+          if (!fakeButtonMobile) {
+            fakeButtonMobile = document.createElement('span');
+            fakeButtonMobile.id = 'fake-button_mobile';
+            fakeButtonMobile.classList.add('fake_button_mobile_sub', 'search_close_mobile');
+            snizeCloseButton.appendChild(fakeButtonMobile);
+          }
           
-          snizeCloseButton.appendChild(fakeButtonMobile);
           
           document.querySelector('.fake_button_mobile_sub').addEventListener('click', function(event) {
             event.stopPropagation(); // 다른 이벤트 전파 막기
