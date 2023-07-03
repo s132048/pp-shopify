@@ -68,6 +68,10 @@ body{
   margin-right: 25px;
 }
 
+.account_buttons a, .account_buttons button:first-child {
+  margin-right: 0px;
+}
+
 .customer {
   margin: 0 auto;
   padding: 0 10px 70px 10px;
