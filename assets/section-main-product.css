@@ -1,3 +1,11 @@
+a:hover {
+  color: #dcdcdc;
+}
+
+button:hover {
+  color: #dcdcdc;
+}
+
 .product {
   margin: 0;
 }
