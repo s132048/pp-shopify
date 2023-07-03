@@ -521,6 +521,7 @@ document.getElementById('fake-button').addEventListener('click', function() {
     function clickCloseButton() {
     let closeButton = document.querySelector('.modal_close_pc_settimeout');
     closeButton.click();
+    searchModal.classList.remove('down');
   }
 setTimeout(clickCloseButton, 1000); 
 });
