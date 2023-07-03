@@ -1075,6 +1075,7 @@ variant-radios, variant-selects {
 
     .info-img-wrap--m img {
         display: block;
+        padding-bottom: 3px;
         width: 100%;
         height: auto;
     }
