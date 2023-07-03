@@ -1808,7 +1808,7 @@ variant-radios, variant-selects {
     width: 32px !important;
     height: 32px !important;
     margin-top: -4px;
-    margin-right: -12px;
+    margin-right: -11px;
 }
 
 .pp .product-default .product-form__quantity .quantity__button {
