@@ -581,7 +581,13 @@ function handleTouch() {
           });
 
 
+          let resultsList = document.querySelector('.snize-ac-results-list');
+
+          let resultsWrapper = document.createElement('div');
+          resultsWrapper.classList.add('results-wrapper');
           
+          resultsList.parentNode.insertBefore(resultsWrapper, resultsList);
+          resultsWrapper.appendChild(resultsList);
           snizeCloseButton.appendChild(fakeButtonMobile);
           // searchInputMobile.forEach(function(mobileSearchInput) {
           //   changePlaceholder(mobileSearchInput, "Type something...");
