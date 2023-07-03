@@ -419,8 +419,17 @@ body.overflow-hidden .search_menu_list{
 
   }
 
-  .pp .search-modal__close-button {
+  .pp .search-modal__close-button,
+  .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
     margin-top: -1px;
+    z-index: 10;
+    background-image: url(https://cdn.shopify.com/s/files/1/0702/4522/0637/files/search_close.svg?v=1686387638);
+    width: 1rem;
+    position: absolute;
+    right: -1px;
+    height: 1rem;
+    top: 17px;
+    background-size: 0.8rem 0.8rem;
   }
 
   .snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text {
