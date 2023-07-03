@@ -1929,7 +1929,6 @@ variant-radios, variant-selects {
     top: 0;
     left: 0;
     color: transparent;
-    padding: 3px 0 3px;
     width: 100%;
     height: 100%;
     white-space: nowrap;
