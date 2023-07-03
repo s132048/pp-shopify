@@ -440,7 +440,8 @@ body.overflow-hidden .search_menu_list{
   .search_close_mobile{
     display:flex !important;
   }
-  .fake_button_mobile{
+  .fake_button_mobile,
+  .fake_button_mobile_sub{
     margin-top: -1px;
     z-index: 10;
     background-repeat: no-repeat;
