@@ -413,6 +413,16 @@ body.overflow-hidden .search_menu_list{
 .search_close_mobile{
   display: none !important;
 }
+
+.pp .search-modal {
+    top: initial;
+    bottom: -100%;
+    transition: bottom .4s ease;
+    opacity: 1;
+}
+.overflow-hidden .pp .search-modal {
+  bottom: 0 !important;
+}
 @media screen and (max-width: 1024px) {
   .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
     font-size: 19px;
