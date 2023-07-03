@@ -419,9 +419,6 @@ body.overflow-hidden .search_menu_list{
 
   }
 
-  .search-modal__form .search__input.snize-input-style {
-    position: relative;
-  }
   .pp .search-modal__close-button,
   .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
     margin-top: -1px;
@@ -435,7 +432,9 @@ body.overflow-hidden .search_menu_list{
     top: 17px;
     background-size: 0.8rem 0.8rem;
   }
-
+  .pp .search-modal__close-button{
+    right: 11px;
+  }
   .snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text {
     font-size: inherit;
   }
