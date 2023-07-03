@@ -1368,6 +1368,18 @@ variant-radios, variant-selects {
     padding: 0 10px 90px;
 }
 
+.index-item {
+  padding: 0 5px;
+}
+
+.index-item:first-child {
+  padding-left: 0;
+}
+
+.index-item:last-child {
+  padding-right: 0;
+}
+
 @media screen and (max-width: 1024px) {
     .index-row {
         display: grid;
