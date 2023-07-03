@@ -316,6 +316,7 @@ input::-webkit-search-results-decoration{
     display:none;
   }
   .search-modal, .overflow-hidden .snize-ac-results-mobile {
+    top: 0 !important;
     padding: 0 7px;
     transition: top 0.4s ease;
     transition: bottom 0.4s ease;
