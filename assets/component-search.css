@@ -420,7 +420,7 @@ body.overflow-hidden .search_menu_list{
   }
 
   .pp .search-modal__close-button {
-    top: -1px;
+    margin-top: -1px;
   }
 
   .snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text {
