@@ -449,6 +449,9 @@
         "address1_label": "주소 1",
         "address2_label": "주소 2"
       }
+    },
+    "errors": {
+      "blank": "can't be blank"
     }
   },
   "customer_accounts": {
