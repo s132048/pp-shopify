@@ -1070,6 +1070,7 @@ variant-radios, variant-selects {
 
     .info-img-wrap--m {
         display: block;
+        padding-top: 3px;
     }
 
     .info-img-wrap--m img {
