@@ -559,7 +559,7 @@ variant-radios, variant-selects {
 }
 
 .pp .collection-nav-item + .collection-nav-item {
-    margin-left: 0 12.5px;
+    margin: 0 12.5px;
 }
 
 .collection-title {
@@ -613,7 +613,7 @@ variant-radios, variant-selects {
     }
 
     .pp .collection-nav-item + .collection-nav-item {
-      margin-left: 0 9px;
+      margin: 0 9px;
     }
 }
 
