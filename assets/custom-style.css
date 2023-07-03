@@ -1574,6 +1574,10 @@ variant-radios, variant-selects {
 }
 
 @media screen and (max-width: 1024px) {
+    .pp .page-section #snize-search-results-grid-mode ul {
+      gap: 36px 7px;
+    }
+  
     .pp .page-section .snize-search-results-header,
     .pp .page-section .snize-search-results-header * {
         font-size: 19px;
