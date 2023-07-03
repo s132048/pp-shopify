@@ -419,7 +419,7 @@ body.overflow-hidden .search_menu_list{
   transition: bottom 0.4s ease; 
 }
 .search-modal.down{
-  bottom: -110% !important;
+  bottom: -101% !important;
   transition: bottom 0.4s ease; 
 }
 
