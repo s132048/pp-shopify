@@ -320,6 +320,9 @@ input::-webkit-search-results-decoration{
     transition: top 0.4s ease;
     transition: bottom 0.4s ease;
   }
+  .snize-ac-results-mobile.down{
+    top:101%; 
+  }
   .snize-ac-results.snize-ac-results-mobile .snize-product {
     padding-right: 0px !important;
   }
