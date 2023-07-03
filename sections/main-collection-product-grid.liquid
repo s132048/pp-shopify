@@ -205,7 +205,15 @@
   });
   render();
   $('.eo-sh-loading-text').remove();
-
+  $('.stock-btn').on('click', function (){
+    if ($(this).hasClass('selected')) {
+      searchParams.delete('filter.v.availability');
+    } else {
+      searchParams.set('filter.v.availability', $(this).attr('data'));
+    }
+    const newUrl = `${window.location.origin}${window.location.pathname}?${searchParams.toString()}`;
+  location.href = newUrl;
+  });
 </script>
 {% schema %}
 {
