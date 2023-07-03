@@ -410,6 +410,9 @@ body.overflow-hidden .search_menu_list{
   font-weight: 400 !important;
 }
 
+.search_close_mobile{
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
     font-size: 19px;
@@ -418,7 +421,12 @@ body.overflow-hidden .search_menu_list{
     height: 100%;
 
   }
-
+  .search_close_pc{
+     display: none; 
+  }
+  .search_close_mobile{
+    display:block;
+  }
   .pp .search-modal__close-button,
   .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
     margin-top: -1px;
