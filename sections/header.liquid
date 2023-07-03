@@ -552,6 +552,10 @@ function handleTouch() {
       if (searchInputMobile.length === 0) {
           setTimeout(handleTouch, 50); 
         } else {
+          let newCloseButtons = document.querySelectorAll('.snize-close-button-arrow');
+          newCloseButtons.forEach(function(button) {
+            button.classList.add('fake_button_mobile');
+          });
           // searchInputMobile.forEach(function(mobileSearchInput) {
           //   changePlaceholder(mobileSearchInput, "Type something...");
           // });
