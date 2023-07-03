@@ -421,9 +421,7 @@ body.overflow-hidden .search_menu_list{
     height: 100%;
 
   }
-  .search_close_pc{
-     display: none !important; 
-  }
+
   .search_close_mobile{
     display:block;
   }
@@ -442,6 +440,9 @@ body.overflow-hidden .search_menu_list{
   }
   .pp .search-modal__close-button{
     right: 10px;
+  }
+  .pp .search-modal__close-button.search_close_pc{
+    display: none !important;
   }
   .snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text {
     font-size: inherit;
