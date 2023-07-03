@@ -205,6 +205,8 @@
   });
   render();
   $('.eo-sh-loading-text').remove();
+
+  const searchParams = new URLSearchParams(window.location.search);
   $('.stock-btn').on('click', function (){
     if ($(this).hasClass('selected')) {
       searchParams.delete('filter.v.availability');
