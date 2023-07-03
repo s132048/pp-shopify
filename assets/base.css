@@ -2946,3 +2946,9 @@ details-disclosure > details {
 .nav-mobile {
   margin-top: 28px;
 }
+
+@media screen and (max-width: 1024px) {
+    .nav-mobile {
+  margin-top: 24px;
+}
+}
