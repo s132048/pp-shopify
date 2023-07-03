@@ -414,7 +414,7 @@ body.overflow-hidden .search_menu_list{
   .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
     font-size: 19px;
     line-height: 24px;
-    padding: 4px 0 !important;
+    padding: 7px 0 4px 0 !important;
     height: 100%;
 
   }
