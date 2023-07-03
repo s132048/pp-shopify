@@ -56,6 +56,10 @@ body{
   margin: 0;
 }
 
+.customer a, .customer button:first-child {
+  margin-right: 25px;
+}
+
 .customer {
   margin: 0 auto;
   padding: 0 10px 70px 10px;
@@ -508,6 +512,10 @@ input:autofill:active {
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
     font-size : 19px;
+  }
+  
+  .customer a, .customer button:first-child {
+    margin-right: 18px;
   }
 }
 
