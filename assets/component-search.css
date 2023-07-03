@@ -411,7 +411,7 @@ body.overflow-hidden .search_menu_list{
 }
 
 .search_close_mobile{
-  display: none;
+  display: none !important;
 }
 @media screen and (max-width: 1024px) {
   .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
@@ -422,7 +422,7 @@ body.overflow-hidden .search_menu_list{
 
   }
   .search_close_pc{
-     display: none; 
+     display: none !important; 
   }
   .search_close_mobile{
     display:block;
