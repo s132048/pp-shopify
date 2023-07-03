@@ -361,9 +361,12 @@ body.overflow-hidden .search_menu_list{
   display: grid !important;
 }
 @media screen and (max-width: 1024px){
-  .results-wrapper{
+/*   .results-wrapper{
     overflow-y : auto;
     height: 100%;
+  } */
+  .snize-ac-results-content{
+    overflow-y: auto;
   }
     body.overflow-hidden .search_menu_list{
     display: block !important;
