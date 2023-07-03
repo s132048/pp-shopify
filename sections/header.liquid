@@ -192,7 +192,7 @@
                   </div>
                   <span id="fake-button" class="fake_button search_close_pc search-modal__close-button">×</span>
                   <span id="fake-button" class="fake_button search_close_mobile"></span>
-                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_pc" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
+                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_pc modal_close_pc_settimeout" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
                     ×
                   </button>
                   <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_mobile" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
@@ -518,6 +518,11 @@
 document.getElementById('fake-button').addEventListener('click', function() {
     let searchModal = document.querySelector('.search-modal');
     searchModal.classList.add('down');
+    function clickCloseButton() {
+    let closeButton = document.querySelector('.modal_close_pc_settimeout');
+    closeButton.click();
+  }
+setTimeout(clickCloseButton, 1000); 
 });
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function removeDisplayNone() {
