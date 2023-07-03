@@ -553,8 +553,8 @@ function handleTouch() {
           setTimeout(handleTouch, 50); 
         } else {
           let snizeCloseButton = document.querySelector('.snize-close-button');
-
-          let fakeButtonMobile = document.getElementById('fake-button_mobile');
+          
+          let fakeButtonMobile = snizeCloseButton.querySelector('#fake-button_mobile');
           if (!fakeButtonMobile) {
             fakeButtonMobile = document.createElement('span');
             fakeButtonMobile.id = 'fake-button_mobile';
