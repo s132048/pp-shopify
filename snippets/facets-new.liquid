@@ -774,6 +774,7 @@
 
   const filterParam = searchParams.get('filter.v.availability');
   if (filterParam) $(`.stock-btn[data="${filterParam}"]`).addClass('selected');
+  console.log($('.stock-btn'));
   $('.stock-btn').on('click', function (){
     if ($(this).hasClass('selected')) {
       searchParams.delete('filter.v.availability');
