@@ -556,7 +556,19 @@ function handleTouch() {
 
           let fakeButtonMobile = document.createElement('span');
           fakeButtonMobile.id = 'fake-button_mobile';
-          fakeButtonMobile.classList.add('fake_button_mobile', 'search_close_mobile');
+          fakeButtonMobile.classList.add('fake_button_mobile_sub', 'search_close_mobile');
+
+        document.getElementById('fake_button_mobile_sub').addEventListener('click', function() {
+        let snizeResultsMobile = document.querySelector('.snize-ac-results-mobile');
+        snizeResultsMobile.classList.add('down');
+      
+        setTimeout(function() {
+          let closeButtonArrow = document.querySelector('.snize-close-button-arrow');
+          closeButtonArrow.click();
+      
+          snizeResultsMobile.classList.remove('down');
+        }, 1000);
+      });
           
           snizeCloseButton.appendChild(fakeButtonMobile);
           // searchInputMobile.forEach(function(mobileSearchInput) {
