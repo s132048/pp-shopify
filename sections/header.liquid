@@ -564,13 +564,16 @@ function handleTouch() {
             event.stopPropagation(); // 다른 이벤트 전파 막기
           
             let snizeResultsMobile = document.querySelector('.snize-ac-results-mobile');
+            let wrapper = document.quertSelector('.search-modal');
             snizeResultsMobile.classList.add('down');
+            wrapper.classList.add('down');
           
             setTimeout(function() {
               let closeButtonArrow = document.querySelector('.snize-close-button-arrow');
               closeButtonArrow.click();
           
               snizeResultsMobile.classList.remove('down');
+              wrapper.classList.remove('down');
             }, 1000);
           });
 
