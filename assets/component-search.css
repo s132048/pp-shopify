@@ -414,12 +414,6 @@ body.overflow-hidden .search_menu_list{
   display: none !important;
 }
 
-.pp .search-modal {
-    top: initial;
-    bottom: -50% !important;
-    transition: bottom .4s ease;
-    opacity: 1;
-}
 .overflow-hidden .search-modal {
   bottom: 0 !important;
   transition: bottom 0.4s ease; 
