@@ -435,7 +435,7 @@ body.overflow-hidden .search_menu_list{
   .search_close_mobile{
     display:flex !important;
   }
-  .fake_button,
+  .fake_button_mobile,
   .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
     margin-top: -1px;
     z-index: 10;
