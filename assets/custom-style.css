@@ -1580,6 +1580,9 @@ variant-radios, variant-selects {
     #snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode.snize-two-columns li.snize-product {
       padding-right: 0px !important;
     }
+    #snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode li.snize-product {
+      margin-bottom: 6px !important;
+    }
     .pp .page-section .snize-search-results-header,
     .pp .page-section .snize-search-results-header * {
         font-size: 19px;
