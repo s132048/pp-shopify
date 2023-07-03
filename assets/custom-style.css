@@ -230,7 +230,7 @@ a {
 .detail-top {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 0 8px;
+    gap: 0 10px;
     width: 100%;
     /*height: calc(100vh - 120px);*/
     padding: 34px 10px 0px;
