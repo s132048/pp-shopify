@@ -1092,10 +1092,6 @@ variant-radios, variant-selects {
     }
 }
 
-.main-collection-title {
-    padding: 3px 0 3px;
-}
-
 .main-collection-title a {
     display: inline-block;
     color: #000;
