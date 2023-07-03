@@ -322,6 +322,7 @@ input::-webkit-search-results-decoration{
   }
   .snize-ac-results-mobile.down{
     top:101% !important; 
+    transition: top 0.4s ease;
   }
   .snize-ac-results.snize-ac-results-mobile .snize-product {
     padding-right: 0px !important;
