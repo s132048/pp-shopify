@@ -529,6 +529,9 @@ input:autofill:active {
   .customer a, .customer button:first-child {
     margin-right: 18px;
   }
+  .account_buttons a, .account_buttons button:first-child {
+    margin-right: 0px;
+  }
 }
 
 .customer a {
