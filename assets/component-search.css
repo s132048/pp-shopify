@@ -423,7 +423,7 @@ body.overflow-hidden .search_menu_list{
   }
 
   .search_close_mobile{
-    display:block;
+    display:flex;
   }
   .pp .search-modal__close-button,
   .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
