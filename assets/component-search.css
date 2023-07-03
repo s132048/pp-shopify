@@ -418,4 +418,8 @@ body.overflow-hidden .search_menu_list{
     height: 100%;
 
   }
+
+  .pp .search-modal__close-button {
+    top: -1px;
+  }
 }
