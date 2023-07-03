@@ -558,7 +558,7 @@ function handleTouch() {
           fakeButtonMobile.id = 'fake-button_mobile';
           fakeButtonMobile.classList.add('fake_button_mobile_sub', 'search_close_mobile');
 
-        document.getElementById('fake_button_mobile_sub').addEventListener('click', function() {
+        document.querySelector('.fake_button_mobile_sub').addEventListener('click', function() {
         let snizeResultsMobile = document.querySelector('.snize-ac-results-mobile');
         snizeResultsMobile.classList.add('down');
       
