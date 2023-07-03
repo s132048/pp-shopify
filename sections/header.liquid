@@ -525,6 +525,16 @@ document.getElementById('fake-button').addEventListener('click', function() {
   }
 setTimeout(clickCloseButton, 1000); 
 });
+  document.getElementById('fake-button_mobile').addEventListener('click', function() {
+    let searchModal = document.querySelector('.search-modal');
+    searchModal.classList.add('down');
+    function clickCloseButton() {
+    let closeButton = document.querySelector('.modal_close_pc_settimeout');
+    closeButton.click();
+    searchModal.classList.remove('down');
+  }
+setTimeout(clickCloseButton, 1000); 
+});
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function removeDisplayNone() {
   var headerElement = document.querySelector("#shopify-section-header");
