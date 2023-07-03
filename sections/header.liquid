@@ -513,6 +513,10 @@
   });
 </script>
 <script>
+
+document.getElementById('fake-button').addEventListener('click', function() {
+  document.body.classList.remove('overflow-hidden');
+});
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
 function removeDisplayNone() {
   var headerElement = document.querySelector("#shopify-section-header");
