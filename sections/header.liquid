@@ -560,7 +560,9 @@ function handleTouch() {
           
           snizeCloseButton.appendChild(fakeButtonMobile);
           
-          document.querySelector('.fake_button_mobile_sub').addEventListener('click', function() {
+          document.querySelector('.fake_button_mobile_sub').addEventListener('click', function(event) {
+            event.stopPropagation(); // 다른 이벤트 전파 막기
+          
             let snizeResultsMobile = document.querySelector('.snize-ac-results-mobile');
             snizeResultsMobile.classList.add('down');
           
@@ -571,6 +573,7 @@ function handleTouch() {
               snizeResultsMobile.classList.remove('down');
             }, 1000);
           });
+
 
           
           snizeCloseButton.appendChild(fakeButtonMobile);
