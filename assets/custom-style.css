@@ -987,6 +987,7 @@ variant-radios, variant-selects {
 @media screen and (max-width: 1024px) {
     .info-inner {
         display: block;
+        padding-bottom: 90px;
     }
 }
 
