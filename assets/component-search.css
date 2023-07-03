@@ -21,7 +21,7 @@ input {
 .search__input,
 .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
   background: transparent;
-  padding: 3px 0 3px 0 !important;
+  padding: 5px 0 3px 0 !important;
   border:none;
   width: 100%;
   border-bottom: 1.5px solid #000;
