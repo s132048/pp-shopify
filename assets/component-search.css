@@ -315,6 +315,9 @@ input::-webkit-search-results-decoration{
   .search_menu_list > div .mobile-search-menu-title .close-list.hide{
     display:none;
   }
+  .pp .snize-ac-results{
+    top: 0 !important;
+  }
   .search-modal, .overflow-hidden .snize-ac-results-mobile {
     padding: 0 7px;
     transition: top 0.4s ease;
