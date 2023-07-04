@@ -199,7 +199,7 @@ a {
     }
 
     .pp .product-default .product__info-container {
-        height: 33.5px;
+        /*height: 33.5px;*/
         align-content: center;
     }
 
