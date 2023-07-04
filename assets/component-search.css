@@ -476,5 +476,6 @@ body.overflow-hidden .search_menu_list{
   }
   .snize-ac-results-content{
     overflow : unset;
+    height: calc(100% - 5px);
   }
 }
