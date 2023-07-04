@@ -480,6 +480,9 @@ body.overflow-hidden .search_menu_list{
   .snize-ac-results.snize-ac-results-mobile{
     overflow: unset;
   }
+  .pp .snize-ac-results-list{
+    padding-bottom : 200px;
+  }
   .snize-ac-results-content{
     overflow : unset;
     height: calc(100% + 5px);
