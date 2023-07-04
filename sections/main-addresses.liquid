@@ -202,9 +202,10 @@
 
   window.addEventListener('load', function() {
     var checkbox = document.querySelector('#adrs-chk input[type="checkbox"]');
+    var checkLabel = document.querySelector('#adrs-chk-label');
     var id = checkbox.id;
 
-    console.log(id); // 로그를 통해 id 값을 확인할 수 있습니다.
+    checkLabel.setAttribute('for', id);
   });
 </script>
 
