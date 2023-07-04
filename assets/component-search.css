@@ -474,6 +474,9 @@ body.overflow-hidden .search_menu_list{
   .snize-ac-results.snize-ac-results-mobile .snize-nothing-found-text {
     font-size: inherit;
   }
+  .search-modal, .overflow-hidden .snize-ac-results-mobile{
+    height: 100%;
+  }
   .snize-ac-results-content{
     overflow : unset;
     height: calc(100% - 5px);
