@@ -451,7 +451,8 @@
       }
     },
     "errors": {
-      "blank": "can't be blank"
+      "blank": "can't be blank",
+      "reset_password_html": "Your email address is already linked to your account. If this account is yours, you can <a href=\/account\/login#recover>reset your password<\/a>."
     }
   },
   "customer_accounts": {
