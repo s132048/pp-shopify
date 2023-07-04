@@ -537,3 +537,13 @@ input:autofill:active {
 .customer a {
   display: inline-block;
 }
+
+@media (hover: hover) {
+  .pp .menu-list .menu-item a:hover,
+  .pp .menu-list .menu-item a:hover *,
+  .pp .menu-list .menu-item:hover *,
+  .pp .menu-list .menu-item:hover {
+    color: #969696;
+    cursor: pointer;
+  }
+}
