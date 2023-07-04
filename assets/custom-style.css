@@ -1888,6 +1888,10 @@ variant-radios, variant-selects {
     .card--standard .card__inner.off:hover {
         opacity: 1;
     }
+
+    .pp .product-default .product-form__input label:hover {
+        color: #dcdcdc;
+    }
 }
 
 @media (hover: hover) {
@@ -2302,3 +2306,4 @@ details[open] > .search-modal {
     margin-top: 0;
     top: 30px !important;
 }
+
