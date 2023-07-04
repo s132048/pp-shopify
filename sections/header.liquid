@@ -602,14 +602,14 @@ function handleTouch() {
 
 
 // 각 입력 엘리먼트에 이벤트 리스너 추가
-// searchInputs.forEach(function(searchInput) {
-//   searchInput.addEventListener("input", function() {
-//     let touchEvent = new Event("touchstart");
-//     searchInput.dispatchEvent(touchEvent);
-//     removeDisplayNone();
-//   });
-//   searchInput.addEventListener("touchstart", handleTouch);
-// });
+searchInputs.forEach(function(searchInput) {
+  searchInput.addEventListener("input", function() {
+    let touchEvent = new Event("touchstart");
+    searchInput.dispatchEvent(touchEvent);
+    removeDisplayNone();
+  });
+  searchInput.addEventListener("touchstart", handleTouch);
+});
   
 </script>
 <script type="application/ld+json">
