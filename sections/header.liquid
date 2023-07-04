@@ -149,7 +149,7 @@
                           type="search"
                           name="q"
                           value=""
-                          placeholder="Search our store..."
+                          placeholder="Type something..."
                           {%- if settings.predictive_search_enabled -%}
                             role="combobox"
                             aria-expanded="false"
@@ -185,17 +185,10 @@
                   {%- if settings.predictive_search_enabled -%}
                     </predictive-search>
                   {%- endif -%}
-                  <div id="view-all-btn">
-                    <div>
-                      View all
-                    </div>
-                  </div>
-                  <span id="fake-button_pc" class="fake_button_pc search_close_pc search-modal__close-button">×</span>
-                  <span id="fake-button_mobile" class="fake_button_mobile search_close_mobile"></span>
-                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_pc modal_close_pc_settimeout" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
-                    ×
-                  </button>
-                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_mobile" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
+                  <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
+                      <path id="패스_686" data-name="패스 686" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#2b2e34"/>
+                    </svg>
                   </button>
                   {% render 'search-menu-list' %}
                 </div>
@@ -224,7 +217,9 @@
 <div class="nav-wrapper">
   <div class="nav-inner">
     <div class="nav-close-btn">
-      ×
+      <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
+        <path id="패스_563" data-name="패스 563" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#2b2e34"/>
+      </svg>
     </div>
     <div class="nav-col nav-col--1">
       <div class="nav-list">
@@ -237,7 +232,7 @@
             <!-- 네비게이션 2depth 메뉴 리스트-->
             <div class="depth-list" role="list" tabindex="-1">
               {%- for childlink in link.links -%}
-                <div class="depth-item">
+                <div class="depth-tiem">
                   {%- if childlink.links == blank -%}
                     <a href="{{ childlink.url }}" class="{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                       {{ childlink.title | escape }}
@@ -264,6 +259,14 @@
           {%- endif -%}
         </div>
         {%- endfor -%}
+        <div class="nav-item">
+          <button class='nav-kr'>
+            South Korea
+          </button>
+          <button class='nav-intl'>
+            International
+          </button>
+        </div>
       </div>
     </div>
     <div class="nav-col nav-col--2">
@@ -334,7 +337,9 @@
                     </predictive-search>
                   {%- endif -%}
                   <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                    ×
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9.856" height="9.856" viewBox="0 0 9.856 9.856">
+                      <path id="패스_686" data-name="패스 686" d="M0,0,3.784-3.806,7.568,0,8.712-1.144,4.928-4.928,8.712-8.712,7.546-9.856,3.784-6.072.022-9.856-1.144-8.712,2.662-4.928-1.144-1.144Z" transform="translate(1.144 9.856)" fill="#2b2e34"/>
+                    </svg>
                   </button>
                   {% render 'search-menu-list' %}
                 </div>
@@ -387,14 +392,6 @@
             -%}
             </a>
           {%- endif -%}
-        </div>
-        <div class="nav-item nav-pc nav-mobile">
-          <div class='nav-country nav-kr currency-switcher-btn' doubly-currency='KRW'>
-            South Korea
-          </div>
-          <div class='nav-country nav-intl currency-switcher-btn' doubly-currency='USD'>
-            International
-          </div>
         </div>
       </div>
     </div>
@@ -496,105 +493,31 @@
 
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
-<script type='module'>
-  if (!window.location.pathname.startsWith('/en')) {
-    $('.nav-intl').addClass('disabled');
-  } else {
-    $('.nav-kr').addClass('disabled');
-  }
-  $(document).on('click', '.nav-intl', function() {
-    if (!window.location.pathname.startsWith('/en')) {
-      window.location = '/en' + window.location.pathname;
-    }
-  });
-  $(document).on('click', '.nav-kr', function() {
-    if (window.location.pathname.startsWith('/en')) {
-      window.location = window.location.pathname.slice(3);
-    }
-  });
-</script>
 <script>
-function clickCloseButton() {
-  let closeButton = document.querySelector('.modal_close_pc_settimeout');
-  closeButton.click();
-  let searchModal = document.querySelector('.search-modal');
-  searchModal.classList.remove('down');
-}
-
-function addClickEventToElements(className) {
-  let elements = document.querySelectorAll('.' + className);
-  elements.forEach(function(element) {
-    element.addEventListener('click', function() {
-      let searchModal = document.querySelector('.search-modal');
-      searchModal.classList.add('down');
-      setTimeout(clickCloseButton, 1000);
-    });
-  });
-}
-
-addClickEventToElements('fake_button_pc');
-addClickEventToElements('fake_button_mobile');
-
 let searchInputs = document.querySelectorAll("#Search-In-Modal");
-function removeDisplayNone() {
-  var headerElement = document.querySelector("#shopify-section-header");
-  const remove = headerElement.removeAttribute("style");
-}
+
 // 터치되는 함수 정의
-function isMobileDevice() {
-  const mediaQuery = window.matchMedia("(max-width: 768px)");
-  return mediaQuery.matches;
-}
-  
 function handleTouch() {
-  removeDisplayNone();
+  console.log("#Search-In-Modal이 터치되었습니다.");
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
-   if (isMobileDevice()) {
-      if (searchInputMobile.length === 0) {
-          setTimeout(handleTouch, 50); 
-        } else {
-          let snizeCloseButton = document.querySelector('.snize-close-button');
-          
-          let fakeButtonMobile = snizeCloseButton.querySelector('#fake-button_mobile');
-          if (!fakeButtonMobile) {
-            fakeButtonMobile = document.createElement('span');
-            fakeButtonMobile.id = 'fake-button_mobile';
-            fakeButtonMobile.classList.add('fake_button_mobile_sub', 'search_close_mobile');
-            snizeCloseButton.appendChild(fakeButtonMobile);
-          }
-          
-          
-          document.querySelector('.fake_button_mobile_sub').addEventListener('click', function(event) {
-            event.stopPropagation(); // 다른 이벤트 전파 막기
-          
-            let snizeResultsMobile = document.querySelector('.snize-ac-results-mobile');
-            let wrapper = document.querySelector('.search-modal');
-            snizeResultsMobile.classList.add('down');
-            wrapper.classList.add('down');
-          
-            setTimeout(function() {
-              let closeButtonArrow = document.querySelector('.snize-close-button-arrow');
-              closeButtonArrow.click();
-          
-              snizeResultsMobile.classList.remove('down');
-              wrapper.classList.remove('down');
-            }, 1000);
-          });
+  if (searchInputMobile.length === 0) {
+    setTimeout(handleTouch, 50); 
+  } else {
+    searchInputMobile.forEach(function(mobileSearchInput) {
+      changePlaceholder(mobileSearchInput, "Type something...");
+      removeDisplayNone();
+    });
+  }
+  function removeDisplayNone() {
+  var headerElement = document.querySelector("#shopify-section-header");
+  headerElement.style.display = ""; // display 속성을 빈 문자열로 설정하여 제거
 
+  // 또는 아래와 같이 display 속성을 null로 설정할 수도 있습니다.
+  // headerElement.style.display = null;
+}
 
-          let resultsList = document.querySelector('.snize-ac-results-list');
+// removeDisplayNone 함수 호출
 
-          let resultsWrapper = document.createElement('div');
-          resultsWrapper.classList.add('results-wrapper');
-          
-          resultsList.parentNode.insertBefore(resultsWrapper, resultsList);
-          resultsWrapper.appendChild(resultsList);
-          snizeCloseButton.appendChild(fakeButtonMobile);
-          // searchInputMobile.forEach(function(mobileSearchInput) {
-          //   changePlaceholder(mobileSearchInput, "Type something...");
-          // });
-        }
-      }
   function changePlaceholder(inputElement, newPlaceholder) {
     inputElement.placeholder = newPlaceholder;
   }
@@ -606,12 +529,12 @@ searchInputs.forEach(function(searchInput) {
   searchInput.addEventListener("input", function() {
     let touchEvent = new Event("touchstart");
     searchInput.dispatchEvent(touchEvent);
-    removeDisplayNone();
   });
   searchInput.addEventListener("touchstart", handleTouch);
 });
   
 </script>
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
