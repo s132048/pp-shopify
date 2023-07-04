@@ -479,4 +479,14 @@ body.overflow-hidden .search_menu_list{
     height: calc(100% - 5px);
     min-height :calc(100% - 5px) !important;
   }
+  /* 모든 스크롤바 숨기기 */
+  .snize-ac-results-content::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #F5F5F5;
+  }
+  
+  .snize-ac-results-content::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+
 }
