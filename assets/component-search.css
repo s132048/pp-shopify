@@ -479,8 +479,8 @@ body.overflow-hidden .search_menu_list{
   }
   .snize-ac-results-content{
     overflow : unset;
-    height: calc(100% - 5px);
-    min-height :calc(100% - 5px) !important;
+    height: calc(100% + 5px);
+    min-height :calc(100% + 5px) !important;
   }
   /* 모든 스크롤바 숨기기 */
   .snize-ac-results-content::-webkit-scrollbar {
