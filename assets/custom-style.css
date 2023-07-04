@@ -1898,8 +1898,10 @@ variant-radios, variant-selects {
 }
 
 @media (hover: hover) {
-    .theme-black.pp .menu-item a:hover,
-    .theme-black.pp .menu-item a:hover *,
+    .theme-black.pp .menu-list .menu-item a:hover,
+    .theme-black.pp .menu-list .menu-item a:hover *,
+    .theme-black.pp .menu-list .menu-item:hover *,
+    .theme-black.pp .menu-list .menu-item:hover,
     .pp .line_title:hover,
     .pp .order_item a:hover,
     .pp .customer button:hover,
@@ -1918,8 +1920,16 @@ variant-radios, variant-selects {
         cursor: pointer;
     }
 
+    .theme-black.pp .menu-list * {
+
+    }
+
     .account_form_box select:hover {
         color: #969696;
+    }
+
+    .customer .account_checkbox:hover input {
+        background: #969696;
     }
 
     .customer input[type=checkbox]:hover:before {
