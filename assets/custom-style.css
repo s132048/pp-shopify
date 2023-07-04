@@ -617,7 +617,7 @@ variant-radios, variant-selects {
     }
 
     .pp .collection-nav-item + .collection-nav-item {
-      margin: 0 9px;
+        margin: 0 9px;
     }
 }
 
@@ -1376,15 +1376,15 @@ variant-radios, variant-selects {
 }
 
 .index-item {
-  padding: 0 5px;
+    padding: 0 5px;
 }
 
 .index-item:first-child {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 .index-item:last-child {
-  padding-right: 0;
+    padding-right: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1399,7 +1399,7 @@ variant-radios, variant-selects {
     }
 
     .index-item:last-child {
-      padding-left: 3.5px;
+        padding-left: 3.5px;
     }
 
     .index-item:nth-child(1),
@@ -1582,15 +1582,18 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .page-section #snize-search-results-grid-mode ul {
-      gap: 10px 7px;
-      margin-top: 0 !important;
+        gap: 10px 7px;
+        margin-top: 0 !important;
     }
+
     #snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode.snize-two-columns li.snize-product {
-      padding-right: 0px !important;
+        padding-right: 0px !important;
     }
+
     #snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode li.snize-product {
-      margin-bottom: 6px !important;
+        margin-bottom: 6px !important;
     }
+
     .pp .page-section .snize-search-results-header,
     .pp .page-section .snize-search-results-header * {
         font-size: 19px;
@@ -2307,3 +2310,8 @@ details[open] > .search-modal {
     top: 30px !important;
 }
 
+@media (hover: hover) {
+    .size-title:hover span {
+        color: #dcdcdc;
+    }
+}
