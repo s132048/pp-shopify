@@ -60,12 +60,12 @@
     <div class="account_error_box">
      {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
-        {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
+        Email {{ form.errors.messages['email'] }}.
       </span>
     {%- endif -%}
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
-        {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
+        Password {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
     {% if form.errors contains 'form' %}
