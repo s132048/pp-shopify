@@ -345,7 +345,7 @@
     "login_page": {
       "cancel": "취소",
       "create_account": "Register",
-      "email": "이메일",
+      "email": "Email",
       "forgot_password": "비밀번호를 잊으셨나요?",
       "guest_continue": "계속",
       "guest_title": "게스트로 계속하기",
