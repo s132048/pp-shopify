@@ -658,7 +658,7 @@ variant-radios, variant-selects {
 }
 
 @media (hover: hover) {
-    .pp .product-item .card:hover .card__heading {
+    .pp .product-item .card .card__inner:hover + .card__content .card__heading {
         opacity: 1;
     }
 }
