@@ -1928,7 +1928,7 @@ variant-radios, variant-selects {
         color: #969696;
     }
 
-    .customer .account_checkbox:hover input {
+    .customer .account_checkbox:hover input[type=checkbox] {
         background: #969696;
     }
 
