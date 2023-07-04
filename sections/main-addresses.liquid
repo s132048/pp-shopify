@@ -136,7 +136,7 @@
             <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
             <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
             <div class='account_checkbox'>
-              <label id="adrs-chk" for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
+              <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
               {{ form.set_as_default_checkbox }}
             </div>
           </div>
