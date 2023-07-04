@@ -281,7 +281,7 @@ variant-radios, variant-selects {
 }
 
 .pp .product-default .product-form__input label {
-    margin-right: 5px;
+    margin-right: 25px;
 }
 
 .pp .product-default .product-form__input input[type='radio']:checked + label {
@@ -342,6 +342,10 @@ variant-radios, variant-selects {
 }
 
 @media screen and (max-width: 1024px) {
+    .pp .product-default .product-form__input label {
+        margin-right: 10px;
+    }
+
     .pp .product-default .product-form__quantity .quantity__button {
         font-size: 19px;
     }
