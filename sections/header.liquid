@@ -546,7 +546,7 @@ function isMobileDevice() {
   return mediaQuery.matches;
 }
   
-function handleTouch() {
+{% comment %} function handleTouch() {
   removeDisplayNone();
   let searchInputMobile = document.querySelectorAll('#snize-mobile-search-input');
    if (isMobileDevice()) {
@@ -599,7 +599,7 @@ function handleTouch() {
     inputElement.placeholder = newPlaceholder;
   }
 }
-
+ {% endcomment %}
 
 // 각 입력 엘리먼트에 이벤트 리스너 추가
 searchInputs.forEach(function(searchInput) {
