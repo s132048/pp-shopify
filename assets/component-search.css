@@ -475,6 +475,6 @@ body.overflow-hidden .search_menu_list{
     font-size: inherit;
   }
   .snize-ac-results-content{
-    overflow-y : auto;
+    overflow : unset;
   }
 }
