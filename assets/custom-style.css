@@ -353,7 +353,7 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .product-default .product-form__input label {
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     .pp .product-default .product-form__quantity .quantity__button {
