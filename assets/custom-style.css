@@ -1089,12 +1089,9 @@ variant-radios, variant-selects {
     padding: 0 10px 70px;
 }
 
-.main-collection-section:first-child {
-  background-color: red;
-}
-
 .main-collection-section .collection {
     border-top: 1.5px solid #000;
+    margin-top: 32.5px;
 }
 
 @media screen and (max-width: 1024px) {
