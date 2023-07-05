@@ -45,6 +45,9 @@ $('.size-title').on('click', function () {
 
 $('.search__input').on('keyup', function () {
     let thisVal = $(this).val();
+
+    console.log(thisVal);
+
     if (thisVal != '') {
         $('#view-all-btn').show();
 
@@ -74,6 +77,10 @@ $('.search__input').on('keyup', function () {
 //
 //     console.log('a');
 // });
+
+$('#snize-mobile-search-input').on('click', function(){
+    console.log('a');
+});
 
 $('#view-all-btn').on('click', function (){
     let keyword = $('.search__input').val();

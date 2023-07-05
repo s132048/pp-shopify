@@ -2378,7 +2378,7 @@ details[open] > .search-modal {
     }
 
     .overflow-hidden .snize-ac-results-mobile {
-        height: calc(100% - 50px) !important;
+        height: calc(100% - 27px) !important;
     }
 
     .pp .results-wrapper {
