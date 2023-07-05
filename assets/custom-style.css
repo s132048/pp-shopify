@@ -2357,3 +2357,17 @@ details[open] > .search-modal {
 .search-modal__close-button {
     cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+    .pp wishlist-product-card .wk-icon {
+        line-height: 24px !important;
+    }
+
+    wishlist-page .wk-page {
+        flex-wrap: wrap;
+    }
+
+    wishlist-product-card .wk-form {
+        font-size: 19px !important;
+        line-height: 24px !important;
+    }
+}
