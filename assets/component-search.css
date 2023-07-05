@@ -513,6 +513,7 @@ body.overflow-hidden .search_menu_list{
   }
 
   .search-item-wrapper{
+    height: auto;
     max-height: calc(100vh - 150px);
     overflow-y : auto;
   }
