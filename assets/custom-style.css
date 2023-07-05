@@ -2343,3 +2343,7 @@ details[open] > .search-modal {
         color: #646464;
     }
 }
+
+.search-modal__close-button {
+    cursor: pointer;
+}

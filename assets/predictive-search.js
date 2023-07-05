@@ -271,19 +271,31 @@ customElements.define('predictive-search', PredictiveSearch);
 //   });
 // });
 
-$('.mobile-search-menu-title').on('click', function(){
-  $(this).toggleClass('chk');
-  if($(this).hasClass('chk')){
-    $('.mobile-search-menu-title').not(this).find('.open-list').removeClass('hide');
-    $('.mobile-search-menu-title').not(this).find('.close-list').addClass('hide');
-    $(this).find('.open-list').addClass('hide');
-    $(this).find('.close-list').removeClass('hide');
-    $('.mobile-search-menu-title').not(this).siblings('.search-menu-item-list').slideUp(300);
-    $(this).siblings('.search-menu-item-list').slideDown(300);
-  }else{
-    $('.mobile-search-menu-title').removeClass('chk');
-    $('.mobile-search-menu-title').find('.open-list').removeClass('hide');
-    $('.mobile-search-menu-title').find('.close-list').addClass('hide');
-    $('.mobile-search-menu-title').siblings('.search-menu-item-list').slideUp(300);
-  }
+$(document).ready(function() {
+  checkWindowSize();
+
+  $(window).resize(function() {
+    checkWindowSize();
+  });
 });
+
+function checkWindowSize() {
+  if ($(window).width() <= 1024) {
+    $('.mobile-search-menu-title').on('click', function(){
+      $(this).toggleClass('chk');
+      if($(this).hasClass('chk')){
+        $('.mobile-search-menu-title').not(this).find('.open-list').removeClass('hide');
+        $('.mobile-search-menu-title').not(this).find('.close-list').addClass('hide');
+        $(this).find('.open-list').addClass('hide');
+        $(this).find('.close-list').removeClass('hide');
+        $('.mobile-search-menu-title').not(this).siblings('.search-menu-item-list').slideUp(300);
+        $(this).siblings('.search-menu-item-list').slideDown(300);
+      }else{
+        $('.mobile-search-menu-title').removeClass('chk');
+        $('.mobile-search-menu-title').find('.open-list').removeClass('hide');
+        $('.mobile-search-menu-title').find('.close-list').addClass('hide');
+        $('.mobile-search-menu-title').siblings('.search-menu-item-list').slideUp(300);
+      }
+    });
+  }
+}

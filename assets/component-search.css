@@ -449,19 +449,23 @@ body.overflow-hidden .search_menu_list{
   .search_close_mobile{
     display:flex !important;
   }
-  .fake_button_mobile,
-  .fake_button_mobile_sub{
-    margin-top: -1px;
-    z-index: 10;
-    background-repeat: no-repeat;
-    background-image: url(https://cdn.shopify.com/s/files/1/0702/4522/0637/files/search_close.svg?v=1686387638);
-    width: 1rem !important;
+  .pp .fake_button_mobile,
+  .pp .fake_button_mobile_sub{
+    color: #969696 !important;
     position: absolute;
-    right: -1px;
-    height: 1rem !important;
-    top: 17px;
-    background-size: 0.8rem 0.8rem;
+    top: 0;
+    right: -10px !important;
+    cursor: pointer;
+    width: 32px;
+    height: 38px !important;
+    line-height: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 0;
   }
+
   .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel button.snize-close-button-arrow {
     display: none;
   }
