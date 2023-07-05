@@ -23,7 +23,7 @@ button:hover {
   padding-left: 0;
 }
 
-variant-radios {
+variant-radios > fieldset {
   padding: 2.25px 0;
 }
 
