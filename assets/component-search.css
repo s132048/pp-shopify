@@ -439,14 +439,14 @@ body.overflow-hidden .search_menu_list{
 .search-menu-item {
   height: 100%;
 }
+.search-menu-item-list{  
+  height: 100%;
+}
 .search-item-wrapper{
   height: 100%;
   overflow-y : auto;
 }
-.search-menu-item-list{
-  
-  height: 100%;
-}
+
 @media screen and (max-width: 1024px) {
   .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
     font-size: 19px;
