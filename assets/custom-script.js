@@ -58,6 +58,23 @@ $('.search__input').on('keyup', function () {
     }
 });
 
+// $('.snize-input-style').on('keyup', function () {
+//     let thisVal = $(this).val();
+//     // if (thisVal != '') {
+//     //     $('#view-all-btn').show();
+//     //
+//     //     const chk = setTimeout(function () {
+//     //         if ($('.snize-results-html').hasClass('snize-hidden')) {
+//     //             $('#view-all-btn').hide();
+//     //         }
+//     //     }, 500);
+//     // }else{
+//     //     $('#view-all-btn').hide();
+//     // }
+//
+//     console.log('a');
+// });
+
 $('#view-all-btn').on('click', function (){
     let keyword = $('.search__input').val();
     window.location.href = `/pages/search-results-page?q=${keyword}`;

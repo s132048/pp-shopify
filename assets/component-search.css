@@ -362,8 +362,8 @@ body.overflow-hidden .search_menu_list{
 }
 @media screen and (max-width: 1024px){
   .results-wrapper{
-    overflow-y : auto;
-    height: 100%;
+    /*overflow-y : auto;*/
+    /*height: 100%;*/
   }
   
     body.overflow-hidden .search_menu_list{
@@ -496,10 +496,10 @@ body.overflow-hidden .search_menu_list{
     height: 100%;
   }
   .snize-ac-results.snize-ac-results-mobile{
-    overflow: unset;
+    /*overflow: unset;*/
   }
   .pp .snize-ac-results-list{
-    padding-bottom : 50px;
+    /*padding-bottom : 50px;*/
   }
   .snize-ac-results-content{
     overflow : unset;

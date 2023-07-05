@@ -2120,6 +2120,7 @@ details[open] > .search-modal {
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     height: fit-content;
+    background: #FFFF00;
 }
 
 .pp .snize-ac-results .snize-thumbnail {
@@ -2369,5 +2370,18 @@ details[open] > .search-modal {
     wishlist-product-card .wk-form {
         font-size: 19px !important;
         line-height: 24px !important;
+    }
+    .pp .snize-ac-results-content {
+        min-height: auto !important;
+        height: 100% !important;
+        max-height: none !important;
+    }
+
+    .overflow-hidden .snize-ac-results-mobile {
+        height: calc(100% - 50px) !important;
+    }
+
+    .pp .results-wrapper {
+
     }
 }
