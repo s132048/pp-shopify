@@ -1102,7 +1102,6 @@ variant-radios, variant-selects {
 
 .main-collection-title a {
     display: inline-block;
-    paading: 3px 0;
     color: #000;
 }
 
@@ -1965,6 +1964,7 @@ variant-radios, variant-selects {
 }
 
 .main-collection-title {
+    pading: 3px 0;
     position: relative;
     display: inline-block;
 }
