@@ -2121,6 +2121,9 @@ details[open] > .search-modal {
 }
 
 @media screen and (max-width: 1024px) {
+    .pp .search-modal__content {
+      overflow-y: scroll;
+    } 
     .pp .snize-ac-results-list {
         grid-template-columns: repeat(2, 1fr);
     }
