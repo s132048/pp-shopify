@@ -370,13 +370,13 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .product-default .product-form__input {
-        height: 31px;
+        height: 33.5px;
         display: flex;
         align-items: center;
     }
 
     .pp .product-default .product__info-container .product-form {
-        height: 31px;
+        height: 33.5px;
         display: flex;
         align-items: center;
     }
