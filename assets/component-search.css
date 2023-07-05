@@ -359,7 +359,6 @@ body.overflow-hidden.snize-instant-widget-is-open .search_menu_list{
 }
 body.overflow-hidden .search_menu_list{
   display: grid !important;
-  align-items: stretch;
 }
 @media screen and (max-width: 1024px){
   .results-wrapper{
@@ -437,14 +436,14 @@ body.overflow-hidden .search_menu_list{
   bottom: -101% !important;
   transition: bottom 0.4s ease; 
 }
-.search-menu-item {
+/* .search-menu-item {
   height: calc(100% - 40px);
 }
 .search-menu-item-list{  
   height: calc(100% - 40px);
-}
+} */
 .search-item-wrapper{
-  height: calc(100% - 40px);
+  height: calc(100vh - 100px);
   overflow-y : auto;
 }
 
