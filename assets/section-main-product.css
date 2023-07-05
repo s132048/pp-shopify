@@ -24,7 +24,7 @@ button:hover {
 }
 
 variant-radios > fieldset {
-  padding: 2.25px 0;
+  padding: 2.25px 0 !important;
 }
 
 @media screen and (min-width: 750px) {
