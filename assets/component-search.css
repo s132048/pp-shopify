@@ -437,13 +437,13 @@ body.overflow-hidden .search_menu_list{
   transition: bottom 0.4s ease; 
 }
 .search-menu-item {
-  calc(100% - 40px)
+  height: calc(100% - 40px);
 }
 .search-menu-item-list{  
-  calc(100% - 40px)
+  height: calc(100% - 40px);
 }
 .search-item-wrapper{
-  calc(100% - 40px)
+  height: calc(100% - 40px);
   overflow-y : auto;
 }
 
