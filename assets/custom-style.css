@@ -848,7 +848,7 @@ variant-radios, variant-selects {
     }
 
     .cart-drawer .cart-item .quantity {
-        width: 90px;
+        width: 78px;
     }
 
     .cart-drawer .cart-item .quantity__button:first-child {
