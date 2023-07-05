@@ -74,8 +74,9 @@
             you agree to the use of cookies.</span>
         </div>
         <div class="cookie-btn-list">
-            <div onclick="handleAccept()">Accept</div>
-            <div onclick="handleDecline()">Decline</div>
+<!--             <div onclick="handleAccept()">Accept</div> -->
+<!--             <div onclick="handleDecline()">Decline</div> -->
+            <div onclick="bannerClose()">Close</div>
         </div>
     </div>
 </div>
@@ -102,6 +103,10 @@
 
     function handleDecline() {
         window.Shopify.customerPrivacy.setTrackingConsent(false,hideBanner);
+    }
+
+    function bannerClose() {
+      sessionStorage.getItem('bannerClosed', 'closed')    
     }
 
     function initCookieBanner() {
