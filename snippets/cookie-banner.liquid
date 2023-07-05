@@ -105,11 +105,9 @@
     }
 
     function initCookieBanner() {
-        const userCanBeTracked = window.Shopify.customerPrivacy.userCanBeTracked();
-        const userTrackingConsent = window.Shopify.customerPrivacy.getTrackingConsent();
-        console.log(userCanBeTracked, userTrackingConsent);
-        if(!userCanBeTracked && userTrackingConsent === 'no_interaction') {
-            showBanner();
+        const openBanner = sessionStorage.getItem('bannerClosed') === null;
+        if (openBanner) {
+          showBanner();
         }
     }
 
