@@ -1089,7 +1089,7 @@ variant-radios, variant-selects {
     padding: 0 10px 70px;
 }
 
-.main-collection-section > .main-collection-section .collection:first-child {
+.main-collection-section:first-child > .main-collection-section .collection {
   padding-top: 32.5px;
 }
 
