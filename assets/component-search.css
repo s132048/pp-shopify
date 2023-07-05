@@ -512,4 +512,8 @@ body.overflow-hidden .search_menu_list{
     background-color: #000000;
   }
 
+  .search-item-wrapper{
+    max-height: calc(100vh - 150px);
+    overflow-y : auto;
+  }
 }
