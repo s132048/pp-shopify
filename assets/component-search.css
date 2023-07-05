@@ -359,6 +359,7 @@ body.overflow-hidden.snize-instant-widget-is-open .search_menu_list{
 }
 body.overflow-hidden .search_menu_list{
   display: grid !important;
+  align-items: stretch;
 }
 @media screen and (max-width: 1024px){
   .results-wrapper{
