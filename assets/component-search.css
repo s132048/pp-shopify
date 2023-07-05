@@ -443,7 +443,7 @@ body.overflow-hidden .search_menu_list{
   overflow-y : auto;
 }
 .search-menu-item-list{
-  overflow-y: auto;
+  height: 100%;
 }
 @media screen and (max-width: 1024px) {
   .search__input, .snize-ac-results.snize-ac-results-mobile .snize-mobile-top-panel input.snize-mobile-input-style {
