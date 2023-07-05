@@ -436,6 +436,9 @@ body.overflow-hidden .search_menu_list{
   bottom: -101% !important;
   transition: bottom 0.4s ease; 
 }
+.search-item-wrapper{
+  height: 100%;
+}
 .search-menu-item-list{
   overflow-y : auto;
 }
