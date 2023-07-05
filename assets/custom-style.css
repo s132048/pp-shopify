@@ -562,7 +562,7 @@ variant-radios, variant-selects {
     cursor: pointer;
 }
 
-.pp .collection-nav-item + .collection-nav-item {
+.pp .collection-nav-item {
     margin: 0 12.5px;
 }
 
@@ -616,7 +616,7 @@ variant-radios, variant-selects {
         padding: 0 0 0 3.5px;
     }
 
-    .pp .collection-nav-item + .collection-nav-item {
+    .pp .collection-nav-item {
         margin: 0 9px;
     }
 }
