@@ -101,14 +101,13 @@ a {
     opacity: 0;
 }
 
-.nav-wrapper.off {
-    bottom: 0;
-}
-
-
 .nav-wrapper.active {
     bottom: 0;
     opacity: 1;
+}
+
+.nav-wrapper.off {
+    bottom: -100%;
 }
 
 .ps {
