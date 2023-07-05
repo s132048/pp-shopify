@@ -454,7 +454,7 @@
       "blank": "can't be blank",
       "reset_password_html": "Your email address is already linked to your account. If this account is yours, you can <a href=\/account\/login#recover>reset your password<\/a>.",
       "invalid": "is not valid",
-      "too_short": "Password must be at least {{ count }} characters long"
+      "too_short": "must be at least {{ count }} characters long"
     }
   },
   "customer_accounts": {
