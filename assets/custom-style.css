@@ -1094,6 +1094,10 @@ variant-radios, variant-selects {
     border-top: 1.5px solid #000;
 }
 
+.main-collection-section .collection:first-child {
+    padding-top: 32.5px;
+}
+
 @media screen and (max-width: 1024px) {
     .main-collection-section {
         padding: 0 7px 64px;
