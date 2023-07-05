@@ -275,7 +275,7 @@ input::-webkit-search-results-decoration{
     height: 8px;
   }
   .search_menu_list{
-    top: 34px;
+    top: 38px;
     height: calc(100% - 34px);
   }
   .search_menu_list > div .mobile-search-menu-title{
