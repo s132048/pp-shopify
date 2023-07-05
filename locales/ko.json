@@ -345,11 +345,11 @@
     "login_page": {
       "cancel": "취소",
       "create_account": "Register",
-      "email": "Email",
+      "email": "이메일",
       "forgot_password": "비밀번호를 잊으셨나요?",
       "guest_continue": "계속",
       "guest_title": "게스트로 계속하기",
-      "password": "Password",
+      "password": "비밀번호",
       "title": "로그인",
       "sign_in": "로그인",
       "submit": "제출"
@@ -374,7 +374,7 @@
       "first_name": "이름",
       "last_name": "성",
       "email": "Email",
-      "password": "Password",
+      "password": "비밀번호",
       "submit": "생성"
     },
     "reset_password": {
@@ -452,7 +452,8 @@
     },
     "errors": {
       "blank": "can't be blank",
-      "reset_password_html": "Your email address is already linked to your account. If this account is yours, you can <a href=\/account\/login#recover>reset your password<\/a>."
+      "reset_password_html": "Your email address is already linked to your account. If this account is yours, you can <a href=\/account\/login#recover>reset your password<\/a>.",
+      "invalid": "is not valid"
     }
   },
   "customer_accounts": {
