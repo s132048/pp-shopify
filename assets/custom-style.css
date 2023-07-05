@@ -1090,7 +1090,7 @@ variant-radios, variant-selects {
 }
 
 .main-collection-section:first-child {
-  padding-top: 32.5px;
+  margin-top: 32.5px;
 }
 
 .main-collection-section .collection {
