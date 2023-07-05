@@ -240,7 +240,7 @@ input::-webkit-search-results-decoration{
 
 .search_menu_list{
   position:absolute;
-  top: 35px;
+  top: 37px;
   left: 0px;
   height: calc(100% - 40px);
   width: 100%;
