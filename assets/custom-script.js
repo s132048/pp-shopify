@@ -23,7 +23,12 @@ menuBtn.addEventListener('click', function () {
 });
 
 navCloseBtn.addEventListener('click', function () {
-    navPanel.classList.remove('active');
+    navPanel.classList.add('off');
+    const chk = setTimeout(function () {
+        navPanel.classList.remove('active');
+        navPanel.classList.remove('off');
+    }, 500);
+
     document.querySelector('body').classList.remove('ps');
 });
 
