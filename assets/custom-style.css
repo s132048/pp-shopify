@@ -1089,13 +1089,12 @@ variant-radios, variant-selects {
     padding: 0 10px 70px;
 }
 
-.main-collection-section .collection {
-    border-top: 1.5px solid #000;
-    padding-top: 32.5px;
+.main-collection-section > .main-collection-section .collection:first-child {
+  padding-top: 32.5px;
 }
 
-.pt-0 {
-    padding-top: 0;
+.main-collection-section .collection {
+    border-top: 1.5px solid #000;
 }
 
 @media screen and (max-width: 1024px) {
