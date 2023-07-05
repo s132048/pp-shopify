@@ -451,7 +451,7 @@ body.overflow-hidden .search_menu_list{
   }
   .pp .fake_button_mobile,
   .pp .fake_button_mobile_sub{
-    color: #969696 !important;
+    color: #000 !important;
     position: absolute;
     top: 0;
     right: -10px !important;

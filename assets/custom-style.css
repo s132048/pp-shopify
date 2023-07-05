@@ -2192,12 +2192,12 @@ details[open] > .search-modal {
 }
 
 .pp .search-modal__close-button {
-    color: #969696 !important;
+    color: #000 !important;
 }
 
 @media (hover: hover) {
     .pp .search-modal__close-button:hover {
-        color: #000 !important;
+        color: #969696 !important;
     }
 }
 
