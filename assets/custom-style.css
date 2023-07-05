@@ -95,7 +95,8 @@ a {
     left: 0;
     padding: 8px 10px 10px;
     width: 100%;
-    height: calc(var(--vh, 1vh) * 100);
+    /*height: calc(var(--vh, 1vh) * 100);*/
+    height: 100vh;
     background-color: #fff;
     transition: bottom 400ms ease;
 }
@@ -1983,7 +1984,7 @@ variant-radios, variant-selects {
     display: block;
     position: absolute;
     z-index: 0;
-    top: 0;
+    top: 3px;
     left: 0;
     color: transparent;
     width: 100%;
@@ -2336,6 +2337,10 @@ details[open] > .search-modal {
 
 @media (hover: hover) {
     .size-title:hover span {
+        color: #dcdcdc;
+    }
+
+    .size-title:hover:after {
         color: #dcdcdc;
     }
 
