@@ -2381,7 +2381,7 @@ details[open] > .search-modal {
         height: calc(100% - 27px) !important;
     }
 
-    .pp .results-wrapper {
-
+    .pp #view-all-btn {
+        display: block !important;
     }
 }
