@@ -98,10 +98,12 @@ a {
     height: calc(var(--vh, 1vh) * 100);
     background-color: #fff;
     transition: bottom 400ms ease;
+    opacity: 0;
 }
 
 .nav-wrapper.active {
     bottom: 0;
+    opacity: 1;
 }
 
 .ps {
