@@ -48,7 +48,7 @@
     font-size: 22px;
     line-height: 28px;
     word-break: keep-all;
-    cursor: pointer;
+
   }
 
   @media screen and (max-width: 1024px) {
@@ -70,6 +70,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    cursor: pointer;
   }
 
   .ib-inner {
@@ -85,16 +86,19 @@
   }
 
   .ib-close-btn {
-    margin-top: 48px;
+    display: inline-block;
+    cursor: pointer;
   }
 </style>
 
-<div id="info-banner" onclick="closePopup()">
-  <div class="ib-overlay"></div>
+<div id="info-banner">
+  <div class="ib-overlay" onclick="closePopup()">
+
+  </div>
 
   <div class="ib-inner">
     <div class="ib-text">
-      <div style="cursor: text;">
+      <div>
         Our website is currently in the development phase.<br>
         There may still be some minor bugs and<br>
         errors that need to be addressed.
@@ -102,9 +106,10 @@
         현재 웹사이트는 가오픈 상태입니다.<br>
         일부 기능 및 상품 정보 등의 오류가 있을 수 있으며,<br>
         이는 지속적으로 수정될 예정입니다.
+        <br><br>
+        <span class="ib-close-btn" onclick="closePopup()">×</span>
       </div>
     </div>
-    <div class="ib-close-btn">×</div>
   </div>
 </div>
 <script>
