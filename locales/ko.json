@@ -439,7 +439,10 @@
     },
     "checkout": {
       "stock": {
-        "empty_cart_label": "Your cart is empty"
+        "empty_cart_label": "Your cart is empty",
+        "quantity_update": {
+          "description": "The number of items available for purchase has been changed and updated to your cart."
+        }
       },
       "order_summary": {
         "subtotal_label": "Subtotal label",
