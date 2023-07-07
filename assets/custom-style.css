@@ -1115,11 +1115,11 @@ variant-radios, variant-selects {
     color: #000;
 }
 
-.main-collection-title a:after {
-    content: '+';
-    display: inline-block;
-    margin-left: 5px;
-}
+/*.main-collection-title a:after {*/
+/*    content: '+';*/
+/*    display: inline-block;*/
+/*    margin-left: 5px;*/
+/*}*/
 
 .main-collection-row {
     display: grid;
@@ -2378,6 +2378,10 @@ details[open] > .search-modal {
     }
 
     .overflow-hidden .snize-ac-results-mobile {
-        height: calc(100% - 27px) !important;
+        height: calc(100% - 26.5px) !important;
     }
+}
+
+.pp .eo-sh-message {
+    display: none !important;
 }

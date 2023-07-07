@@ -248,13 +248,16 @@ input::-webkit-search-results-decoration{
   gap: 10px;
 }
 
-
 .search_menu_list > div .mobile-search-menu-title{
   position:relative;
   display: block;
   border-bottom: 1.5px solid #000;
-  margin:0 0 3px 0;
+  margin:0 0 0 0;
   padding: 3px 0 3px 0;
+}
+
+.search-menu-item-list {
+  margin-top: 3px;
 }
 
 .search_menu_list > div .mobile-search-menu-title .open-list,
@@ -266,6 +269,10 @@ input::-webkit-search-results-decoration{
 }
 
 @media screen and (max-width: 1024px){
+  .search-menu-item-list {
+    margin-top: 0;
+  }
+
   .search-modal__close-button{
     width:30px;
     right:0;
