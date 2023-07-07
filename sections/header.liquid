@@ -711,7 +711,21 @@ searchInputs.forEach(function(searchInput) {
   });
   searchInput.addEventListener("touchstart", handleTouch);
 });
-  
+
+$('#Search-In-Modal').on('DOMSubtreeModified', function(){
+    let thisVal = $(this).val();
+    if (thisVal != '') {
+        $('#view-all-btn').show();
+
+        const chk = setTimeout(function () {
+            if ($('.snize-results-html').hasClass('snize-hidden')) {
+                $('#view-all-btn').hide();
+            }
+        }, 500);
+    }else{
+        $('#view-all-btn').hide();
+    }
+});
 </script>
 <script type="application/ld+json">
   {

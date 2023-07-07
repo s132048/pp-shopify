@@ -78,10 +78,6 @@ $('.search__input').on('keyup', function () {
 //     console.log('a');
 // });
 
-$('#snize-mobile-search-input').on('click', function(){
-    console.log('a');
-});
-
 $('#view-all-btn').on('click', function (){
     let keyword = $('.search__input').val();
     window.location.href = `/pages/search-results-page?q=${keyword}`;
