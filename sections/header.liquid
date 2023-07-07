@@ -694,19 +694,8 @@ function handleTouch() {
           // searchInputMobile.forEach(function(mobileSearchInput) {
           //   changePlaceholder(mobileSearchInput, "Type something...");
           // });
-
         }
-      }else{
-     searchInputMobile.forEach(input => {
-       input.addEventListener('input', function() {
-         if (document.querySelector('.snize-results-html').classList.contains('snize-hidden')) {
-           document.getElementById('view-all-btn').style.display = 'none';
-         }else{
-           document.getElementById('view-all-btn').style.display = 'block';
-         }
-       });
-     });
-   }
+      }
   function changePlaceholder(inputElement, newPlaceholder) {
     inputElement.placeholder = newPlaceholder;
   }
@@ -723,37 +712,26 @@ searchInputs.forEach(function(searchInput) {
   searchInput.addEventListener("touchstart", handleTouch);
 });
 
-$('#Search-In-Modal').on('DOMSubtreeModified', function(){
-    let thisVal = $(this).val();
-
-    if (thisVal != '') {
-        $('#view-all-btn').show();
-
-        const chk = setTimeout(function () {
-            if ($('.snize-results-html').hasClass('snize-hidden')) {
-                $('#view-all-btn').hide();
-            }
-        }, 500);
-    }else{
-        $('#view-all-btn').hide();
-    }
+$('.search__input').on('DOMSubtreeModified', function(){
+  $('#view-all-btn').show();
 });
 
-$('#snize-mobile-search-input').on('DOMSubtreeModified', function(){
+$(document).on('input', '#snize-mobile-search-input', function () {
   let thisVal = $(this).val();
-
   if (thisVal != '') {
-    $('#view-all-btn').show();
+      $('#view-all-btn').show();
 
-    const chk = setTimeout(function () {
-      if ($('.snize-results-html').hasClass('snize-hidden')) {
-        $('#view-all-btn').hide();
-      }
-    }, 500);
+      const chk = setTimeout(function () {
+          if ($('.snize-results-html').hasClass('snize-hidden')) {
+              $('#view-all-btn').hide();
+          }
+      }, 300);
   }else{
-    $('#view-all-btn').hide();
+      $('#view-all-btn').hide();
   }
 });
+
+
 </script>
 <script type="application/ld+json">
   {
