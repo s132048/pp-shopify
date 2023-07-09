@@ -265,7 +265,7 @@
                           {%- endif -%}
                         >
                         <input type="hidden" name="options[prefix]" value="last">
-                        <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}" style="display:none;">
+                        <button id="search_button" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}" style="display:none;">
                           <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                             <use href="#icon-search">
                           </svg>
@@ -731,6 +731,9 @@ $(document).on('input', '#snize-mobile-search-input', function () {
   }
 });
 
+  $('#view-all-btn').on('click', function(){
+    $('#search_button').click();
+  })
 
 </script>
 <script type="application/ld+json">
