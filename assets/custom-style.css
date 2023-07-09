@@ -2303,7 +2303,7 @@ details[open] > .search-modal {
     z-index: 100;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 14px);
     margin : 0 7px;
     text-align: center;
     border-top: 1.5px solid #000;
