@@ -717,7 +717,7 @@ $('.search__input').on('DOMSubtreeModified', function(){
   if ($('#view-all-btn').length === 0) {
      setTimeout(function () {
       var viewAllBtn = $('<div id="view-all-btn" style="display: block;"><div>View all</div></div>');
-      $('.results-wrapper').append(viewAllBtn);
+      $('.snize-ac-results-content').append(viewAllBtn);
     }, 500);
   }
 });
@@ -726,7 +726,7 @@ $(document).on('input', '#snize-mobile-search-input', function () {
   if ($('#view-all-btn').length === 0) {
      setTimeout(function () {
       var viewAllBtn = $('<div id="view-all-btn" style="display: block;"><div>View all</div></div>');
-      $('.results-wrapper').append(viewAllBtn);
+      $('.snize-ac-results-content').append(viewAllBtn);
     }, 500);
   }
 });
