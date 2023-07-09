@@ -711,48 +711,41 @@ searchInputs.forEach(function(searchInput) {
   });
   searchInput.addEventListener("touchstart", handleTouch);
 });
+function handleSearchInput() {
+  if ($('#view-all-btn').length === 0) {
+    setTimeout(function () {
+      var viewAllBtn = $('<div id="view-all-btn" style="display: block;"><div>View all</div></div>');
+      $('.snize-ac-results-content').append(viewAllBtn);
+    }, 500);
+  }
+}
 
-$('.search__input').on('DOMSubtreeModified', function(){
-  // $('#view-all-btn').show();
-  if ($('#view-all-btn').length === 0) {
-     setTimeout(function () {
-      var viewAllBtn = $('<div id="view-all-btn" style="display: block;"><div>View all</div></div>');
-      $('.snize-ac-results-content').append(viewAllBtn);
-    }, 500);
+function handleMobileSearchInput() {
+  let thisVal = $(this).val();
+  if (thisVal != '') {
+    $('#view-all-btn').show();
+
+    const chk = setTimeout(function () {
+      if ($('.snize-results-html').hasClass('snize-hidden')) {
+        $('#view-all-btn').hide();
+      }
+    }, 300);
+  } else {
+    $('#view-all-btn').hide();
   }
-});
-  
-$(document).on('input', '#snize-mobile-search-input', function () {
-  if ($('#view-all-btn').length === 0) {
-     setTimeout(function () {
-      var viewAllBtn = $('<div id="view-all-btn" style="display: block;"><div>View all</div></div>');
-      $('.snize-ac-results-content').append(viewAllBtn);
-    }, 500);
-  }
-});
+}
+
+if ($(window).width() <= 1024) {
+  $('.search__input').on('DOMSubtreeModified', handleMobileSearchInput);
+} else {
+  $('.search__input').on('input', handleSearchInput);
+}
 
 $(document).on('click', '#view-all-btn', function () {
   $('#search_button').click();
 });
 
-// $(document).on('input', '#snize-mobile-search-input', function () {
-//   let thisVal = $(this).val();
-//   if (thisVal != '') {
-//       $('#view-all-btn').show();
 
-//       const chk = setTimeout(function () {
-//           if ($('.snize-results-html').hasClass('snize-hidden')) {
-//               $('#view-all-btn').hide();
-//           }
-//       }, 300);
-//   }else{
-//       $('#view-all-btn').hide();
-//   }
-// });
-
-//   $('#view-all-btn').on('click', function(){
-//     $('#search_button').click();
-//   })
 
 </script>
 <script type="application/ld+json">
