@@ -711,6 +711,7 @@ searchInputs.forEach(function(searchInput) {
   });
   searchInput.addEventListener("touchstart", handleTouch);
 });
+  
 function handleSearchInput() {
   if ($('#view-all-btn').length === 0) {
     setTimeout(function () {
@@ -736,7 +737,13 @@ function handleMobileSearchInput() {
 }
 
 if ($(window).width() <= 1024) {
-  $('.search__input').on('DOMSubtreeModified', handleMobileSearchInput);
+  $('.search__input').on('DOMSubtreeModified input', function () {
+  handleSearchInput();
+  });
+  
+  $(document).on('input', '#snize-mobile-search-input', function () {
+    handleSearchInput();
+  });
 } else {
   $('.search__input').on('input', handleSearchInput);
 }
