@@ -286,11 +286,11 @@
                   {%- if settings.predictive_search_enabled -%}
                     </predictive-search>
                   {%- endif -%}
-                  <div id="view-all-btn">
+{% comment %}                   <div id="view-all-btn">
                     <div>
                       View all
                     </div>
-                  </div>
+                  </div> {% endcomment %}
                   <span id="fake-button_pc" class="fake_button_pc search_close_pc search-modal__close-button">×</span>
                   <span id="fake-button_mobile" class="fake_button_mobile search_close_mobile search-modal__close-button">×</span>
                   <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset search_close_pc modal_close_pc_settimeout" style="display:none;" aria-label="{{ 'accessibility.close' | t }}">
@@ -712,9 +712,9 @@ searchInputs.forEach(function(searchInput) {
   searchInput.addEventListener("touchstart", handleTouch);
 });
 
-$('.search__input').on('DOMSubtreeModified', function(){
-  $('#view-all-btn').show();
-});
+// $('.search__input').on('DOMSubtreeModified', function(){
+//   $('#view-all-btn').show();
+// });
   
 $(document).on('input', '#snize-mobile-search-input', function () {
   if ($('#view-all-btn').length === 0) {
