@@ -2307,7 +2307,7 @@ details[open] > .search-modal {
     margin : 0 7px;
     text-align: center;
     border-top: 1.5px solid #000;
-    background-color : pink;
+    background-color : #ff0;
 }
 
 #view-all-btn > div {
