@@ -282,11 +282,11 @@
         
                         <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
                       {%- endif -%}
-                    <div id="view-all-btn">
+                    <button id="view-all-btn" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                       <div>
                         View all
                       </div>
-                    </div>
+                    </button>
                     </form>
                   {%- if settings.predictive_search_enabled -%}
                     </predictive-search>
