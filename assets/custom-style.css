@@ -2299,14 +2299,14 @@ details[open] > .search-modal {
 
 #view-all-btn {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     bottom: 0;
     left: 0;
     width: 100%;
+    margin : 0 7px;
     text-align: center;
     border-top: 1.5px solid #000;
-    z-index: 10;
     background-color : #ff0;
 }
 
