@@ -22,7 +22,7 @@ a {
 }
 
 .mt-0 {
-  margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2311,10 +2311,10 @@ details[open] > .search-modal {
     bottom: 0;
     left: 0;
     width: calc(100% - 14px);
-    margin : 0 7px;
+    margin: 0 7px;
     text-align: center;
     border-top: 1.5px solid #000;
-    background-color : #ff0;
+    background-color: #ff0;
 }
 
 #view-all-btn > div {
@@ -2367,6 +2367,7 @@ details[open] > .search-modal {
 .search-modal__close-button {
     cursor: pointer;
 }
+
 @media screen and (max-width: 1024px) {
     .pp wishlist-product-card .wk-icon {
         line-height: 24px !important;
@@ -2380,6 +2381,7 @@ details[open] > .search-modal {
         font-size: 19px !important;
         line-height: 24px !important;
     }
+
     .pp .snize-ac-results-content {
         min-height: auto !important;
         height: 100% !important;
