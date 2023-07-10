@@ -281,7 +281,7 @@ $(document).ready(function() {
 
 function checkWindowSize() {
   if ($(window).width() <= 1024) {
-    $('.mobile-search-menu-title').on('click', function(){
+    $('.mobile-search-menu-title').off('click').on('click', function(){
       $(this).toggleClass('chk');
       if($(this).hasClass('chk')){
         $('.mobile-search-menu-title').not(this).find('.open-list').removeClass('hide');
