@@ -256,8 +256,8 @@ input::-webkit-search-results-decoration{
   padding: 3px 0 3px 0;
 }
 
-.search-menu-item-list {
-  margin-top: 3px;
+.search-menu-item-list .search-item-wrapper{
+  padding-top: 3px;
 }
 
 .search_menu_list > div .mobile-search-menu-title .open-list,
