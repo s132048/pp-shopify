@@ -125,7 +125,7 @@
     "checkout_sidebar_background_color": "#ffffff",
     "checkout_heading_font": "Helvetica Neue",
     "checkout_body_font": "Helvetica Neue",
-    "checkout_accent_color": "#e9e9e9",
+    "checkout_accent_color": "#ff8000",
     "checkout_button_color": "#e9e9e9",
     "sections": {
       "announcement-bar": {
