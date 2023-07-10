@@ -1860,6 +1860,10 @@ variant-radios, variant-selects {
         width: 13px !important;
         height: 28px !important;
     }
+
+    .pp .search-modal__close-button#fake-button_mobile {
+        width: 32px !important;
+    }
 }
 
 .pp .product-default .product-form__quantity .quantity__button {
