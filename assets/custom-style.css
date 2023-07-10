@@ -1857,7 +1857,8 @@ variant-radios, variant-selects {
 
 @media screen and (max-width: 1024px) {
     .pp .search-modal__close-button {
-        width: auto !important;
+        width: 13px !important;
+        height: 28px !important;
     }
 }
 
