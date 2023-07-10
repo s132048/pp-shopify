@@ -1855,6 +1855,12 @@ variant-radios, variant-selects {
     margin-right: -11px;
 }
 
+@media screen and (max-width: 1024px) {
+    .pp .search-modal__close-button {
+        width: auto !important;
+    }
+}
+
 .pp .product-default .product-form__quantity .quantity__button {
     color: #000;
 }
