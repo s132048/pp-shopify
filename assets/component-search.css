@@ -492,6 +492,7 @@ body.overflow-hidden .search_menu_list{
   }
   .pp .search-modal__close-button{
     right: 10px;
+    top: 9px;
   }
   .pp .search-modal__close-button.search_close_pc{
     display: none !important;

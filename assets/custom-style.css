@@ -148,7 +148,7 @@ a {
 
 .nav-close-btn {
     position: absolute;
-    top: -8px;
+    top: -5px;
     right: -10px;
     cursor: pointer;
     width: 32px;
@@ -1993,6 +1993,7 @@ variant-radios, variant-selects {
 .main-collection-title a {
     position: relative;
     z-index: 1;
+    min-width: 120px;
 }
 
 .main-collection-title:after {
@@ -2009,7 +2010,7 @@ variant-radios, variant-selects {
 }
 
 @media (hover: hover) {
-    .main-collection-title a:hover {
+    .main-collection-title:hover a {
         color: transparent;
     }
 
