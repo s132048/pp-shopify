@@ -2396,6 +2396,10 @@ details[open] > .search-modal {
     .overflow-hidden .snize-ac-results-mobile {
         height: 100% !important;
     }
+
+    .fake_button_mobile.search_close_mobile.search-modal__close-button {
+        top: -3px;
+    }
 }
 
 .pp .eo-sh-message {
