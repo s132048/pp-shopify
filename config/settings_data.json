@@ -117,6 +117,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/pp_favicon_e79b249c-c6e7-492f-9636-14b60ebcf108.png",
     "currency_code_enabled": true,
     "cart_type": "drawer",
     "show_vendor": false,
