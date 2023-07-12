@@ -2398,7 +2398,7 @@ details[open] > .search-modal {
     }
 
     .fake_button_mobile.search_close_mobile.search-modal__close-button {
-        top: -1px;
+        top: 1px;
     }
 }
 
