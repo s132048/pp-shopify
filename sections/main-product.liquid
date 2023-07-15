@@ -42,7 +42,7 @@
                 <!--   작가 -->
                 <div style='padding-top: 3px;'>
                   <div style="display:none">
-                    {% for author in product.metafields.custom.author_list %}
+                    {% for author in product.metafields.custom.author_list.value %}
                       {{ author }}
                     {% endfor %}
                   </div>
