@@ -40,7 +40,14 @@
         <div class="detail-info">
             <div>
                 <!--   작가 -->
-                <div style='padding-top: 3px;'><a href="/collections/{{ product.metafields.custom.author | replace: " ", "-" }}">{{ product.metafields.custom.author }}</a></div>
+                <div style='padding-top: 3px;'>
+                  <div style="display:none">
+                    {% for author in product.metafields.custom.author_list %}
+                      {{ author }}
+                    {% endfor %}
+                  </div>
+                  <a href="/collections/{{ product.metafields.custom.author | replace: " ", "-" }}">{{ product.metafields.custom.author }}</a>
+                </div>
                 <!--   출판사 -->
                 <div>
                     {% if product.metafields.custom.category_text %}
