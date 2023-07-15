@@ -42,7 +42,7 @@
                 <!--   작가 -->
                 <div style='padding-top: 3px;'>
                   {% for author in product.metafields.custom.author_list.value %}
-                    <a href="/collections/{{ author | replace: " ", "-" }}">{{ author }}{% if forloop.last != true %},{% endif  %}</a>
+                    <a href="/collections/{{ author | replace: " ", "-" }}">{{ author }}</a>{% if forloop.last != true %},{% endif  %}
                   {% endfor %}
 <!--                   <a href="/collections/{{ product.metafields.custom.author | replace: " ", "-" }}">{{ product.metafields.custom.author }}</a> -->
                 </div>
