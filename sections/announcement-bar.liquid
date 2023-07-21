@@ -1,24 +1,106 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
-      <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
-        {%- if block.settings.text != blank -%}
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-          {%- endif -%}
-              <div class="page-width">
-                <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
-                  {{ block.settings.text | escape }}
-                  {%- if block.settings.link != blank -%}
-                    {% render 'icon-arrow' %}
-                  {%- endif -%}
-                </p>
-              </div>
-          {%- if block.settings.link != blank -%}
-            </a>
-          {%- endif -%}
-        {%- endif -%}
+      <style>
+        #info-banner {
+          /*display: flex;*/
+          display: none;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          z-index: 1000000;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.55);
+          font-family: 'ABC Diatype', 'Noto Sans KR', sans-serif;
+          letter-spacing: 0;
+          font-size: 22px;
+          line-height: 28px;
+          word-break: keep-all;
+
+        }
+
+        @media screen and (max-width: 1024px) {
+          #info-banner {
+            font-size: 19px;
+            line-height: 24px;
+          }
+        }
+
+        .ib-inner * {
+          color: #fff;
+          text-align: center;
+        }
+
+        .ib-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          cursor: pointer;
+        }
+
+        .ib-inner {
+          position: relative;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .ib-text {
+          text-align: center;
+        }
+
+        .ib-close-btn {
+          display: inline-block;
+          cursor: pointer;
+        }
+      </style>
+      <div id="info-banner">
+        <div class="ib-overlay" onclick="closePopup()">
+
+        </div>
+        <div class="ib-inner">
+          <div class="ib-text">
+            <div>
+              {{ block.settings.text | escape }}
+              Our website is currently in the development phase.<br>
+              There may still be some minor bugs and<br>
+              errors that need to be addressed.
+              <br><br>
+              현재 웹사이트는 가오픈 상태입니다.<br>
+              일부 기능 및 상품 정보 등의 오류가 있을 수 있으며,<br>
+              이는 지속적으로 수정될 예정입니다.
+              <br><br>
+              <span class="ib-close-btn" onclick="closePopup()">×</span>
+            </div>
+          </div>
+        </div>
       </div>
+      <script>
+        function closePopup() {
+          document.getElementById('info-banner').style.display = 'none';
+
+          document.cookie = "popup_closed=true; max-age=86400; path=/";
+        }
+
+        function checkPopup() {
+          if (document.cookie.includes("popup_closed=true")) {
+
+            document.getElementById('info-banner').style.display = 'none';
+          } else {
+
+            document.getElementById('info-banner').style.display = 'flex';
+          }
+        }
+        window.onload = checkPopup;
+      </script>
+
   {%- endcase -%}
 {%- endfor -%}
 
