@@ -135,10 +135,7 @@
           "33a2107e-db6e-4dc8-9a73-938492cd72bd": {
             "type": "announcement",
             "settings": {
-              "text": "",
-              "text_alignment": "center",
-              "color_scheme": "accent-1",
-              "link": ""
+              "text": "Our website is currently in the development phase.\nThere may still be some minor bugs and\nerrors that need to be addressed.\n\n\n현재 웹사이트는 가오픈 상태입니다.\n일부 기능 및 상품 정보 등의 오류가 있을 수 있으며,\n이는 지속적으로 수정될 예정입니다."
             }
           }
         },
