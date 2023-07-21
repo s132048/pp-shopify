@@ -68,7 +68,15 @@
         <div class="ib-inner">
           <div class="ib-text">
             <div>
-              {{ block.settings.text | escape }}
+              {% comment %}{{ block.settings.text | escape }}{% endcomment %}
+              {% comment %}{% include 'textarea', text: block.settings.text %}{% endcomment %}
+              Our website is currently in the development phase.<br>
+              There may still be some minor bugs and<br>
+              errors that need to be addressed.
+              <br><br>
+              현재 웹사이트는 가오픈 상태입니다.<br>
+              일부 기능 및 상품 정보 등의 오류가 있을 수 있으며,<br>
+              이는 지속적으로 수정될 예정입니다.
               <br><br>
               <span class="ib-close-btn" onclick="closePopup()">×</span>
             </div>
