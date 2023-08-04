@@ -2349,7 +2349,7 @@ details[open] > .search-modal {
     transition: none;
     align-self: end;
     margin-left: 0;
-  margin-right: 0;
+    margin-right: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2380,6 +2380,10 @@ details[open] > .search-modal {
 }
 
 @media screen and (max-width: 1024px) {
+    #snize-search-results-grid-mode {
+      vertical-align: bottom;
+    }
+  
     .pp wishlist-product-card .wk-icon {
         line-height: 24px !important;
     }
