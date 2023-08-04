@@ -1542,6 +1542,10 @@ variant-radios, variant-selects {
 
 }
 
+.snize-with-suggestion {
+  display: none;
+}
+
 .pp .page-section .snize-search-results-header,
 .pp .page-section .snize-search-results-header * {
     color: #000;
