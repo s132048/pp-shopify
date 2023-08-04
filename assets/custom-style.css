@@ -1565,7 +1565,7 @@ variant-radios, variant-selects {
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    padding: 8px 10px 90px;
+    padding: 3px 10px 90px;
     box-sizing: border-box;
     width: 100%;
     display: grid;
