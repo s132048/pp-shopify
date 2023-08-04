@@ -2348,6 +2348,8 @@ details[open] > .search-modal {
     cursor: pointer;
     transition: none;
     align-self: end;
+    margin-left: 0;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 1024px) {
