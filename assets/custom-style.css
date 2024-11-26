@@ -2024,7 +2024,7 @@ variant-radios, variant-selects {
 }
 
 .card--standard .card__inner.off {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 aside#main-collection-filters {
